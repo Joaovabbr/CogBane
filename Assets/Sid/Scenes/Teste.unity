@@ -277,6 +277,7 @@ MonoBehaviour:
   velocidadeCorrer: 6
   forcaPulo: 7
   tempoParaCorrer: 0.5
+  tempoParaEntrarIdle: 3
 --- !u!1 &1927763316
 GameObject:
   m_ObjectHideFlags: 0
@@ -494,6 +495,10 @@ PrefabInstance:
     - target: {fileID: 6069998898032438524, guid: af35df74626d1b7309f891676fd39a3c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8649695925755104113, guid: af35df74626d1b7309f891676fd39a3c, type: 3}
+      propertyPath: m_GravityScale
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
