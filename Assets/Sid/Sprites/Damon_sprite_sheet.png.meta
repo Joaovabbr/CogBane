@@ -1,0 +1,1081 @@
+fileFormatVersion: 2
+guid: c0a064a4a3d72d0d598a4ab7efa81558
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8111611826639305256
+    second: Damon_sprite_sheet_0
+  - first:
+      213: -862360154041529458
+    second: Damon_sprite_sheet_1
+  - first:
+      213: 9153544462353482509
+    second: Damon_sprite_sheet_2
+  - first:
+      213: 4064217088435107265
+    second: Damon_sprite_sheet_3
+  - first:
+      213: 4262650371311220551
+    second: Damon_sprite_sheet_4
+  - first:
+      213: 5708385385503935826
+    second: Damon_sprite_sheet_5
+  - first:
+      213: -7775366729932745315
+    second: Damon_sprite_sheet_6
+  - first:
+      213: -1234831452793290643
+    second: Damon_sprite_sheet_7
+  - first:
+      213: -4422708963354314828
+    second: Damon_sprite_sheet_8
+  - first:
+      213: 476340128596085372
+    second: Damon_sprite_sheet_9
+  - first:
+      213: -6079465932131988939
+    second: Damon_sprite_sheet_10
+  - first:
+      213: 6962443966477451954
+    second: Damon_sprite_sheet_11
+  - first:
+      213: -60499718167351632
+    second: Damon_sprite_sheet_12
+  - first:
+      213: -5467055893317350206
+    second: Damon_sprite_sheet_13
+  - first:
+      213: -4859853768123660053
+    second: Damon_sprite_sheet_14
+  - first:
+      213: -5707139659179653665
+    second: Damon_sprite_sheet_15
+  - first:
+      213: -3713704892381577983
+    second: Damon_sprite_sheet_16
+  - first:
+      213: 922357307603911026
+    second: Damon_sprite_sheet_17
+  - first:
+      213: -3914172558544506389
+    second: Damon_sprite_sheet_18
+  - first:
+      213: 1880867042317674471
+    second: Damon_sprite_sheet_19
+  - first:
+      213: 6846604491791925518
+    second: Damon_sprite_sheet_20
+  - first:
+      213: -3524721546303795332
+    second: Damon_sprite_sheet_21
+  - first:
+      213: -6953432276468935158
+    second: Damon_sprite_sheet_22
+  - first:
+      213: 2881494905780903253
+    second: Damon_sprite_sheet_23
+  - first:
+      213: -2248152750022233709
+    second: Damon_sprite_sheet_24
+  - first:
+      213: 6476529283828894875
+    second: Damon_sprite_sheet_25
+  - first:
+      213: 449829597797990860
+    second: Damon_sprite_sheet_26
+  - first:
+      213: -6433209804595350533
+    second: Damon_sprite_sheet_27
+  - first:
+      213: 1007506527866513830
+    second: Damon_sprite_sheet_28
+  - first:
+      213: 1538828039147402873
+    second: Damon_sprite_sheet_29
+  - first:
+      213: -1258613453879933795
+    second: Damon_sprite_sheet_30
+  - first:
+      213: 2758667947600551162
+    second: Damon_sprite_sheet_31
+  - first:
+      213: -958096736701315917
+    second: Damon_sprite_sheet_32
+  - first:
+      213: -166836097487626807
+    second: Damon_sprite_sheet_33
+  - first:
+      213: -7578417303897965279
+    second: Damon_sprite_sheet_34
+  - first:
+      213: 3868712324272902842
+    second: Damon_sprite_sheet_35
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Damon_sprite_sheet_0
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 588
+        width: 86
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d58e455504cd6f80800000000000000
+      internalID: -8111611826639305256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Damon_sprite_sheet_1
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 583
+        width: 81
+        height: 145
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8b47e542084804f0800000000000000
+      internalID: -862360154041529458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Damon_sprite_sheet_2
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 589
+        width: 81
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d03c252e03ce70f70800000000000000
+      internalID: 9153544462353482509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Damon_sprite_sheet_3
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 587
+        width: 111
+        height: 141
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c53f36a8eff66830800000000000000
+      internalID: 4064217088435107265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Damon_sprite_sheet_4
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 588
+        width: 107
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74731bf9de9f72b30800000000000000
+      internalID: 4262650371311220551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Damon_sprite_sheet_5
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 588
+        width: 111
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25d4ef78342483f40800000000000000
+      internalID: 5708385385503935826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Damon_sprite_sheet_6
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 588
+        width: 99
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d95d7ff9729581490800000000000000
+      internalID: -7775366729932745315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Damon_sprite_sheet_7
+      rect:
+        serializedVersion: 2
+        x: 883
+        y: 588
+        width: 109
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d60c6ca065ffcdee0800000000000000
+      internalID: -1234831452793290643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Damon_sprite_sheet_8
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 589
+        width: 106
+        height: 139
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b7745e51a16f92c0800000000000000
+      internalID: -4422708963354314828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Damon_sprite_sheet_9
+      rect:
+        serializedVersion: 2
+        x: 1112
+        y: 588
+        width: 112
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7acb3db2dc4c9600800000000000000
+      internalID: 476340128596085372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Damon_sprite_sheet_10
+      rect:
+        serializedVersion: 2
+        x: 1230
+        y: 587
+        width: 110
+        height: 141
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53a0f23f1f561aba0800000000000000
+      internalID: -6079465932131988939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Damon_sprite_sheet_11
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 404
+        width: 93
+        height: 137
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b2437e16e19f9060800000000000000
+      internalID: 6962443966477451954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Damon_sprite_sheet_12
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 405
+        width: 100
+        height: 135
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0beaf9da3df092ff0800000000000000
+      internalID: -60499718167351632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Damon_sprite_sheet_13
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 406
+        width: 111
+        height: 133
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cc0d9771ad1124b0800000000000000
+      internalID: -5467055893317350206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Damon_sprite_sheet_14
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 404
+        width: 110
+        height: 135
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be845aa1fb45e8cb0800000000000000
+      internalID: -4859853768123660053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Damon_sprite_sheet_15
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 404
+        width: 94
+        height: 135
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd58d0bb7ba2cc0b0800000000000000
+      internalID: -5707139659179653665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Damon_sprite_sheet_16
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 406
+        width: 105
+        height: 133
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10d37f09315467cc0800000000000000
+      internalID: -3713704892381577983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Damon_sprite_sheet_17
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 406
+        width: 91
+        height: 123
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27187bb951fdccc00800000000000000
+      internalID: 922357307603911026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Damon_sprite_sheet_18
+      rect:
+        serializedVersion: 2
+        x: 977
+        y: 447
+        width: 88
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be17f52dbc01ea9c0800000000000000
+      internalID: -3914172558544506389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Damon_sprite_sheet_19
+      rect:
+        serializedVersion: 2
+        x: 1091
+        y: 424
+        width: 123
+        height: 124
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e7a5171c9e2a1a10800000000000000
+      internalID: 1880867042317674471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Damon_sprite_sheet_20
+      rect:
+        serializedVersion: 2
+        x: 1229
+        y: 398
+        width: 92
+        height: 123
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e010adaa286040f50800000000000000
+      internalID: 6846604491791925518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Damon_sprite_sheet_21
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 206
+        width: 100
+        height: 156
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7f856cad6ca51fc0800000000000000
+      internalID: -3524721546303795332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Damon_sprite_sheet_22
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 212
+        width: 105
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0655577f22708f90800000000000000
+      internalID: -6953432276468935158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Damon_sprite_sheet_23
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 212
+        width: 208
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55d1b2999502df720800000000000000
+      internalID: 2881494905780903253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Damon_sprite_sheet_24
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 205
+        width: 143
+        height: 152
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3917b1e2cf4fcc0e0800000000000000
+      internalID: -2248152750022233709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Damon_sprite_sheet_25
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 205
+        width: 100
+        height: 156
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9c490cc11141e950800000000000000
+      internalID: 6476529283828894875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Damon_sprite_sheet_26
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 13
+        width: 130
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc1c43ac2ad1e3600800000000000000
+      internalID: 449829597797990860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Damon_sprite_sheet_27
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 20
+        width: 132
+        height: 143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf3b88f64c5a8b6a0800000000000000
+      internalID: -6433209804595350533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Damon_sprite_sheet_28
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 20
+        width: 132
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a9ee5e59d16bfd00800000000000000
+      internalID: 1007506527866513830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Damon_sprite_sheet_29
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 19
+        width: 111
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 976bac3d2f30b5510800000000000000
+      internalID: 1538828039147402873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Damon_sprite_sheet_30
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 20
+        width: 107
+        height: 145
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9485fb6bb1888ee0800000000000000
+      internalID: -1258613453879933795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Damon_sprite_sheet_31
+      rect:
+        serializedVersion: 2
+        x: 763
+        y: 15
+        width: 109
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afc9cfdd1e1c84620800000000000000
+      internalID: 2758667947600551162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Damon_sprite_sheet_32
+      rect:
+        serializedVersion: 2
+        x: 909
+        y: 20
+        width: 127
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b4057c181824b2f0800000000000000
+      internalID: -958096736701315917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Damon_sprite_sheet_33
+      rect:
+        serializedVersion: 2
+        x: 1053
+        y: 13
+        width: 127
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cd998904774fadf0800000000000000
+      internalID: -166836097487626807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Damon_sprite_sheet_34
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 18
+        width: 129
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12dfc714d9d04d690800000000000000
+      internalID: -7578417303897965279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Damon_sprite_sheet_35
+      rect:
+        serializedVersion: 2
+        x: 1319
+        y: 0
+        width: 58
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab256729c5d60b530800000000000000
+      internalID: 3868712324272902842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: cfa5970f295e246118f5e040ca44d081
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Damon_sprite_sheet_0: -8111611826639305256
+      Damon_sprite_sheet_1: -862360154041529458
+      Damon_sprite_sheet_10: -6079465932131988939
+      Damon_sprite_sheet_11: 6962443966477451954
+      Damon_sprite_sheet_12: -60499718167351632
+      Damon_sprite_sheet_13: -5467055893317350206
+      Damon_sprite_sheet_14: -4859853768123660053
+      Damon_sprite_sheet_15: -5707139659179653665
+      Damon_sprite_sheet_16: -3713704892381577983
+      Damon_sprite_sheet_17: 922357307603911026
+      Damon_sprite_sheet_18: -3914172558544506389
+      Damon_sprite_sheet_19: 1880867042317674471
+      Damon_sprite_sheet_2: 9153544462353482509
+      Damon_sprite_sheet_20: 6846604491791925518
+      Damon_sprite_sheet_21: -3524721546303795332
+      Damon_sprite_sheet_22: -6953432276468935158
+      Damon_sprite_sheet_23: 2881494905780903253
+      Damon_sprite_sheet_24: -2248152750022233709
+      Damon_sprite_sheet_25: 6476529283828894875
+      Damon_sprite_sheet_26: 449829597797990860
+      Damon_sprite_sheet_27: -6433209804595350533
+      Damon_sprite_sheet_28: 1007506527866513830
+      Damon_sprite_sheet_29: 1538828039147402873
+      Damon_sprite_sheet_3: 4064217088435107265
+      Damon_sprite_sheet_30: -1258613453879933795
+      Damon_sprite_sheet_31: 2758667947600551162
+      Damon_sprite_sheet_32: -958096736701315917
+      Damon_sprite_sheet_33: -166836097487626807
+      Damon_sprite_sheet_34: -7578417303897965279
+      Damon_sprite_sheet_35: 3868712324272902842
+      Damon_sprite_sheet_4: 4262650371311220551
+      Damon_sprite_sheet_5: 5708385385503935826
+      Damon_sprite_sheet_6: -7775366729932745315
+      Damon_sprite_sheet_7: -1234831452793290643
+      Damon_sprite_sheet_8: -4422708963354314828
+      Damon_sprite_sheet_9: 476340128596085372
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
