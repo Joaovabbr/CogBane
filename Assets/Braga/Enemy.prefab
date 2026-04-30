@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3308648483478174341}
   - component: {fileID: 343369858084220639}
   - component: {fileID: 7588488546663917662}
-  - component: {fileID: 7096977760227720888}
+  - component: {fileID: 7062822831928776754}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -171,7 +171,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &7096977760227720888
+--- !u!114 &7062822831928776754
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -182,4 +182,9 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c6b2edda5ae721d4ca1e67970674219a, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: '::'
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyAI
+  player: {fileID: 0}
+  patrolSpeed: 0.75
+  followingSpeed: 3
+  pointA: {fileID: 0}
+  pointB: {fileID: 0}
