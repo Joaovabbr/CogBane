@@ -7,6 +7,8 @@ public class PlayerMovement : MonoBehaviour
     public float velocidadeCorrer = 6f;
     public float forcaPulo = 7f;
     public float tempoParaCorrer = 0.5f;
+    public Transform firePoint;
+    public GameObject projectilePrefab;
 
     [Header("Configurações de Inatividade")]
     public float tempoParaEntrarIdle = 3.0f; // A cada 3 segundos ele toca a animação
@@ -14,7 +16,6 @@ public class PlayerMovement : MonoBehaviour
 
     private Rigidbody2D rb;
     private Animator anim;
-    private SpriteRenderer sprite;
     
     private float tempoPressionado = 0f;
 
@@ -22,7 +23,7 @@ public class PlayerMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
-        sprite = GetComponent<SpriteRenderer>();
+        // O SpriteRenderer foi removido, não precisamos mais dele para virar o personagem!
     }
 
     void Update()
@@ -31,10 +32,10 @@ public class PlayerMovement : MonoBehaviour
         bool apertouPulo = Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow);
         bool apertouAtaque = Input.GetKeyDown(KeyCode.Z) || Input.GetKeyDown(KeyCode.X);
 
-        // 1. VERIFICAÇÃO DE ATIVIDADE (O CICLO DE 3 SEGUNDOS)
+        // 1. VERIFICAÇÃO DE ATIVIDADE
         if (movX != 0 || apertouPulo || apertouAtaque)
         {
-            cronometroInatividade = 0f; // Reseta se fizer qualquer ação
+            cronometroInatividade = 0f; 
         }
         else
         {
@@ -42,8 +43,8 @@ public class PlayerMovement : MonoBehaviour
 
             if (cronometroInatividade >= tempoParaEntrarIdle)
             {
-                anim.SetTrigger("playIdle"); // Dispara o "suspiro" uma vez
-                cronometroInatividade = 0f;  // Reseta o cronômetro para o próximo ciclo
+                anim.SetTrigger("playIdle"); 
+                cronometroInatividade = 0f;  
             }
         }
 
@@ -62,7 +63,16 @@ public class PlayerMovement : MonoBehaviour
                 velAtual = velocidadeAndar;
                 anim.SetFloat("Speed", 1.0f); 
             }
-            sprite.flipX = movX < 0; 
+
+            // A MÁGICA ACONTECE AQUI: Rotacionando o personagem inteiro!
+            if (movX > 0)
+            {
+                transform.eulerAngles = new Vector3(0, 0, 0); // Vira para a direita
+            }
+            else if (movX < 0)
+            {
+                transform.eulerAngles = new Vector3(0, 180f, 0); // Vira 180 graus para a esquerda
+            }
         }
         else 
         {
@@ -83,14 +93,11 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Z)) anim.SetTrigger("attackShort");
         if (Input.GetKeyDown(KeyCode.X)) anim.SetTrigger("attackLong");
         
-        // 5. LÓGICA DE MORTE (ATUALIZADA)
-        // 5. LÓGICA DE MORTE (ATUALIZADA E CORRIGIDA)
+        // 5. LÓGICA DE MORTE 
         if (Input.GetKeyDown(KeyCode.C))
         {
             anim.SetTrigger("die");
             rb.linearVelocity = Vector2.zero;
-            
-            // Mantém o script desligado para ele não andar mais
             this.enabled = false; 
         }
     }
@@ -98,5 +105,12 @@ public class PlayerMovement : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         anim.SetBool("isJumping", false);
+    }
+    
+    public void Shoot()
+    {
+        // Como o personagem inteiro girou no eixo Y, o FirePoint também girou.
+        // Ele vai nascer na frente do personagem e atirar para a direção correta automaticamente!
+        Instantiate(projectilePrefab, firePoint.position, firePoint.rotation);
     }
 }
