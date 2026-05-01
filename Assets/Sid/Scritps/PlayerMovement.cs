@@ -82,7 +82,17 @@ public class PlayerMovement : MonoBehaviour
         // 4. ATAQUES E MORTE
         if (Input.GetKeyDown(KeyCode.Z)) anim.SetTrigger("attackShort");
         if (Input.GetKeyDown(KeyCode.X)) anim.SetTrigger("attackLong");
-        if (Input.GetKeyDown(KeyCode.C)) anim.SetTrigger("die");
+        
+        // 5. LÓGICA DE MORTE (ATUALIZADA)
+        // 5. LÓGICA DE MORTE (ATUALIZADA E CORRIGIDA)
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            anim.SetTrigger("die");
+            rb.linearVelocity = Vector2.zero;
+            
+            // Mantém o script desligado para ele não andar mais
+            this.enabled = false; 
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
