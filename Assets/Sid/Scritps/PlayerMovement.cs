@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI; // NOVO: Obrigatório para mexer com a barrinha do HUD!
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -11,23 +12,33 @@ public class PlayerMovement : MonoBehaviour
     public GameObject projectilePrefab;
 
     [Header("Configurações de Inatividade")]
-    public float tempoParaEntrarIdle = 3.0f; // A cada 3 segundos ele toca a animação
+    public float tempoParaEntrarIdle = 3.0f; 
     private float cronometroInatividade = 0f;
+
+    [Header("Saúde e HUD")] // NOVO: Sessão da vida
+    public float vidaMaxima = 100f;
+    public float vidaAtual;
+    public Image barraDeVida; // A caixinha onde você vai arrastar o Fill_Sangue
 
     private Rigidbody2D rb;
     private Animator anim;
-    
     private float tempoPressionado = 0f;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
-        // O SpriteRenderer foi removido, não precisamos mais dele para virar o personagem!
+        
+        // NOVO: Enche a vida quando o jogo começa
+        vidaAtual = vidaMaxima; 
+        if(barraDeVida != null) barraDeVida.fillAmount = 1f;
     }
 
     void Update()
     {
+        // Se já morreu, ignora os inputs e sai do Update
+        if (vidaAtual <= 0) return;
+
         float movX = Input.GetAxisRaw("Horizontal");
         bool apertouPulo = Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow);
         bool apertouAtaque = Input.GetKeyDown(KeyCode.Z) || Input.GetKeyDown(KeyCode.X);
@@ -40,7 +51,6 @@ public class PlayerMovement : MonoBehaviour
         else
         {
             cronometroInatividade += Time.deltaTime;
-
             if (cronometroInatividade >= tempoParaEntrarIdle)
             {
                 anim.SetTrigger("playIdle"); 
@@ -48,7 +58,7 @@ public class PlayerMovement : MonoBehaviour
             }
         }
 
-        // 2. LÓGICA DE MOVIMENTO
+        // 2. LÓGICA DE MOVIMENTO (com a rotação 3D)
         float velAtual = 0f;
         if (movX != 0) 
         {
@@ -64,15 +74,8 @@ public class PlayerMovement : MonoBehaviour
                 anim.SetFloat("Speed", 1.0f); 
             }
 
-            // A MÁGICA ACONTECE AQUI: Rotacionando o personagem inteiro!
-            if (movX > 0)
-            {
-                transform.eulerAngles = new Vector3(0, 0, 0); // Vira para a direita
-            }
-            else if (movX < 0)
-            {
-                transform.eulerAngles = new Vector3(0, 180f, 0); // Vira 180 graus para a esquerda
-            }
+            if (movX > 0) transform.eulerAngles = new Vector3(0, 0, 0); 
+            else if (movX < 0) transform.eulerAngles = new Vector3(0, 180f, 0); 
         }
         else 
         {
@@ -89,17 +92,18 @@ public class PlayerMovement : MonoBehaviour
             anim.SetBool("isJumping", true); 
         }
 
-        // 4. ATAQUES E MORTE
+        // 4. ATAQUES
         if (Input.GetKeyDown(KeyCode.Z)) anim.SetTrigger("attackShort");
         if (Input.GetKeyDown(KeyCode.X)) anim.SetTrigger("attackLong");
         
-        // 5. LÓGICA DE MORTE 
-        if (Input.GetKeyDown(KeyCode.C))
+        // 5. TESTE DE DANO (NOVO: Aperte T para tomar 10 de dano)
+        if (Input.GetKeyDown(KeyCode.T))
         {
-            anim.SetTrigger("die");
-            rb.linearVelocity = Vector2.zero;
-            this.enabled = false; 
+            TomarDano(10f);
         }
+        
+        // A lógica de apertar 'C' para morrer foi removida, 
+        // agora o personagem morre sozinho se a vida zerar!
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -109,8 +113,38 @@ public class PlayerMovement : MonoBehaviour
     
     public void Shoot()
     {
-        // Como o personagem inteiro girou no eixo Y, o FirePoint também girou.
-        // Ele vai nascer na frente do personagem e atirar para a direção correta automaticamente!
         Instantiate(projectilePrefab, firePoint.position, firePoint.rotation);
+    }
+
+    // NOVO: Função chamada sempre que o jogador apanha
+    public void TomarDano(float dano)
+    {
+        vidaAtual -= dano;
+
+        // Atualiza a barrinha visual (a conta resulta em algo entre 0.0 e 1.0)
+        if (barraDeVida != null)
+        {
+            barraDeVida.fillAmount = vidaAtual / vidaMaxima;
+        }
+
+        // Checa se o golpe foi fatal
+        if (vidaAtual <= 0)
+        {
+            vidaAtual = 0; // Trava no zero para a barrinha não dar erro
+            Morrer();
+        }
+        else
+        {
+            // Opcional para o futuro: Tocar animação de Hit
+            // anim.SetTrigger("takeHit"); 
+        }
+    }
+
+    // NOVO: Função isolada de Morte
+    private void Morrer()
+    {
+        anim.SetTrigger("die");
+        rb.linearVelocity = Vector2.zero; // Para de deslizar
+        this.enabled = false; // Desliga o script para o jogador não andar morto
     }
 }
