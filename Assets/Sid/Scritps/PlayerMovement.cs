@@ -1,5 +1,6 @@
 using UnityEngine;
-using UnityEngine.UI; // NOVO: Obrigatório para mexer com a barrinha do HUD!
+using UnityEngine.UI; 
+using TMPro; // NOVO: Biblioteca obrigatória para usar o TextMeshPro!
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -8,6 +9,8 @@ public class PlayerMovement : MonoBehaviour
     public float velocidadeCorrer = 6f;
     public float forcaPulo = 7f;
     public float tempoParaCorrer = 0.5f;
+    
+    [Header("Combate e Tiro")]
     public Transform firePoint;
     public GameObject projectilePrefab;
 
@@ -15,11 +18,24 @@ public class PlayerMovement : MonoBehaviour
     public float tempoParaEntrarIdle = 3.0f; 
     private float cronometroInatividade = 0f;
 
-    [Header("Saúde e HUD")] // NOVO: Sessão da vida
+    [Header("Saúde e HUD")]
     public float vidaMaxima = 100f;
     public float vidaAtual;
-    public Image barraDeVida; // A caixinha onde você vai arrastar o Fill_Sangue
+    public Image barraDeVida; 
+    
+    [Header("Efeitos Visuais")]
+    public GameObject damagePopupPrefab; // Arraste o prefab do número vermelho aqui
+    
+    [Header("Cores dos Popups")]
+    public Color corDano = new Color(0.7f, 0f, 0f); // Vermelho base (Você pode mudar pro Hex lá no Unity)
+    public Color corCura = new Color(0.18f, 0.8f, 0.44f); // Verde base
 
+    [Header("Sistema de Poções")]
+    public int pocoesAtuais = 0;
+    public float valorDeCura = 30f;
+    public TextMeshProUGUI textoContadorPocoes; // NOVO: Variável atualizada para o TextMeshPro!
+
+    // Componentes internos
     private Rigidbody2D rb;
     private Animator anim;
     private float tempoPressionado = 0f;
@@ -29,22 +45,22 @@ public class PlayerMovement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         
-        // NOVO: Enche a vida quando o jogo começa
         vidaAtual = vidaMaxima; 
-        if(barraDeVida != null) barraDeVida.fillAmount = 1f;
+        AtualizarHUD(); 
     }
 
     void Update()
     {
-        // Se já morreu, ignora os inputs e sai do Update
         if (vidaAtual <= 0) return;
 
         float movX = Input.GetAxisRaw("Horizontal");
         bool apertouPulo = Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow);
-        bool apertouAtaque = Input.GetKeyDown(KeyCode.Z) || Input.GetKeyDown(KeyCode.X);
+        bool apertouAtaqueCurto = Input.GetKeyDown(KeyCode.Z);
+        bool apertouAtaqueLongo = Input.GetKeyDown(KeyCode.X);
+        bool apertouPocao = Input.GetKeyDown(KeyCode.E); 
 
         // 1. VERIFICAÇÃO DE ATIVIDADE
-        if (movX != 0 || apertouPulo || apertouAtaque)
+        if (movX != 0 || apertouPulo || apertouAtaqueCurto || apertouAtaqueLongo || apertouPocao)
         {
             cronometroInatividade = 0f; 
         }
@@ -58,7 +74,7 @@ public class PlayerMovement : MonoBehaviour
             }
         }
 
-        // 2. LÓGICA DE MOVIMENTO (com a rotação 3D)
+        // 2. LÓGICA DE MOVIMENTO E ROTAÇÃO
         float velAtual = 0f;
         if (movX != 0) 
         {
@@ -92,18 +108,16 @@ public class PlayerMovement : MonoBehaviour
             anim.SetBool("isJumping", true); 
         }
 
-        // 4. ATAQUES
-        if (Input.GetKeyDown(KeyCode.Z)) anim.SetTrigger("attackShort");
-        if (Input.GetKeyDown(KeyCode.X)) anim.SetTrigger("attackLong");
+        // 4. ATAQUES E AÇÕES
+        if (apertouAtaqueCurto) anim.SetTrigger("attackShort");
+        if (apertouAtaqueLongo) anim.SetTrigger("attackLong");
+        if (apertouPocao) UsarPocao();
         
-        // 5. TESTE DE DANO (NOVO: Aperte T para tomar 10 de dano)
+        // 5. TESTE DE DANO 
         if (Input.GetKeyDown(KeyCode.T))
         {
             TomarDano(10f);
         }
-        
-        // A lógica de apertar 'C' para morrer foi removida, 
-        // agora o personagem morre sozinho se a vida zerar!
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -116,35 +130,90 @@ public class PlayerMovement : MonoBehaviour
         Instantiate(projectilePrefab, firePoint.position, firePoint.rotation);
     }
 
-    // NOVO: Função chamada sempre que o jogador apanha
+    // ----------------------------------------------------
+    // SISTEMAS DE VIDA E HUD
+    // ----------------------------------------------------
+
     public void TomarDano(float dano)
     {
         vidaAtual -= dano;
 
-        // Atualiza a barrinha visual (a conta resulta em algo entre 0.0 e 1.0)
+        // Mostra o número do dano (apenas o número, na cor vermelha)
+        MostrarNumeroPopup(dano.ToString(), corDano);
+
+        if (vidaAtual <= 0)
+        {
+            vidaAtual = 0; 
+            AtualizarHUD();
+            Morrer();
+        }
+        else
+        {
+            AtualizarHUD();
+        }
+    }
+
+    private void Morrer()
+    {
+        anim.SetTrigger("die");
+        rb.linearVelocity = Vector2.zero; 
+        this.enabled = false; 
+    }
+
+    public void AdicionarPocao(int quantidade)
+    {
+        pocoesAtuais += quantidade;
+        AtualizarHUD();
+    }
+
+    private void UsarPocao()
+    {
+        if (pocoesAtuais > 0 && vidaAtual < vidaMaxima)
+        {
+            pocoesAtuais--; 
+
+            // Calcula o quanto o Damon REALMENTE vai curar para não passar do limite
+            float curaReal = valorDeCura;
+            if (vidaAtual + valorDeCura > vidaMaxima)
+            {
+                curaReal = vidaMaxima - vidaAtual;
+            }
+
+            vidaAtual += curaReal; 
+
+            // Mostra o número da cura (Com o sinal de "+" na frente, na cor verde)
+            MostrarNumeroPopup("+" + curaReal.ToString(), corCura);
+
+            AtualizarHUD();
+        }
+    }
+
+    // NOVA FUNÇÃO UNIFICADA: Serve tanto para dano quanto para cura!
+    private void MostrarNumeroPopup(string texto, Color cor)
+    {
+        if (damagePopupPrefab != null)
+        {
+            Vector3 posicaoSpawn = transform.position + new Vector3(0, 1.5f, 0); 
+            GameObject popup = Instantiate(damagePopupPrefab, posicaoSpawn, Quaternion.identity);
+
+            DamagePopup scriptPopup = popup.GetComponent<DamagePopup>();
+            if (scriptPopup != null)
+            {
+                scriptPopup.Setup(texto, cor); // Envia o texto e a cor para o objeto nascer certinho
+            }
+        }
+    }
+
+    private void AtualizarHUD()
+    {
         if (barraDeVida != null)
         {
             barraDeVida.fillAmount = vidaAtual / vidaMaxima;
         }
 
-        // Checa se o golpe foi fatal
-        if (vidaAtual <= 0)
+        if (textoContadorPocoes != null)
         {
-            vidaAtual = 0; // Trava no zero para a barrinha não dar erro
-            Morrer();
+            textoContadorPocoes.text = pocoesAtuais.ToString();
         }
-        else
-        {
-            // Opcional para o futuro: Tocar animação de Hit
-            // anim.SetTrigger("takeHit"); 
-        }
-    }
-
-    // NOVO: Função isolada de Morte
-    private void Morrer()
-    {
-        anim.SetTrigger("die");
-        rb.linearVelocity = Vector2.zero; // Para de deslizar
-        this.enabled = false; // Desliga o script para o jogador não andar morto
     }
 }
