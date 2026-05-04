@@ -1,0 +1,283 @@
+fileFormatVersion: 2
+guid: f0255dcc956219d4d9642149aaefc4f6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 9008593581390283492
+    second: wolf_atack (1)_0
+  - first:
+      213: -301908281761976673
+    second: wolf_atack (1)_1
+  - first:
+      213: -7553180655710728650
+    second: wolf_atack (1)_2
+  - first:
+      213: 3086029498529096526
+    second: wolf_atack (1)_3
+  - first:
+      213: -3583789625347957199
+    second: wolf_atack (1)_4
+  - first:
+      213: -8481413543871851360
+    second: wolf_atack (1)_5
+  - first:
+      213: -1733441130477762400
+    second: wolf_atack (1)_6
+  - first:
+      213: 1077888623669247001
+    second: wolf_atack (1)_7
+  - first:
+      213: -4530133545105159177
+    second: wolf_atack (1)_8
+  - first:
+      213: 8651980810495290848
+    second: wolf_atack (1)_9
+  - first:
+      213: 7880186448039196874
+    second: wolf_atack (1)_10
+  - first:
+      213: 809992891605401304
+    second: wolf_atack (1)_11
+  - first:
+      213: -7260186040145542323
+    second: wolf_atack (1)_12
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 40
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: wolf_atack (1)_0
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 209
+        width: 215
+        height: 165
+      alignment: 9
+      pivot: {x: 0.49999985, y: 0.37500757}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e2c1a8f124f40d70800000000000000
+      internalID: 9008593581390283492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolf_atack (1)_1
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 207
+        width: 241
+        height: 180
+      alignment: 9
+      pivot: {x: 0.4946512, y: 0.2780087}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9e24de64086fcbf0800000000000000
+      internalID: -301908281761976673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolf_atack (1)_7
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 209
+        width: 217
+        height: 135
+      alignment: 9
+      pivot: {x: 0.5, y: 0.66231596}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91c7d390efd65fe00800000000000000
+      internalID: 1077888623669247001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolf_atack (1)_8
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 223
+        width: 217
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fb0deada8bb121c0800000000000000
+      internalID: -4530133545105159177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 36ffafda1760960478114725e95defab
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      wolf_atack (1)_0: 9008593581390283492
+      wolf_atack (1)_1: -301908281761976673
+      wolf_atack (1)_10: 7880186448039196874
+      wolf_atack (1)_11: 809992891605401304
+      wolf_atack (1)_12: -7260186040145542323
+      wolf_atack (1)_2: -7553180655710728650
+      wolf_atack (1)_3: 3086029498529096526
+      wolf_atack (1)_4: -3583789625347957199
+      wolf_atack (1)_5: -8481413543871851360
+      wolf_atack (1)_6: -1733441130477762400
+      wolf_atack (1)_7: 1077888623669247001
+      wolf_atack (1)_8: -4530133545105159177
+      wolf_atack (1)_9: 8651980810495290848
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

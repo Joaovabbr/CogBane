@@ -1,0 +1,485 @@
+fileFormatVersion: 2
+guid: b04744a7b540bcd4bb665ef810580447
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3530123982099182931
+    second: wolf_death_cycle (2)_0
+  - first:
+      213: -5133856205710176199
+    second: wolf_death_cycle (2)_1
+  - first:
+      213: -539514703466220838
+    second: wolf_death_cycle (2)_2
+  - first:
+      213: -6427325449435343415
+    second: wolf_death_cycle (2)_3
+  - first:
+      213: 6870645717250375766
+    second: wolf_death_cycle (2)_4
+  - first:
+      213: -522727534866432628
+    second: wolf_death_cycle (2)_5
+  - first:
+      213: 243492952525442251
+    second: wolf_death_cycle (2)_6
+  - first:
+      213: 8244034083388160273
+    second: wolf_death_cycle (2)_7
+  - first:
+      213: 6113999021036706235
+    second: wolf_death_cycle (2)_8
+  - first:
+      213: 4667483792021384865
+    second: wolf_death_cycle (2)_9
+  - first:
+      213: -3178913376054029630
+    second: wolf_death_cycle (2)_10
+  - first:
+      213: -1381508929516032087
+    second: wolf_death_cycle (2)_11
+  - first:
+      213: -5124929614066778529
+    second: wolf_death_cycle (2)_12
+  - first:
+      213: -9110778160206545062
+    second: wolf_death_cycle (2)_13
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: wolf_death_cycle (2)_1
+      rect:
+        serializedVersion: 2
+        x: 1067
+        y: 1082
+        width: 68
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 930d5b23bf0e0c8b0800000000000000
+      internalID: -5133856205710176199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolf_death_cycle (2)_2
+      rect:
+        serializedVersion: 2
+        x: 1149
+        y: 1082
+        width: 68
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad2bbc45c324388f0800000000000000
+      internalID: -539514703466220838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolf_death_cycle (2)_3
+      rect:
+        serializedVersion: 2
+        x: 1231
+        y: 1082
+        width: 68
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c51492ae8d8dc6a0800000000000000
+      internalID: -6427325449435343415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolf_death_cycle (2)_4
+      rect:
+        serializedVersion: 2
+        x: 1313
+        y: 1082
+        width: 67
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 650844aa0ef695f50800000000000000
+      internalID: 6870645717250375766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolf_death_cycle (2)_5
+      rect:
+        serializedVersion: 2
+        x: 1431
+        y: 1082
+        width: 68
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8d78f99316eeb8f0800000000000000
+      internalID: -522727534866432628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolf_death_cycle (2)_6
+      rect:
+        serializedVersion: 2
+        x: 1513
+        y: 1082
+        width: 67
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcc079cdc8f016300800000000000000
+      internalID: 243492952525442251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolf_death_cycle (2)_7
+      rect:
+        serializedVersion: 2
+        x: 1595
+        y: 1082
+        width: 68
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1197090f151b86270800000000000000
+      internalID: 8244034083388160273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolf_death_cycle (2)_8
+      rect:
+        serializedVersion: 2
+        x: 1675
+        y: 1082
+        width: 65
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb99afd57b949d450800000000000000
+      internalID: 6113999021036706235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolf_death_cycle (2)_9
+      rect:
+        serializedVersion: 2
+        x: 1754
+        y: 1082
+        width: 67
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1aee35a87cb36c040800000000000000
+      internalID: 4667483792021384865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolf_death1
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 549
+        width: 646
+        height: 338
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c2df88802b32e3d0800000000000000
+      internalID: -3178913376054029630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolf_death2
+      rect:
+        serializedVersion: 2
+        x: 727
+        y: 550
+        width: 644
+        height: 325
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9afaa2ab2f4e3dce0800000000000000
+      internalID: -1381508929516032087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolf_death3
+      rect:
+        serializedVersion: 2
+        x: 1432
+        y: 549
+        width: 653
+        height: 208
+      alignment: 9
+      pivot: {x: 0.49728268, y: 0.90940386}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5e7ba64ba790e8b0800000000000000
+      internalID: -5124929614066778529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolf_death4
+      rect:
+        serializedVersion: 2
+        x: 2129
+        y: 539
+        width: 649
+        height: 193
+      alignment: 9
+      pivot: {x: 0.49179778, y: 0.93203086}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5f7085c883009180800000000000000
+      internalID: -9110778160206545062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 22bbd370e74f4f144b46e8954a48212f
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      wolf_death1: -3178913376054029630
+      wolf_death2: -1381508929516032087
+      wolf_death3: -5124929614066778529
+      wolf_death4: -9110778160206545062
+      wolf_death_cycle (2)_0: -3530123982099182931
+      wolf_death_cycle (2)_1: -5133856205710176199
+      wolf_death_cycle (2)_2: -539514703466220838
+      wolf_death_cycle (2)_3: -6427325449435343415
+      wolf_death_cycle (2)_4: 6870645717250375766
+      wolf_death_cycle (2)_5: -522727534866432628
+      wolf_death_cycle (2)_6: 243492952525442251
+      wolf_death_cycle (2)_7: 8244034083388160273
+      wolf_death_cycle (2)_8: 6113999021036706235
+      wolf_death_cycle (2)_9: 4667483792021384865
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
