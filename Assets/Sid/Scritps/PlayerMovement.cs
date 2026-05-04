@@ -22,6 +22,13 @@ public class PlayerMovement : MonoBehaviour
     public float vidaMaxima = 100f;
     public float vidaAtual;
     public Image barraDeVida; 
+    
+    [Header("Efeitos Visuais")]
+    public GameObject damagePopupPrefab; // Arraste o prefab do número vermelho aqui
+    
+    [Header("Cores dos Popups")]
+    public Color corDano = new Color(0.7f, 0f, 0f); // Vermelho base (Você pode mudar pro Hex lá no Unity)
+    public Color corCura = new Color(0.18f, 0.8f, 0.44f); // Verde base
 
     [Header("Sistema de Poções")]
     public int pocoesAtuais = 0;
@@ -131,6 +138,9 @@ public class PlayerMovement : MonoBehaviour
     {
         vidaAtual -= dano;
 
+        // Mostra o número do dano (apenas o número, na cor vermelha)
+        MostrarNumeroPopup(dano.ToString(), corDano);
+
         if (vidaAtual <= 0)
         {
             vidaAtual = 0; 
@@ -161,14 +171,36 @@ public class PlayerMovement : MonoBehaviour
         if (pocoesAtuais > 0 && vidaAtual < vidaMaxima)
         {
             pocoesAtuais--; 
-            vidaAtual += valorDeCura; 
 
-            if (vidaAtual > vidaMaxima)
+            // Calcula o quanto o Damon REALMENTE vai curar para não passar do limite
+            float curaReal = valorDeCura;
+            if (vidaAtual + valorDeCura > vidaMaxima)
             {
-                vidaAtual = vidaMaxima;
+                curaReal = vidaMaxima - vidaAtual;
             }
 
+            vidaAtual += curaReal; 
+
+            // Mostra o número da cura (Com o sinal de "+" na frente, na cor verde)
+            MostrarNumeroPopup("+" + curaReal.ToString(), corCura);
+
             AtualizarHUD();
+        }
+    }
+
+    // NOVA FUNÇÃO UNIFICADA: Serve tanto para dano quanto para cura!
+    private void MostrarNumeroPopup(string texto, Color cor)
+    {
+        if (damagePopupPrefab != null)
+        {
+            Vector3 posicaoSpawn = transform.position + new Vector3(0, 1.5f, 0); 
+            GameObject popup = Instantiate(damagePopupPrefab, posicaoSpawn, Quaternion.identity);
+
+            DamagePopup scriptPopup = popup.GetComponent<DamagePopup>();
+            if (scriptPopup != null)
+            {
+                scriptPopup.Setup(texto, cor); // Envia o texto e a cor para o objeto nascer certinho
+            }
         }
     }
 
