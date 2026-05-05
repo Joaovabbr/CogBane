@@ -3,7 +3,10 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 3
-  tags: []
+  tags:
+  - Wolf
+  - Enemy
+  - ataque
   layers:
   - Default
   - TransparentFX
@@ -42,7 +45,7 @@ TagManager:
     uniqueID: 0
     locked: 0
   - name: Player
-    uniqueID: 2996577413
+    uniqueID: 4091008687
     locked: 0
   m_RenderingLayers:
   - Default
