@@ -1,8 +1,9 @@
+using System;
 using UnityEngine;
 
 public class EnemyAI : MonoBehaviour
 {
-    public GameObject player;
+    private GameObject player;
     public float patrolSpeed;
     public float followingSpeed;
     private Rigidbody2D rb;
@@ -14,10 +15,12 @@ public class EnemyAI : MonoBehaviour
     private float distance;
     private float cronometroPatrolStop;
     private bool isStopped;
+    private bool close;
 
     public bool dead;
     // controle de ataque
     private float CronometroAtack;
+    public static bool atackRange;
     
     // controle de animação
     private Animator anim;
@@ -36,12 +39,10 @@ public class EnemyAI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {  
-        print(state);
         // define state
-        distance  = Vector2.Distance(transform.position, player.transform.position );
-        if (distance <= 4 && state != "dead") state = "running";
-        if (distance > 4 && state != "dead") state = "patrolling";
-        if (state == "running" && distance <= 1.7 && state != "dead") state = "attacking";
+        if (close && state != "dead") state = "running";
+        if (close == false && state != "dead") state = "patrolling";
+        if (state == "running" &&  atackRange && state != "dead") state = "attacking";
         
         // ação de state
         if (state == "patrolling")
@@ -122,5 +123,24 @@ public class EnemyAI : MonoBehaviour
         
         
         
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.tag == "Player")
+        {
+            close = true;
+            player = other.gameObject;
+        }
+        
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.tag == "Player")
+        {
+            close = false;
+            player = null;
+        }
     }
 }
