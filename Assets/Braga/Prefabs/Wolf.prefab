@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7145100762811303817}
   - component: {fileID: 723585437831943774}
-  - component: {fileID: 2712413726956265702}
+  - component: {fileID: 978934616720444123}
   m_Layer: 0
   m_Name: area_ataque
   m_TagString: Untagged
@@ -69,7 +69,7 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 4.23
---- !u!114 &2712413726956265702
+--- !u!114 &978934616720444123
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -78,9 +78,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2659211373491543984}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 99496d6a81c74404eb3c17d260c4022e, type: 3}
+  m_Script: {fileID: 11500000, guid: 8bcb57b799ba5854fb0330722a5d2042, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: '::'
+  m_EditorClassIdentifier: Assembly-CSharp::ataqueTrigger
+  enemyAI: {fileID: 4131751915577327658}
 --- !u!1 &6740391474129317894
 GameObject:
   m_ObjectHideFlags: 0
@@ -214,7 +215,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 55
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 1
@@ -246,7 +247,10 @@ MonoBehaviour:
   pointA: {fileID: 0}
   pointB: {fileID: 0}
   patrolStopDuration: 2
+  close: 0
+  visionClose: 0
   dead: 0
+  atackRange: 0
 --- !u!61 &7386371217265054116
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -339,6 +343,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8630997679007957461}
   - component: {fileID: 7404521522157762656}
+  - component: {fileID: 887487175087107709}
   m_Layer: 0
   m_Name: Area_visao
   m_TagString: Untagged
@@ -413,6 +418,19 @@ PolygonCollider2D:
       - {x: 17.693602, y: 0.13156855}
       - {x: 17.592659, y: 10.261429}
   m_UseDelaunayMesh: 1
+--- !u!114 &887487175087107709
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7260538285601755245}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5827f93cdd003db47ae4599a66babf05, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::visionTrigger
+  enemyAI: {fileID: 4131751915577327658}
 --- !u!1 &7987757771709464961
 GameObject:
   m_ObjectHideFlags: 0
