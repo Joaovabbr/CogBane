@@ -57,6 +57,7 @@ public class EnemyAI : MonoBehaviour
     void Update()
     {  
         // define state
+        if (dead) return;
         if (close && state != "dead") state = "running";
         if (close == false && state != "dead") state = "patrolling";    
         if (state == "running" &&  atackRange && state != "dead") state = "attacking";
@@ -146,12 +147,6 @@ public class EnemyAI : MonoBehaviour
             anim.SetFloat("speed", followingSpeed);
         }
         
-        if (Input.GetKeyDown(KeyCode.T))
-        {
-            wolfEntity.TomarDano(10f); 
-            if (wolfEntity.vidaAtual == 0) state =  "dead";
-        }
-        
         
     }
 
@@ -179,14 +174,14 @@ public class EnemyAI : MonoBehaviour
         else offset_x = 2f;
         Vector2 hitboxPos = (Vector2)transform.position + new Vector2(offset_x, 0);
         Collider2D[] hits = Physics2D.OverlapCircleAll(hitboxPos, 1f);
+        
         foreach (Collider2D hit in hits)
         {
             // Se acertou o player que você já tinha salvo no trigger
             if (hit.gameObject == player) 
             {
                 // Você AINDA precisa usar o GetComponent para acessar a função no script
-                print("acertou player");
-                player.GetComponent<PlayerEntity>().TomarDano(damage);
+                player.GetComponent<PlayerEntity>().TomarDano(damage, "player" );
             }
         }
     }

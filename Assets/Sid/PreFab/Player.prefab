@@ -240,6 +240,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerEntity
   vidaMaxima: 0
   vidaAtual: 0
+  spriteRenderer: {fileID: 0}
+  tempoParaSumir: 2
   velocidadeAndar: 0
   velocidadeCorrer: 0
   tempoParaCorrer: 0
@@ -260,6 +262,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15dd80ccc394f43cab4fd06a7b5ee465, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement2
+  playerCombat: {fileID: 7824479678121220128}
 --- !u!114 &7824479678121220128
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -275,6 +278,11 @@ MonoBehaviour:
   firePoint: {fileID: 8426325084935042059}
   projectilePrefab: {fileID: 2326561531509359842, guid: 5f562650e2cdcef9dbd74b48b42c8c28, type: 3}
   vfxAnimator: {fileID: 7061158739498483770}
+  danoAtaque: 15
+  hitboxSize: {x: 2.39, y: 0.99}
+  isFlipped: 0
+  offset_x: 1.83
+  offset_y: 1.1
 --- !u!114 &3386795674716884093
 MonoBehaviour:
   m_ObjectHideFlags: 0

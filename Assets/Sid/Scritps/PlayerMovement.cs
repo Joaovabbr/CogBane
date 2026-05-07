@@ -11,6 +11,8 @@ public class PlayerMovement : MonoBehaviour
     private float tempoPressionado = 0f;
     private float cronometroInatividade = 0f;
 
+    public PlayerCombat playerCombat;
+
     void Start()
     {
         atributos = GetComponent<PlayerEntity>();
@@ -60,8 +62,15 @@ public class PlayerMovement : MonoBehaviour
                 anim.SetFloat("Speed", 1.0f); 
             }
 
-            if (movX > 0) transform.eulerAngles = new Vector3(0, 0, 0); 
-            else if (movX < 0) transform.eulerAngles = new Vector3(0, 180f, 0); 
+            if (movX > 0)
+            {
+                transform.eulerAngles = new Vector3(0, 0, 0);
+            } 
+            else if (movX < 0)
+            {
+                transform.eulerAngles = new Vector3(0, 180f, 0);
+                playerCombat.isFlipped = true;
+            } 
         }
         else 
         {

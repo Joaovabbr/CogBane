@@ -32,9 +32,9 @@ public class PlayerEntity : Entity
         }
     }
 
-    public override void TomarDano(float dano)
+    public override void TomarDano(float dano, string type)
     {
-        base.TomarDano(dano); 
+        base.TomarDano(dano,"player"); 
 
         MostrarNumeroPopup(dano.ToString(), corDano);
 
