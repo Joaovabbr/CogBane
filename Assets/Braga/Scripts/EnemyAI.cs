@@ -23,6 +23,8 @@ public class EnemyAI : MonoBehaviour
     public bool close;
     public bool visionClose;
     private bool patrolRange;
+    public WolfEntity wolfEntity;
+    
 
     public bool dead;
     // controle de ataque
@@ -32,7 +34,7 @@ public class EnemyAI : MonoBehaviour
     // controle de animação
     private Animator anim;
 
-    private float offset_x=1.5f;
+    private float offset_x;
 
     private bool isFlipped;
 
@@ -48,16 +50,15 @@ public class EnemyAI : MonoBehaviour
         CronometroAtack = 0.0f;
         dead = false;
         damage = 30;
+        wolfEntity = this.GetComponent<WolfEntity>();
     }
 
     // Update is called once per frame
     void Update()
     {  
         // define state
-        print(Vector2.Distance(transform.position, currentPoint.position) < 0.3f);
-        print(currentPoint);
         if (close && state != "dead") state = "running";
-        if (close == false && state != "dead") state = "patrolling";
+        if (close == false && state != "dead") state = "patrolling";    
         if (state == "running" &&  atackRange && state != "dead") state = "attacking";
         
         // ação de state
@@ -84,7 +85,6 @@ public class EnemyAI : MonoBehaviour
                 isStopped = true;
                 if (cronometroPatrolStop >= patrolStopDuration)
                 {
-                    print("entrei aqui B");
                     patrolSpeed = 0.75f;
                     anim.SetFloat("speed", patrolSpeed);
                     isStopped = false;
@@ -100,7 +100,6 @@ public class EnemyAI : MonoBehaviour
                 isStopped = true;
                 if (cronometroPatrolStop >= patrolStopDuration)
                 {
-                    print("entrei aqui A");
                     patrolSpeed = 0.75f;
                     anim.SetFloat("speed", patrolSpeed);
                     isStopped = false;
@@ -110,13 +109,13 @@ public class EnemyAI : MonoBehaviour
         }
         else if (state == "attacking")
         {
+            print(isFlipped);
            if (CronometroAtack == 0)
-            {
+           {
               anim.SetTrigger("attack");
-              CastAttackHitbox();  
-            } 
+           } 
            CronometroAtack += Time.deltaTime;
-           if (CronometroAtack >= 1)
+           if (CronometroAtack >= 2)
            {
                state = "running";
                CronometroAtack = 0;
@@ -125,7 +124,6 @@ public class EnemyAI : MonoBehaviour
         }
         else if (state == "dead")
         {
-            if (!dead) anim.SetTrigger("death");
             followingSpeed = 0;
             patrolSpeed = 0;
             dead = true;
@@ -148,6 +146,11 @@ public class EnemyAI : MonoBehaviour
             anim.SetFloat("speed", followingSpeed);
         }
         
+        if (Input.GetKeyDown(KeyCode.T))
+        {
+            wolfEntity.TomarDano(10f); 
+            if (wolfEntity.vidaAtual == 0) state =  "dead";
+        }
         
         
     }
@@ -172,15 +175,17 @@ public class EnemyAI : MonoBehaviour
     }
     public void CastAttackHitbox()
     {   
-        if (isFlipped) offset_x = -offset_x;
+        if (isFlipped) offset_x = -2f;
+        else offset_x = 2f;
         Vector2 hitboxPos = (Vector2)transform.position + new Vector2(offset_x, 0);
-        Collider2D[] hits = Physics2D.OverlapCircleAll(hitboxPos, 0.5f);
+        Collider2D[] hits = Physics2D.OverlapCircleAll(hitboxPos, 1f);
         foreach (Collider2D hit in hits)
         {
             // Se acertou o player que você já tinha salvo no trigger
             if (hit.gameObject == player) 
             {
                 // Você AINDA precisa usar o GetComponent para acessar a função no script
+                print("acertou player");
                 player.GetComponent<PlayerEntity>().TomarDano(damage);
             }
         }
@@ -190,6 +195,6 @@ public class EnemyAI : MonoBehaviour
     {
         if (isFlipped) offset_x = -offset_x;
         Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere((Vector2)transform.position + new Vector2(offset_x, 0), 0.5f);
+        Gizmos.DrawWireSphere((Vector2)transform.position + new Vector2(offset_x, 0), 1f);
     }
 }
