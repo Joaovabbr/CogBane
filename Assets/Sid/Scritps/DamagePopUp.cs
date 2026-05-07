@@ -18,12 +18,11 @@ public class DamagePopup : MonoBehaviour
         cronometro = tempoDeVida;
     }
 
-    // NOVO: Agora a função recebe o texto pronto (ex: "10" ou "+30") e a cor!
     public void Setup(string texto, Color cor)
     {
         textMesh.SetText(texto);
         textMesh.color = cor;
-        corTexto = cor; // Salva a cor para podermos fazer o efeito de sumir depois
+        corTexto = cor; 
     }
 
     void Update()
