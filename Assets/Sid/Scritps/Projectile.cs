@@ -3,25 +3,29 @@ using UnityEngine;
 public class Projectile : MonoBehaviour
 {
     public float speed = 20f;
-    public Rigidbody2D rb;
+    public float danoAtaque = 10f;
+    private Rigidbody2D rb;
 
     void Start()
     {
+        rb = GetComponent<Rigidbody2D>();
         rb.linearVelocity = transform.right * speed;
-        
-        Destroy(gameObject, 3f); 
+        Destroy(gameObject, 2f); 
     }
 
-    void OnTriggerEnter2D(Collider2D hitInfo)
+    private void OnTriggerEnter2D(Collider2D hit)
     {
-        if (hitInfo.CompareTag("Player"))
+        if (hit.isTrigger) return;
+        if (hit.CompareTag("Player")) return;
+
+        if (hit.CompareTag("Enemy"))
         {
-            return;
+            if (hit.TryGetComponent(out Entity scriptInimigo))
+            {
+
+                scriptInimigo.TomarDano(danoAtaque, "enemy");
+            }
         }
-
-        // Exemplo de como dar dano no futuro:
-        // if (hitInfo.CompareTag("Enemy")) { hitInfo.GetComponent<Enemy>().TakeDamage(10); }
-
         Destroy(gameObject);
     }
 }
