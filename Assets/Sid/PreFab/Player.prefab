@@ -242,6 +242,7 @@ MonoBehaviour:
   vidaAtual: 0
   spriteRenderer: {fileID: 0}
   tempoParaSumir: 2
+  statusDamon: {fileID: 11400000, guid: 5dd7c8667082de1538a39311e93030f4, type: 2}
   velocidadeAndar: 0
   velocidadeCorrer: 0
   tempoParaCorrer: 0
@@ -263,6 +264,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement2
   playerCombat: {fileID: 7824479678121220128}
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!114 &7824479678121220128
 MonoBehaviour:
   m_ObjectHideFlags: 0

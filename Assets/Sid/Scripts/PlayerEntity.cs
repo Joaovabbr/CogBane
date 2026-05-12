@@ -1,7 +1,11 @@
+using System;
 using UnityEngine;
 
 public class PlayerEntity : Entity
 {
+    [Header("Dados Persistentes")]
+    public StatusJogadorSO statusDamon; 
+
     [Header("Configurações de Movimento do Damon")]
     public float velocidadeAndar;
     public float velocidadeCorrer;
@@ -16,7 +20,13 @@ public class PlayerEntity : Entity
 
     protected override void ConfigurarAtributos()
     {
-        vidaMaxima = 100f;
+        if (statusDamon != null)
+        {
+            vidaMaxima = statusDamon.vidaMaxima;
+            vidaAtual = statusDamon.vidaAtual;
+        }
+        
+
         velocidadeAndar = 5f;
         velocidadeCorrer = 9f;
         tempoParaCorrer = 0.5f;
@@ -36,6 +46,12 @@ public class PlayerEntity : Entity
     {
         base.TomarDano(dano,"player"); 
 
+        // NOVO: Atualiza a vida no arquivo permanente na mesma hora!
+        if (statusDamon != null)
+        {
+            statusDamon.vidaAtual = this.vidaAtual;
+        }
+
         MostrarNumeroPopup(dano.ToString(), corDano);
 
         if (UIManager.Instancia != null)
@@ -49,6 +65,12 @@ public class PlayerEntity : Entity
     {
         vidaAtual += quantidade;
         vidaAtual = Mathf.Clamp(vidaAtual, 0, vidaMaxima);
+
+        // NOVO: Atualiza a vida curada no arquivo permanente!
+        if (statusDamon != null)
+        {
+            statusDamon.vidaAtual = this.vidaAtual;
+        }
 
         MostrarNumeroPopup("+" + quantidade.ToString(), corCura);
 
