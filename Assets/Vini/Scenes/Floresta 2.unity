@@ -15633,7 +15633,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SceneTransitionWithFade
   targetSceneName: Floresta 1
   spawnPosition: {x: 40, y: -0.5, z: 0}
-  fadeDuration: 1
+  fadeDuration: 0.5
 --- !u!4 &749350090
 Transform:
   m_ObjectHideFlags: 0
@@ -15804,7 +15804,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SceneTransitionWithFade
   targetSceneName: Floresta 3
   spawnPosition: {x: -20, y: 0, z: 0}
-  fadeDuration: 1
+  fadeDuration: 0.5
 --- !u!61 &784469247
 BoxCollider2D:
   m_ObjectHideFlags: 0
