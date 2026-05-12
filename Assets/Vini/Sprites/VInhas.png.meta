@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 57d17ca4bc74d98828695805828f5120
+guid: c19786936923922c8bc8787778f20dfe
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 9211222248719333600
-    second: flundo_complementar_floresta_0
+      213: -611860194247369830
+    second: VInhas_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: flundo_complementar_floresta_0
+      name: VInhas_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 236
         y: 0
-        width: 1600
-        height: 800
+        width: 361
+        height: 1237
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0e8371205d5d4df70800000000000000
-      internalID: 9211222248719333600
+      spriteID: a9b1fa5256c3287f0800000000000000
+      internalID: -611860194247369830
       vertices: []
       indices: 
       edges: []
@@ -151,7 +151,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 0c466f3137499b10db9cba9e240d26f0
+    spriteID: e528e8675ce1db74398685ff20c51baf
     internalID: 0
     vertices: []
     indices: 
@@ -159,11 +159,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries:
-      - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+      entries: []
     nameFileIdTable:
-      flundo_complementar_floresta_0: 9211222248719333600
+      VInhas_0: -611860194247369830
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
