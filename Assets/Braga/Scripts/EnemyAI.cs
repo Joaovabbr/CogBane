@@ -57,7 +57,7 @@ public class EnemyAI : MonoBehaviour
     void Update()
     {  
         // define state
-        if (dead) return;
+        if (wolfEntity.vidaAtual == 0) state = "dead" ;
         if (close && state != "dead") state = "running";
         if (close == false && state != "dead") state = "patrolling";    
         if (state == "running" &&  atackRange && state != "dead") state = "attacking";
