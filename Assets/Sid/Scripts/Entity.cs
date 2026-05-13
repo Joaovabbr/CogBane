@@ -65,7 +65,7 @@ public abstract class Entity : MonoBehaviour
             col.enabled = false;
         }
         StartCoroutine(EfeitoPiscarMorte());
-        this.enabled = false;
+        //this.enabled = false;
         Destroy(gameObject, 6f);
     }
     

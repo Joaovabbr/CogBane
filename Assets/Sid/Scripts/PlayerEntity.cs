@@ -1,5 +1,7 @@
 using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using System.Collections;
 
 public class PlayerEntity : Entity
 {
@@ -98,5 +100,12 @@ public class PlayerEntity : Entity
         
         PlayerMovement movimento = GetComponent<PlayerMovement>();
         if (movimento != null) movimento.enabled = false; 
+        StartCoroutine(EsperaCarregarGameOver());
+    }
+    private IEnumerator EsperaCarregarGameOver()
+    {
+        yield return new WaitForSecondsRealtime(4f);
+    
+        SceneManager.LoadScene("GameOver");
     }
 }

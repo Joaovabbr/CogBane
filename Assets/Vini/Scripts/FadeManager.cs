@@ -60,6 +60,9 @@ public class FadeManager : MonoBehaviour
         fadeImage = imageObj.AddComponent<Image>();
         fadeImage.color = new Color(0, 0, 0, 0);
         
+        // NOVO: Desativa o bloqueio de clique por padrão na criação
+        fadeImage.raycastTarget = false; 
+        
         RectTransform rect = fadeImage.GetComponent<RectTransform>();
         rect.anchorMin = Vector2.zero;
         rect.anchorMax = Vector2.one;
@@ -73,6 +76,10 @@ public class FadeManager : MonoBehaviour
     public IEnumerator FadeOut(float duration)
     {
         Debug.Log("FadeOut iniciado");
+        
+        // NOVO: Ativa o escudo invisível para o jogador não clicar em nada durante a transição
+        fadeImage.raycastTarget = true; 
+        
         float elapsed = 0;
         
         while (elapsed < duration)
@@ -102,6 +109,10 @@ public class FadeManager : MonoBehaviour
         }
         
         fadeImage.color = new Color(0, 0, 0, 0);
+        
+        // NOVO: Desativa o escudo invisível após clarear a tela
+        fadeImage.raycastTarget = false; 
+        
         Debug.Log("FadeIn completo");
     }
     
@@ -110,6 +121,10 @@ public class FadeManager : MonoBehaviour
         if (fadeImage != null)
         {
             fadeImage.color = new Color(0, 0, 0, 0);
+            
+            // NOVO: Garante que a tela limpa não vai bloquear cliques
+            fadeImage.raycastTarget = false; 
+            
             Debug.Log("Tela limpa!");
         }
     }

@@ -46,7 +46,7 @@ public class PlayerMovement : MonoBehaviour
         float movX = Input.GetAxisRaw("Horizontal");
         
         // ATUALIZADO: Aceita tanto W quanto Espaço para pular
-        bool apertouPulo = Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.Space);
+        bool apertouPulo = Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.UpArrow);
 
         // 1. VERIFICAÇÃO DE ATIVIDADE
         if (movX != 0 || apertouPulo)

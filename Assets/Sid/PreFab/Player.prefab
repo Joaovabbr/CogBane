@@ -240,7 +240,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerEntity
   vidaMaxima: 0
   vidaAtual: 0
-  spriteRenderer: {fileID: 0}
+  spriteRenderer: {fileID: 2933818354834069151, guid: 5f562650e2cdcef9dbd74b48b42c8c28, type: 3}
   tempoParaSumir: 2
   statusDamon: {fileID: 11400000, guid: 5dd7c8667082de1538a39311e93030f4, type: 2}
   velocidadeAndar: 0
