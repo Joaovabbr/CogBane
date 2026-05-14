@@ -48,6 +48,7 @@ GameObject:
   - component: {fileID: -6540774551773155837}
   - component: {fileID: 7824479678121220128}
   - component: {fileID: 3386795674716884093}
+  - component: {fileID: 7621500876461837486}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -65,7 +66,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -5.8, y: -4.14, z: 0}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
+  m_LocalScale: {x: 2.75, y: 2.75, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8426325084935042059}
@@ -266,7 +267,7 @@ MonoBehaviour:
   playerCombat: {fileID: 7824479678121220128}
   groundLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 128
 --- !u!114 &7824479678121220128
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -301,6 +302,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerInventory
   pocoesAtuais: 1
   valorDeCura: 30
+--- !u!114 &7621500876461837486
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5329762773797623316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5eea784d62b82e083afd00c9a5c568b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerSpawnManager
 --- !u!1 &7737042269922430177
 GameObject:
   m_ObjectHideFlags: 0
