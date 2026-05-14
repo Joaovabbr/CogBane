@@ -46984,6 +46984,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 805463626}
+  - component: {fileID: 805463627}
   m_Layer: 0
   m_Name: Grupo_Heal
   m_TagString: Untagged
@@ -47008,6 +47009,18 @@ Transform:
   - {fileID: 1328396397}
   m_Father: {fileID: 530038588}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!225 &805463627
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 805463625}
+  m_Enabled: 1
+  m_Alpha: 0
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &813788512
 GameObject:
   m_ObjectHideFlags: 0
@@ -97546,7 +97559,7 @@ Transform:
   m_GameObject: {fileID: 1406446506}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -453, y: -311, z: 0}
+  m_LocalPosition: {x: -483, y: -311, z: 0}
   m_LocalScale: {x: 800, y: 300, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -97564,7 +97577,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 342615483953618a9b9fa9ba072de59a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TutorialFade
-  grupoTutorial: {fileID: 0}
+  grupoTutorial: {fileID: 805463627}
   velocidadeFade: 2
 --- !u!61 &1406446509
 BoxCollider2D:
