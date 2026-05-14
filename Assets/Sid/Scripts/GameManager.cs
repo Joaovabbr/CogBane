@@ -1,18 +1,19 @@
 using UnityEngine;
-using UnityEngine.SceneManagement; // Adicionamos isso para trocar de cena
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
     public StatusJogadorSO statusDamon;
 
-    // Assim que o Menu Principal abre, o jogo já reseta a vida e as poções
     void Awake()
     {
+        // Garante que o arquivo de status comece com os valores padrão no menu principal
         if (statusDamon != null)
         {
             statusDamon.ResetarParaNovoJogo();
         }
     }
+
     public void IniciarJogo()
     {
         SceneManager.LoadScene("Floresta 1"); 

@@ -620,7 +620,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6b627a309300373dbf79d5267d68a66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
-  statusDamon: {fileID: 11400000, guid: 5dd7c8667082de1538a39311e93030f4, type: 2}
+  statusDamon: {fileID: 11400000, guid: fcdf081692f843d528e382cbc0fe2fc4, type: 2}
 --- !u!4 &1831194649
 Transform:
   m_ObjectHideFlags: 0

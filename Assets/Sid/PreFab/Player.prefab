@@ -243,7 +243,7 @@ MonoBehaviour:
   vidaAtual: 0
   spriteRenderer: {fileID: 2933818354834069151, guid: 5f562650e2cdcef9dbd74b48b42c8c28, type: 3}
   tempoParaSumir: 2
-  statusDamon: {fileID: 11400000, guid: 5dd7c8667082de1538a39311e93030f4, type: 2}
+  statusDamon: {fileID: 11400000, guid: fcdf081692f843d528e382cbc0fe2fc4, type: 2}
   velocidadeAndar: 0
   velocidadeCorrer: 0
   tempoParaCorrer: 0
@@ -300,7 +300,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76f9988b658c658828ae01d17ef6d52a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerInventory
-  pocoesAtuais: 1
+  statusDamon: {fileID: 11400000, guid: fcdf081692f843d528e382cbc0fe2fc4, type: 2}
   valorDeCura: 30
 --- !u!114 &7621500876461837486
 MonoBehaviour:

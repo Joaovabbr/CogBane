@@ -3,8 +3,10 @@ using UnityEngine;
 [RequireComponent(typeof(PlayerEntity))]
 public class PlayerInventory : MonoBehaviour
 {
-    [Header("Sistema de Poções")]
-    public static int pocoesAtuais = 1; 
+    [Header("Referências")]
+    public StatusJogadorSO statusDamon;
+
+    [Header("Configurações de Cura")]
     public float valorDeCura = 30f;
 
     private PlayerEntity atributos;
@@ -13,9 +15,9 @@ public class PlayerInventory : MonoBehaviour
     {
         atributos = GetComponent<PlayerEntity>();
 
-        if (UIManager.Instancia != null)
+        if (UIManager.Instancia != null && statusDamon != null)
         {
-            UIManager.Instancia.AtualizarContadorPocoes(pocoesAtuais);
+            UIManager.Instancia.AtualizarContadorPocoes(statusDamon.quantidadePocoes);
         }
     }
 
@@ -31,25 +33,25 @@ public class PlayerInventory : MonoBehaviour
 
     public void AdicionarPocao(int quantidade)
     {
-        pocoesAtuais += quantidade;
+        statusDamon.quantidadePocoes += quantidade;
         
         if (UIManager.Instancia != null)
         {
-            UIManager.Instancia.AtualizarContadorPocoes(pocoesAtuais);
+            UIManager.Instancia.AtualizarContadorPocoes(statusDamon.quantidadePocoes);
         }
     }
 
     private void UsarPocao()
     {
-        if (pocoesAtuais > 0 && atributos.vidaAtual < atributos.vidaMaxima)
+        if (statusDamon.quantidadePocoes > 0 && statusDamon.vidaAtual < statusDamon.vidaMaxima)
         {
-            pocoesAtuais--; 
+            statusDamon.quantidadePocoes--; 
 
             atributos.Curar(valorDeCura);
 
             if (UIManager.Instancia != null)
             {
-                UIManager.Instancia.AtualizarContadorPocoes(pocoesAtuais);
+                UIManager.Instancia.AtualizarContadorPocoes(statusDamon.quantidadePocoes);
             }
         }
     }

@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c58857394122e9907b7a2e1e5ef5eeed, type: 3}
-  m_Name: StatusDamon
+  m_Name: NovoStatusDamon
   m_EditorClassIdentifier: Assembly-CSharp::StatusJogadorSO
   vidaMaxima: 100
-  vidaAtual: 70
-  quantidadePocoes: 0
+  vidaAtual: 100
+  quantidadePocoes: 1
