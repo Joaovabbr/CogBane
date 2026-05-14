@@ -104,7 +104,7 @@ public class PlayerEntity : Entity
     }
     private IEnumerator EsperaCarregarGameOver()
     {
-        yield return new WaitForSecondsRealtime(4f);
+        yield return new WaitForSecondsRealtime(3f);
     
         SceneManager.LoadScene("GameOver");
     }
