@@ -130,7 +130,7 @@ GameObject:
   - component: {fileID: 22441182}
   - component: {fileID: 22441184}
   - component: {fileID: 22441183}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Plataforma grande
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -320,7 +320,7 @@ GameObject:
   - component: {fileID: 58904365}
   - component: {fileID: 58904367}
   - component: {fileID: 58904366}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: plataforma madeira (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15911,7 +15911,7 @@ GameObject:
   - component: {fileID: 315259055}
   - component: {fileID: 315259054}
   - component: {fileID: 315259053}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: plataforma madeira (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32565,7 +32565,7 @@ GameObject:
   - component: {fileID: 830499590}
   - component: {fileID: 830499592}
   - component: {fileID: 830499591}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: plataforma madeira (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -57559,7 +57559,7 @@ GameObject:
   - component: {fileID: 1211245251}
   - component: {fileID: 1211245250}
   - component: {fileID: 1211245249}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: plataforma madeira
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -57867,7 +57867,7 @@ GameObject:
   - component: {fileID: 1226678646}
   - component: {fileID: 1226678648}
   - component: {fileID: 1226678647}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: "Ch\xE3o"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -82549,6 +82549,52 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!1 &1352015727
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1352015729}
+  - component: {fileID: 1352015728}
+  m_Layer: 0
+  m_Name: GameController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1352015728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1352015727}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb34ea2570f45002aadf86d9b27eca94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UIManager
+  barraDeVida: {fileID: 1665806680}
+  textoContadorPocoes: {fileID: 1665806679}
+--- !u!4 &1352015729
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1352015727}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 12.72687, y: 1.14408, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1366891888
 GameObject:
   m_ObjectHideFlags: 0
@@ -87740,7 +87786,7 @@ GameObject:
   - component: {fileID: 1418657014}
   - component: {fileID: 1418657013}
   - component: {fileID: 1418657012}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: plataforma madeira (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -98278,6 +98324,125 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1665806678
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1604958448726141451, guid: 07991d068375396b39828c43198888a6, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1604958448726141451, guid: 07991d068375396b39828c43198888a6, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1604958448726141451, guid: 07991d068375396b39828c43198888a6, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1604958448726141451, guid: 07991d068375396b39828c43198888a6, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1604958448726141451, guid: 07991d068375396b39828c43198888a6, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1604958448726141451, guid: 07991d068375396b39828c43198888a6, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1604958448726141451, guid: 07991d068375396b39828c43198888a6, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1604958448726141451, guid: 07991d068375396b39828c43198888a6, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1604958448726141451, guid: 07991d068375396b39828c43198888a6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1604958448726141451, guid: 07991d068375396b39828c43198888a6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1604958448726141451, guid: 07991d068375396b39828c43198888a6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1604958448726141451, guid: 07991d068375396b39828c43198888a6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1604958448726141451, guid: 07991d068375396b39828c43198888a6, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1604958448726141451, guid: 07991d068375396b39828c43198888a6, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1604958448726141451, guid: 07991d068375396b39828c43198888a6, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1604958448726141451, guid: 07991d068375396b39828c43198888a6, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1604958448726141451, guid: 07991d068375396b39828c43198888a6, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1604958448726141451, guid: 07991d068375396b39828c43198888a6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1604958448726141451, guid: 07991d068375396b39828c43198888a6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1604958448726141451, guid: 07991d068375396b39828c43198888a6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2937226599505647253, guid: 07991d068375396b39828c43198888a6, type: 3}
+      propertyPath: m_Name
+      value: Canvas_HUD_Damon
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 07991d068375396b39828c43198888a6, type: 3}
+--- !u!114 &1665806679 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7773205325769870055, guid: 07991d068375396b39828c43198888a6, type: 3}
+  m_PrefabInstance: {fileID: 1665806678}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+--- !u!114 &1665806680 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4347358856769808601, guid: 07991d068375396b39828c43198888a6, type: 3}
+  m_PrefabInstance: {fileID: 1665806678}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
 --- !u!1 &1667339872
 GameObject:
   m_ObjectHideFlags: 0
@@ -98380,7 +98545,7 @@ GameObject:
   - component: {fileID: 1681380008}
   - component: {fileID: 1681380010}
   - component: {fileID: 1681380009}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: plataforma madeira (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -133432,3 +133597,5 @@ SceneRoots:
   - {fileID: 256540254}
   - {fileID: 1230135873}
   - {fileID: 1664466528}
+  - {fileID: 1352015729}
+  - {fileID: 1665806678}

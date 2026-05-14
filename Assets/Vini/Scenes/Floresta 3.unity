@@ -10635,7 +10635,7 @@ GameObject:
   - component: {fileID: 284151660}
   - component: {fileID: 284151659}
   - component: {fileID: 284151658}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: plataforma madeira (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35592,6 +35592,52 @@ Transform:
   - {fileID: 2043976968}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &550483546
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 550483548}
+  - component: {fileID: 550483547}
+  m_Layer: 0
+  m_Name: GameController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &550483547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 550483546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb34ea2570f45002aadf86d9b27eca94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UIManager
+  barraDeVida: {fileID: 581614746}
+  textoContadorPocoes: {fileID: 581614745}
+--- !u!4 &550483548
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 550483546}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 12.72687, y: 1.14408, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &564650991
 GameObject:
   m_ObjectHideFlags: 0
@@ -35767,6 +35813,125 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!1001 &581614744
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1604958448726141451, guid: 07991d068375396b39828c43198888a6, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1604958448726141451, guid: 07991d068375396b39828c43198888a6, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1604958448726141451, guid: 07991d068375396b39828c43198888a6, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1604958448726141451, guid: 07991d068375396b39828c43198888a6, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1604958448726141451, guid: 07991d068375396b39828c43198888a6, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1604958448726141451, guid: 07991d068375396b39828c43198888a6, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1604958448726141451, guid: 07991d068375396b39828c43198888a6, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1604958448726141451, guid: 07991d068375396b39828c43198888a6, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1604958448726141451, guid: 07991d068375396b39828c43198888a6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1604958448726141451, guid: 07991d068375396b39828c43198888a6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1604958448726141451, guid: 07991d068375396b39828c43198888a6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1604958448726141451, guid: 07991d068375396b39828c43198888a6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1604958448726141451, guid: 07991d068375396b39828c43198888a6, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1604958448726141451, guid: 07991d068375396b39828c43198888a6, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1604958448726141451, guid: 07991d068375396b39828c43198888a6, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1604958448726141451, guid: 07991d068375396b39828c43198888a6, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1604958448726141451, guid: 07991d068375396b39828c43198888a6, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1604958448726141451, guid: 07991d068375396b39828c43198888a6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1604958448726141451, guid: 07991d068375396b39828c43198888a6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1604958448726141451, guid: 07991d068375396b39828c43198888a6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2937226599505647253, guid: 07991d068375396b39828c43198888a6, type: 3}
+      propertyPath: m_Name
+      value: Canvas_HUD_Damon
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 07991d068375396b39828c43198888a6, type: 3}
+--- !u!114 &581614745 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7773205325769870055, guid: 07991d068375396b39828c43198888a6, type: 3}
+  m_PrefabInstance: {fileID: 581614744}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+--- !u!114 &581614746 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4347358856769808601, guid: 07991d068375396b39828c43198888a6, type: 3}
+  m_PrefabInstance: {fileID: 581614744}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
 --- !u!1 &628683963
 GameObject:
   m_ObjectHideFlags: 0
@@ -41333,7 +41498,7 @@ GameObject:
   - component: {fileID: 788422986}
   - component: {fileID: 788422985}
   - component: {fileID: 788422984}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: plataforma madeira
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -71613,7 +71778,7 @@ GameObject:
   - component: {fileID: 1137222437}
   - component: {fileID: 1137222436}
   - component: {fileID: 1137222435}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: plataforma madeira (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -111828,7 +111993,7 @@ GameObject:
   - component: {fileID: 1844178316}
   - component: {fileID: 1844178315}
   - component: {fileID: 1844178314}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: "Ch\xE3o"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -122613,3 +122778,5 @@ SceneRoots:
   - {fileID: 688531723}
   - {fileID: 1525009831}
   - {fileID: 506169521}
+  - {fileID: 550483548}
+  - {fileID: 581614744}

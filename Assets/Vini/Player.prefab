@@ -8,6 +8,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -6540774551773155837, guid: af35df74626d1b7309f891676fd39a3c, type: 3}
+      propertyPath: groundLayer.m_Bits
+      value: 128
+      objectReference: {fileID: 0}
     - target: {fileID: 1856180058640605879, guid: af35df74626d1b7309f891676fd39a3c, type: 3}
       propertyPath: m_SortingLayer
       value: 1
@@ -16,6 +20,10 @@ PrefabInstance:
       propertyPath: m_SortingLayerID
       value: -203958609
       objectReference: {fileID: 0}
+    - target: {fileID: 4240909296228036255, guid: af35df74626d1b7309f891676fd39a3c, type: 3}
+      propertyPath: spriteRenderer
+      value: 
+      objectReference: {fileID: 2933818354834069151, guid: 5f562650e2cdcef9dbd74b48b42c8c28, type: 3}
     - target: {fileID: 5329762773797623316, guid: af35df74626d1b7309f891676fd39a3c, type: 3}
       propertyPath: m_Name
       value: Player
@@ -30,11 +38,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6069998898032438524, guid: af35df74626d1b7309f891676fd39a3c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.01
+      value: -3.72
       objectReference: {fileID: 0}
     - target: {fileID: 6069998898032438524, guid: af35df74626d1b7309f891676fd39a3c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.28
+      value: -5.57
       objectReference: {fileID: 0}
     - target: {fileID: 6069998898032438524, guid: af35df74626d1b7309f891676fd39a3c, type: 3}
       propertyPath: m_LocalPosition.z

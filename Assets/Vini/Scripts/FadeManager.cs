@@ -21,7 +21,7 @@ public class FadeManager : MonoBehaviour
             SceneManager.sceneLoaded += OnSceneLoaded;
         }
         else
-        {
+        { 
             Destroy(gameObject);
         }
     }
