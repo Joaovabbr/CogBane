@@ -242,7 +242,7 @@ MonoBehaviour:
   vidaMaxima: 0
   vidaAtual: 0
   spriteRenderer: {fileID: 2933818354834069151, guid: 5f562650e2cdcef9dbd74b48b42c8c28, type: 3}
-  tempoParaSumir: 2
+  tempoParaSumir: 0.5
   statusDamon: {fileID: 11400000, guid: fcdf081692f843d528e382cbc0fe2fc4, type: 2}
   velocidadeAndar: 0
   velocidadeCorrer: 0
