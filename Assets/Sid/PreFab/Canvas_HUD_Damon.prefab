@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7496470919898148821}
   - component: {fileID: 7773205325769870055}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Potion_Counter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

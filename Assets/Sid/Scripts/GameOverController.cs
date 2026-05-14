@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro; 
+using System.Collections; 
 
 public class GameOverController : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class GameOverController : MonoBehaviour
 
     [Header("Configurações")]
     public string nomeDoMenu = "MainMenu";
+    public float tempoEntreLetras = 0.05f; 
     
     [Header("Frases Temáticas")]
     [TextArea(2, 3)]
@@ -32,6 +34,8 @@ public class GameOverController : MonoBehaviour
         "AS POÇÕES QUEBRARAM. SUA SORTE TAMBÉM."
     };
 
+    private Coroutine rotinaDigitacao;
+
     void Start()
     {
         Time.timeScale = 1f;
@@ -41,8 +45,23 @@ public class GameOverController : MonoBehaviour
 
         if (textoFraseAleatoria != null && frasesDeMorte.Length > 0)
         {
-            int indiceSorteado = Random.Range(0, frasesDeMorte.Length);
-            textoFraseAleatoria.text = frasesDeMorte[indiceSorteado];
+            string fraseEscolhida = frasesDeMorte[Random.Range(0, frasesDeMorte.Length)];
+            
+            if (rotinaDigitacao != null) StopCoroutine(rotinaDigitacao);
+            rotinaDigitacao = StartCoroutine(DigitarLetraPorLetra(fraseEscolhida));
+        }
+    }
+
+    private IEnumerator DigitarLetraPorLetra(string frase)
+    {
+        textoFraseAleatoria.text = frase;
+        textoFraseAleatoria.maxVisibleCharacters = 0;
+
+        for (int i = 0; i <= frase.Length; i++)
+        {
+            textoFraseAleatoria.maxVisibleCharacters = i;
+            
+            yield return new WaitForSecondsRealtime(tempoEntreLetras);
         }
     }
 
