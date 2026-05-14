@@ -31,8 +31,8 @@ public class PlayerCombat : MonoBehaviour
     {
         if (atributos.vidaAtual <= 0) return;
 
-        bool apertouAtaqueCurto = Input.GetKeyDown(KeyCode.Z);
-        bool apertouAtaqueLongo = Input.GetKeyDown(KeyCode.X);
+        bool apertouAtaqueCurto = Input.GetKeyDown(KeyCode.Z) || Input.GetKeyDown(KeyCode.J);
+        bool apertouAtaqueLongo = Input.GetKeyDown(KeyCode.X) || Input.GetKeyDown(KeyCode.K);
 
         if (apertouAtaqueCurto) anim.SetTrigger("attackShort");
         if (apertouAtaqueLongo) anim.SetTrigger("attackLong");
