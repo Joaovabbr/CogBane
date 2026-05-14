@@ -2,6 +2,11 @@ using UnityEngine;
 
 public class PocaoColetavel : MonoBehaviour
 {
+    [Header("Persistência")]
+    public StatusJogadorSO statusDamon;
+    [Tooltip("RG da poção. Clique nos 3 pontinhos do componente e vá em 'Gerar ID'")]
+    public string idUnico;
+
     [Header("Animação de Flutuar")]
     public float velocidadeFlutuar = 2f;
     public float alturaFlutuar = 0.2f;
@@ -9,6 +14,12 @@ public class PocaoColetavel : MonoBehaviour
 
     void Start()
     {
+        if (statusDamon != null && statusDamon.itensColetados.Contains(idUnico))
+        {
+            Destroy(gameObject);
+            return; 
+        }
+
         posicaoInicial = transform.position;
     }
 
@@ -27,8 +38,23 @@ public class PocaoColetavel : MonoBehaviour
             if (inventario != null)
             {
                 inventario.AdicionarPocao(1); 
+
+                if (statusDamon != null && !string.IsNullOrEmpty(idUnico))
+                {
+                    if (!statusDamon.itensColetados.Contains(idUnico))
+                    {
+                        statusDamon.itensColetados.Add(idUnico);
+                    }
+                }
+
                 Destroy(gameObject); 
             }
         }
+    }
+
+    [ContextMenu("Gerar ID Único Automático")]
+    private void GerarIDAutomatico()
+    {
+        idUnico = System.Guid.NewGuid().ToString();
     }
 }

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3890290859104502239}
   - component: {fileID: 1237365912462884367}
   - component: {fileID: 581483481633485185}
-  - component: {fileID: 4383603763882051446}
+  - component: {fileID: 8270481336661321440}
   m_Layer: 0
   m_Name: Health_Potion
   m_TagString: Untagged
@@ -139,7 +139,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 12.442657, y: 17.699999}
   m_EdgeRadius: 0
---- !u!114 &4383603763882051446
+--- !u!114 &8270481336661321440
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -151,5 +151,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41e734350bcef416889051212516f49e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PocaoColetavel
+  statusDamon: {fileID: 11400000, guid: fcdf081692f843d528e382cbc0fe2fc4, type: 2}
+  idUnico: 
   velocidadeFlutuar: 2
   alturaFlutuar: 0.2
