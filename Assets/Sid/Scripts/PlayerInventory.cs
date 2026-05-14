@@ -4,7 +4,7 @@ using UnityEngine;
 public class PlayerInventory : MonoBehaviour
 {
     [Header("Sistema de Poções")]
-    public int pocoesAtuais = 1;
+    public static int pocoesAtuais = 1; 
     public float valorDeCura = 30f;
 
     private PlayerEntity atributos;
