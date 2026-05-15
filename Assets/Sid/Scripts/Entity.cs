@@ -13,6 +13,8 @@ public abstract class Entity : MonoBehaviour
 
     [Header("Configurações de dano")]
     protected float tempoUltimoDano = -100f;
+
+    public bool invencible = false;
     
     protected Animator anim;
 
@@ -32,6 +34,7 @@ public abstract class Entity : MonoBehaviour
 
     public virtual void TomarDano(float dano, string type)
     {
+        if (invencible) return;
         float tempoInvencivel = type == "enemy" ? 0.2f : 0.5f;
         if (Time.time - tempoUltimoDano < tempoInvencivel) 
         {

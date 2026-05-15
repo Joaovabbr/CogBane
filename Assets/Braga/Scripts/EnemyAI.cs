@@ -110,7 +110,6 @@ public class EnemyAI : MonoBehaviour
         }
         else if (state == "attacking")
         {
-            print(isFlipped);
            if (CronometroAtack == 0)
            {
               anim.SetTrigger("attack");
@@ -121,7 +120,6 @@ public class EnemyAI : MonoBehaviour
                state = "running";
                CronometroAtack = 0;
            }
-            
         }
         else if (state == "dead")
         {
