@@ -1,0 +1,415 @@
+fileFormatVersion: 2
+guid: 93283caae9df1ce4587ffbdf2c58f66e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2017063902771823754
+    second: sprite_sheet_correndo_0
+  - first:
+      213: -2786597423041737350
+    second: sprite_sheet_correndo_1
+  - first:
+      213: -862849744607882693
+    second: sprite_sheet_correndo_2
+  - first:
+      213: 1565749878410618107
+    second: sprite_sheet_correndo_3
+  - first:
+      213: -4293693603599397203
+    second: sprite_sheet_correndo_4
+  - first:
+      213: -9216213290816909164
+    second: sprite_sheet_correndo_5
+  - first:
+      213: -76767588072638409
+    second: sprite_sheet_correndo_6
+  - first:
+      213: 2229118135494082016
+    second: sprite_sheet_correndo_7
+  - first:
+      213: 3396056024305720980
+    second: sprite_sheet_correndo_8
+  - first:
+      213: 5447687124874392873
+    second: sprite_sheet_correndo_9
+  - first:
+      213: 2628982601114536254
+    second: sprite_sheet_correndo_10
+  - first:
+      213: 894418505182312745
+    second: sprite_sheet_correndo_11
+  - first:
+      213: 8609190875518097248
+    second: sprite_sheet_correndo_12
+  - first:
+      213: -7574079757935899454
+    second: sprite_sheet_correndo_13
+  - first:
+      213: -7483960392262546364
+    second: sprite_sheet_correndo_14
+  - first:
+      213: -1021829494143951101
+    second: sprite_sheet_correndo_15
+  - first:
+      213: -5523888924354157576
+    second: sprite_sheet_correndo_16
+  - first:
+      213: -8569768034717197318
+    second: sprite_sheet_correndo_17
+  - first:
+      213: 7197451961652375518
+    second: sprite_sheet_correndo_18
+  - first:
+      213: 713506649249762003
+    second: sprite_sheet_correndo_19
+  - first:
+      213: -4819158068083359238
+    second: sprite_sheet_correndo_20
+  - first:
+      213: 9007402770814316267
+    second: sprite_sheet_correndo_21
+  - first:
+      213: -2652474606092144908
+    second: sprite_sheet_correndo_22
+  - first:
+      213: -5995965439578307092
+    second: sprite_sheet_correndo_23
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: sprite_sheet_correndo_0
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 269
+        width: 230
+        height: 251
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67bb50a3113f104e0800000000000000
+      internalID: -2017063902771823754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_sheet_correndo_2
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 269
+        width: 217
+        height: 241
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b325c169aba8604f0800000000000000
+      internalID: -862849744607882693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_sheet_correndo_4
+      rect:
+        serializedVersion: 2
+        x: 765
+        y: 269
+        width: 216
+        height: 244
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dae471f9a6cb964c0800000000000000
+      internalID: -4293693603599397203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_sheet_correndo_6
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 269
+        width: 221
+        height: 236
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 738baae09444feef0800000000000000
+      internalID: -76767588072638409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_sheet_correndo_17
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 0
+        width: 226
+        height: 245
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afb1f238061121980800000000000000
+      internalID: -8569768034717197318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_sheet_correndo_18
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 0
+        width: 232
+        height: 254
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edf6a36ec6c72e360800000000000000
+      internalID: 7197451961652375518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_sheet_correndo_19
+      rect:
+        serializedVersion: 2
+        x: 764
+        y: 0
+        width: 218
+        height: 245
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3da49656482e6e900800000000000000
+      internalID: 713506649249762003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_sheet_correndo_21
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 0
+        width: 219
+        height: 235
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: beea147c819b00d70800000000000000
+      internalID: 9007402770814316267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 04ebe3600fde50c47996767135cf942d
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      sprite_sheet_correndo_0: -2017063902771823754
+      sprite_sheet_correndo_1: -2786597423041737350
+      sprite_sheet_correndo_10: 2628982601114536254
+      sprite_sheet_correndo_11: 894418505182312745
+      sprite_sheet_correndo_12: 8609190875518097248
+      sprite_sheet_correndo_13: -7574079757935899454
+      sprite_sheet_correndo_14: -7483960392262546364
+      sprite_sheet_correndo_15: -1021829494143951101
+      sprite_sheet_correndo_16: -5523888924354157576
+      sprite_sheet_correndo_17: -8569768034717197318
+      sprite_sheet_correndo_18: 7197451961652375518
+      sprite_sheet_correndo_19: 713506649249762003
+      sprite_sheet_correndo_2: -862849744607882693
+      sprite_sheet_correndo_20: -4819158068083359238
+      sprite_sheet_correndo_21: 9007402770814316267
+      sprite_sheet_correndo_22: -2652474606092144908
+      sprite_sheet_correndo_23: -5995965439578307092
+      sprite_sheet_correndo_3: 1565749878410618107
+      sprite_sheet_correndo_4: -4293693603599397203
+      sprite_sheet_correndo_5: -9216213290816909164
+      sprite_sheet_correndo_6: -76767588072638409
+      sprite_sheet_correndo_7: 2229118135494082016
+      sprite_sheet_correndo_8: 3396056024305720980
+      sprite_sheet_correndo_9: 5447687124874392873
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

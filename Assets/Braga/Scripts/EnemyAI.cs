@@ -7,6 +7,12 @@ using Vector3 = UnityEngine.Vector3;
 
 public class EnemyAI : MonoBehaviour
 {
+    [Header("Áudio de Ataque")]
+    public AudioSource audioSource;
+    public AudioClip somAtaqueLobo;
+    [Range(0f, 1f)] 
+    public float volumeAtaque = 0.4f; 
+
     private GameObject player;
     public float patrolSpeed;
     public float followingSpeed;
@@ -25,7 +31,6 @@ public class EnemyAI : MonoBehaviour
     private bool patrolRange;
     public WolfEntity wolfEntity;
     
-
     public bool dead;
     // controle de ataque
     private float CronometroAtack;
@@ -35,11 +40,9 @@ public class EnemyAI : MonoBehaviour
     private Animator anim;
 
     private float offset_x;
-
     private bool isFlipped;
-
     private int damage;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+
     void Start()
     {
         rb =  GetComponent<Rigidbody2D>();
@@ -51,9 +54,10 @@ public class EnemyAI : MonoBehaviour
         dead = false;
         damage = 30;
         wolfEntity = this.GetComponent<WolfEntity>();
+
+        if (audioSource == null) audioSource = GetComponent<AudioSource>();
     }
 
-    // Update is called once per frame
     void Update()
     {  
         // define state
@@ -110,18 +114,22 @@ public class EnemyAI : MonoBehaviour
         }
         else if (state == "attacking")
         {
-            print(isFlipped);
-           if (CronometroAtack == 0)
-           {
-              anim.SetTrigger("attack");
-           } 
-           CronometroAtack += Time.deltaTime;
-           if (CronometroAtack >= 2)
-           {
-               state = "running";
-               CronometroAtack = 0;
-           }
-            
+            if (CronometroAtack == 0)
+            {
+                anim.SetTrigger("attack");
+              
+                if (audioSource != null && somAtaqueLobo != null)
+                {
+                    // Adicionamos o volumeAtaque como segundo parâmetro!
+                    audioSource.PlayOneShot(somAtaqueLobo, volumeAtaque);
+                }
+            } 
+            CronometroAtack += Time.deltaTime;
+            if (CronometroAtack >= 2)
+            {
+                state = "running";
+                CronometroAtack = 0;
+            }
         }
         else if (state == "dead")
         {
@@ -146,8 +154,6 @@ public class EnemyAI : MonoBehaviour
             transform.position  = Vector2.MoveTowards(this.transform.position, player.transform.position, followingSpeed * Time.deltaTime);
             anim.SetFloat("speed", followingSpeed);
         }
-        
-        
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -157,7 +163,6 @@ public class EnemyAI : MonoBehaviour
             close = true;
             player = other.gameObject;
         }
-        
     }
 
     private void OnTriggerExit2D(Collider2D other)
@@ -168,6 +173,7 @@ public class EnemyAI : MonoBehaviour
             player = null;
         }
     }
+
     public void CastAttackHitbox()
     {   
         if (isFlipped) offset_x = -2f;
@@ -177,10 +183,8 @@ public class EnemyAI : MonoBehaviour
         
         foreach (Collider2D hit in hits)
         {
-            // Se acertou o player que você já tinha salvo no trigger
             if (hit.gameObject == player) 
             {
-                // Você AINDA precisa usar o GetComponent para acessar a função no script
                 player.GetComponent<PlayerEntity>().TomarDano(damage, "player" );
             }
         }
@@ -188,8 +192,9 @@ public class EnemyAI : MonoBehaviour
 
     private void OnDrawGizmosSelected()
     {
-        if (isFlipped) offset_x = -offset_x;
+        // Consertado para usar uma variável local, igual fizemos no Damon!
+        float gizmoOffset = isFlipped ? -2f : 2f;
         Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere((Vector2)transform.position + new Vector2(offset_x, 0), 1f);
+        Gizmos.DrawWireSphere((Vector2)transform.position + new Vector2(gizmoOffset, 0), 1f);
     }
 }

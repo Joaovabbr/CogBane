@@ -1,0 +1,491 @@
+fileFormatVersion: 2
+guid: 3a3024a7eaf6cfd48a1ad0318b6bb4bf
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3326620148465722899
+    second: sprite_sheet_uivado_0
+  - first:
+      213: -3053104970245271518
+    second: sprite_sheet_uivado_1
+  - first:
+      213: -4821772088052066369
+    second: sprite_sheet_uivado_2
+  - first:
+      213: 1403891146019440085
+    second: sprite_sheet_uivado_3
+  - first:
+      213: 3852367067168914924
+    second: sprite_sheet_uivado_4
+  - first:
+      213: 8010751653943671688
+    second: sprite_sheet_uivado_5
+  - first:
+      213: -5436956459981189613
+    second: sprite_sheet_uivado_6
+  - first:
+      213: -8139301770519050458
+    second: sprite_sheet_uivado_7
+  - first:
+      213: 2434859478159264472
+    second: sprite_sheet_uivado_8
+  - first:
+      213: 2657055718349073673
+    second: sprite_sheet_uivado_9
+  - first:
+      213: 3347217814387819616
+    second: sprite_sheet_uivado_10
+  - first:
+      213: 5761107487936002048
+    second: sprite_sheet_uivado_11
+  - first:
+      213: -1275805930510551443
+    second: sprite_sheet_uivado_12
+  - first:
+      213: -3765231582242080978
+    second: sprite_sheet_uivado_13
+  - first:
+      213: 6987767007112290314
+    second: sprite_sheet_uivado_14
+  - first:
+      213: 869715922518629406
+    second: sprite_sheet_uivado_15
+  - first:
+      213: 6282349398866604058
+    second: sprite_sheet_uivado_16
+  - first:
+      213: -1027402228612843599
+    second: sprite_sheet_uivado_17
+  - first:
+      213: 1172616297395638915
+    second: sprite_sheet_uivado_18
+  - first:
+      213: 2764345705013794919
+    second: sprite_sheet_uivado_19
+  - first:
+      213: -3636713167578254928
+    second: sprite_sheet_uivado_20
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: sprite_sheet_uivado_0
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 306
+        width: 232
+        height: 284
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de91b04a99875d1d0800000000000000
+      internalID: -3326620148465722899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_sheet_uivado_1
+      rect:
+        serializedVersion: 2
+        x: 1047
+        y: 304
+        width: 232
+        height: 284
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2201d82a43131a5d0800000000000000
+      internalID: -3053104970245271518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_sheet_uivado_2
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 11
+        width: 340
+        height: 289
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb753cf25df951db0800000000000000
+      internalID: -4821772088052066369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_sheet_uivado_3
+      rect:
+        serializedVersion: 2
+        x: 1355
+        y: 307
+        width: 329
+        height: 274
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d50ec52f8f9b7310800000000000000
+      internalID: 1403891146019440085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_sheet_uivado_8
+      rect:
+        serializedVersion: 2
+        x: 1687
+        y: 301
+        width: 334
+        height: 282
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8da0da18bcb5ac120800000000000000
+      internalID: 2434859478159264472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_sheet_uivado_11
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 304
+        width: 206
+        height: 246
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 008b4439cb093ff40800000000000000
+      internalID: 5761107487936002048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_sheet_uivado_12
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 314
+        width: 230
+        height: 264
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d66f495044d6b4ee0800000000000000
+      internalID: -1275805930510551443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_sheet_uivado_14
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 12
+        width: 351
+        height: 286
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a006f18f11989f060800000000000000
+      internalID: 6987767007112290314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_sheet_uivado_15
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 13
+        width: 322
+        height: 278
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1c5939060ad11c00800000000000000
+      internalID: 869715922518629406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_sheet_uivado_16
+      rect:
+        serializedVersion: 2
+        x: 1075
+        y: 16
+        width: 224
+        height: 252
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1035523e736f2750800000000000000
+      internalID: 6282349398866604058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_sheet_uivado_19
+      rect:
+        serializedVersion: 2
+        x: 1412
+        y: 15
+        width: 224
+        height: 240
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76859b7c5cdec5620800000000000000
+      internalID: 2764345705013794919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_sheet_uivado_20
+      rect:
+        serializedVersion: 2
+        x: 1742
+        y: 15
+        width: 220
+        height: 240
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b1338864acc78dc0800000000000000
+      internalID: -3636713167578254928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: dc1318c601cb0b148990c92c56bbe718
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      sprite_sheet_uivado_0: -3326620148465722899
+      sprite_sheet_uivado_1: -3053104970245271518
+      sprite_sheet_uivado_10: 3347217814387819616
+      sprite_sheet_uivado_11: 5761107487936002048
+      sprite_sheet_uivado_12: -1275805930510551443
+      sprite_sheet_uivado_13: -3765231582242080978
+      sprite_sheet_uivado_14: 6987767007112290314
+      sprite_sheet_uivado_15: 869715922518629406
+      sprite_sheet_uivado_16: 6282349398866604058
+      sprite_sheet_uivado_17: -1027402228612843599
+      sprite_sheet_uivado_18: 1172616297395638915
+      sprite_sheet_uivado_19: 2764345705013794919
+      sprite_sheet_uivado_2: -4821772088052066369
+      sprite_sheet_uivado_20: -3636713167578254928
+      sprite_sheet_uivado_3: 1403891146019440085
+      sprite_sheet_uivado_4: 3852367067168914924
+      sprite_sheet_uivado_5: 8010751653943671688
+      sprite_sheet_uivado_6: -5436956459981189613
+      sprite_sheet_uivado_7: -8139301770519050458
+      sprite_sheet_uivado_8: 2434859478159264472
+      sprite_sheet_uivado_9: 2657055718349073673
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

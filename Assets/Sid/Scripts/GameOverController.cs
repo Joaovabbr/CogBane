@@ -12,6 +12,18 @@ public class GameOverController : MonoBehaviour
     public string nomeDoMenu = "MainMenu";
     public float tempoEntreLetras = 0.05f; 
     
+    [Header("Áudio de Escrita")]
+    public AudioSource audioSource;
+    public AudioClip somLetra;
+
+    [Header("Áudio da Voz de Game Over")]
+    public AudioClip somVozGameOver;
+    [Range(0f, 1f)]
+    public float volumeVoz = 1f; // Controle de volume exclusivo para a voz
+
+    [Header("Áudio do Botão")]
+    public AudioClip somCliqueBotao;
+
     [Header("Frases Temáticas")]
     [TextArea(2, 3)]
     public string[] frasesDeMorte = new string[]
@@ -42,6 +54,14 @@ public class GameOverController : MonoBehaviour
 
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
+        
+        if (audioSource == null) audioSource = GetComponent<AudioSource>();
+
+        // TOCA A VOZ DO GAME OVER IMEDIATAMENTE (Usando a posição da câmera para volume máximo 2D)
+        if (somVozGameOver != null)
+        {
+            AudioSource.PlayClipAtPoint(somVozGameOver, Camera.main.transform.position, volumeVoz);
+        }
 
         if (textoFraseAleatoria != null && frasesDeMorte.Length > 0)
         {
@@ -61,6 +81,17 @@ public class GameOverController : MonoBehaviour
         {
             textoFraseAleatoria.maxVisibleCharacters = i;
             
+            if (i > 0)
+            {
+                char letraAtual = frase[i - 1];
+
+                if (letraAtual != ' ' && audioSource != null && somLetra != null)
+                {
+                    audioSource.pitch = Random.Range(0.85f, 1.15f);
+                    audioSource.PlayOneShot(somLetra);
+                }
+            }
+            
             yield return new WaitForSecondsRealtime(tempoEntreLetras);
         }
     }
@@ -68,6 +99,22 @@ public class GameOverController : MonoBehaviour
     public void VoltarMenu()
     {
         Debug.Log("Botão de voltar ao menu foi clicado!");
-        SceneManager.LoadScene(nomeDoMenu);
+        StartCoroutine(TocarSomEVoltar(nomeDoMenu));
+    }
+
+    private IEnumerator TocarSomEVoltar(string nomeCena)
+    {
+        if (audioSource != null && somCliqueBotao != null)
+        {
+            audioSource.pitch = Random.Range(0.95f, 1.05f);
+            audioSource.PlayOneShot(somCliqueBotao);
+            yield return new WaitForSecondsRealtime(somCliqueBotao.length);
+        }
+        else
+        {
+            yield return new WaitForSecondsRealtime(0.2f);
+        }
+
+        SceneManager.LoadScene(nomeCena);
     }
 }
