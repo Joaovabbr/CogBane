@@ -165,8 +165,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1890773161
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: -3738313238989265998, guid: 05b62f1d1f0a1c545a478833f13e14a8, type: 3}
@@ -244,6 +244,7 @@ MonoBehaviour:
   speed: 5
   atackRange: 0
   hitboxSize: {x: 2.72, y: 6.66}
+  howlHitboxRadius: 2
   offset_x: 3.06
   offset_y: 2.22
   flipped: 0
@@ -261,9 +262,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   vidaMaxima: 0
   vidaAtual: 0
-  spriteRenderer: {fileID: 0}
-  tempoParaSumir: 2
   invencible: 0
+  itemParaDropar: {fileID: 6861863308483608258, guid: 517d8a45c87cf389fa180c01bab36016, type: 3}
+  alturaDropY: 3
+  idUnicoBoss: boss_werewolf
+  statusDamon: {fileID: 11400000, guid: fcdf081692f843d528e382cbc0fe2fc4, type: 2}
 --- !u!60 &6375082499885554730
 PolygonCollider2D:
   m_ObjectHideFlags: 0

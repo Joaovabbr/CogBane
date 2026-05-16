@@ -1,0 +1,677 @@
+fileFormatVersion: 2
+guid: 0cbbbfbc5ed3618f1928af050bba7361
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8804226096760014907
+    second: claw slash spritesheet_0
+  - first:
+      213: 3310881534190818923
+    second: claw slash spritesheet_1
+  - first:
+      213: -2572763167001785861
+    second: claw slash spritesheet_2
+  - first:
+      213: 6717678364204490532
+    second: claw slash spritesheet_3
+  - first:
+      213: 2087255525395914527
+    second: claw slash spritesheet_4
+  - first:
+      213: -4397257989660742089
+    second: claw slash spritesheet_5
+  - first:
+      213: 8727208971573474286
+    second: claw slash spritesheet_6
+  - first:
+      213: -7065905469115390647
+    second: claw slash spritesheet_7
+  - first:
+      213: -3135559211820163827
+    second: claw slash spritesheet_8
+  - first:
+      213: -7309760975425859278
+    second: claw slash spritesheet_9
+  - first:
+      213: -8335220272564102605
+    second: claw slash spritesheet_10
+  - first:
+      213: -3307605433619547681
+    second: claw slash spritesheet_11
+  - first:
+      213: -3158164474063499496
+    second: claw slash spritesheet_12
+  - first:
+      213: -5451272868966450186
+    second: claw slash spritesheet_13
+  - first:
+      213: 1184134630044271037
+    second: claw slash spritesheet_14
+  - first:
+      213: 8508209389700221301
+    second: claw slash spritesheet_15
+  - first:
+      213: 2136683910189964389
+    second: claw slash spritesheet_16
+  - first:
+      213: 1202322195333677400
+    second: claw slash spritesheet_17
+  - first:
+      213: -2082605070124899885
+    second: claw slash spritesheet_18
+  - first:
+      213: 2167243183847852289
+    second: claw slash spritesheet_19
+  - first:
+      213: 4803732523402823302
+    second: claw slash spritesheet_20
+  - first:
+      213: 7157202915370895892
+    second: claw slash spritesheet_21
+  - first:
+      213: 4761734354614974195
+    second: claw slash spritesheet_22
+  - first:
+      213: -1895147743390616337
+    second: claw slash spritesheet_23
+  - first:
+      213: 2135663181328515044
+    second: claw slash spritesheet_24
+  - first:
+      213: -588268407516319315
+    second: claw slash spritesheet_25
+  - first:
+      213: 4601772223179983446
+    second: claw slash spritesheet_26
+  - first:
+      213: -6434949343179820295
+    second: claw slash spritesheet_27
+  - first:
+      213: 8223343979983693139
+    second: claw slash spritesheet_28
+  - first:
+      213: 9084453799410283318
+    second: claw slash spritesheet_29
+  - first:
+      213: -8409173355734726675
+    second: claw slash spritesheet_30
+  - first:
+      213: -6024551430873877514
+    second: claw slash spritesheet_31
+  - first:
+      213: 8993679705320921967
+    second: claw slash spritesheet_32
+  - first:
+      213: -5630251333524384193
+    second: claw slash spritesheet_33
+  - first:
+      213: -4937792634451596371
+    second: claw slash spritesheet_34
+  - first:
+      213: 4248357841311948463
+    second: claw slash spritesheet_35
+  - first:
+      213: -2589101916867340100
+    second: claw slash spritesheet_36
+  - first:
+      213: 4020142243779470237
+    second: claw slash spritesheet_37
+  - first:
+      213: 2769309462228285603
+    second: claw slash spritesheet_38
+  - first:
+      213: 1084320104778454942
+    second: claw slash spritesheet_39
+  - first:
+      213: -611169819849534352
+    second: claw slash spritesheet_40
+  - first:
+      213: -3049973291637662679
+    second: claw slash spritesheet_41
+  - first:
+      213: 6250180410423755138
+    second: claw slash spritesheet_42
+  - first:
+      213: -1907158122824743239
+    second: claw slash spritesheet_43
+  - first:
+      213: 2739970949469268386
+    second: claw slash spritesheet_44
+  - first:
+      213: 6877059855777648652
+    second: claw slash spritesheet_45
+  - first:
+      213: 5136941727981314697
+    second: claw slash spritesheet_46
+  - first:
+      213: -8773587730544496415
+    second: claw slash spritesheet_47
+  - first:
+      213: 9086894546527968265
+    second: claw slash spritesheet_48
+  - first:
+      213: -3608153907498119871
+    second: claw slash spritesheet_49
+  - first:
+      213: -4285597521945599738
+    second: claw slash spritesheet_50
+  - first:
+      213: -7818473706688505339
+    second: claw slash spritesheet_51
+  - first:
+      213: -3632276597880655997
+    second: claw slash spritesheet_52
+  - first:
+      213: 8761053005705861169
+    second: claw slash spritesheet_53
+  - first:
+      213: -5326478249014153311
+    second: claw slash spritesheet_54
+  - first:
+      213: -8313015047373619034
+    second: claw slash spritesheet_55
+  - first:
+      213: -7685430160308561122
+    second: claw slash spritesheet_56
+  - first:
+      213: -8384955785247501955
+    second: claw slash spritesheet_57
+  - first:
+      213: -3232827798857933023
+    second: claw slash spritesheet_58
+  - first:
+      213: 333659427024052846
+    second: claw slash spritesheet_59
+  - first:
+      213: -2211953373035848128
+    second: claw slash spritesheet_60
+  - first:
+      213: -7607331871332035771
+    second: claw slash spritesheet_61
+  - first:
+      213: -4094521990524295370
+    second: claw slash spritesheet_62
+  - first:
+      213: 3123732093659419999
+    second: claw slash spritesheet_63
+  - first:
+      213: 515990728640535753
+    second: claw slash spritesheet_64
+  - first:
+      213: -685935425895040225
+    second: claw slash spritesheet_65
+  - first:
+      213: 8803531984755207603
+    second: claw slash spritesheet_66
+  - first:
+      213: 1394932788356194850
+    second: claw slash spritesheet_67
+  - first:
+      213: -930581734308383216
+    second: claw slash spritesheet_68
+  - first:
+      213: -4044279138060848012
+    second: claw slash spritesheet_69
+  - first:
+      213: 8279428008740119167
+    second: claw slash spritesheet_70
+  - first:
+      213: -2312444378392850524
+    second: claw slash spritesheet_71
+  - first:
+      213: -5176636602604868308
+    second: claw slash spritesheet_72
+  - first:
+      213: 5305649155137620231
+    second: claw slash spritesheet_73
+  - first:
+      213: -3527916516285768585
+    second: claw slash spritesheet_74
+  - first:
+      213: -4138353696623048958
+    second: claw slash spritesheet_75
+  - first:
+      213: -6781272763981895814
+    second: claw slash spritesheet_76
+  - first:
+      213: -1293501604761764682
+    second: claw slash spritesheet_77
+  - first:
+      213: -2463534543382185080
+    second: claw slash spritesheet_78
+  - first:
+      213: 4179226892984341620
+    second: claw slash spritesheet_79
+  - first:
+      213: 6912736581856693761
+    second: claw slash spritesheet_80
+  - first:
+      213: -8469852106168896294
+    second: claw slash spritesheet_81
+  - first:
+      213: 8102326521225448789
+    second: claw slash spritesheet_82
+  - first:
+      213: -4646154412321088073
+    second: claw slash spritesheet_83
+  - first:
+      213: 1991169419929865733
+    second: claw slash spritesheet_84
+  - first:
+      213: -4226942014445481736
+    second: claw slash spritesheet_85
+  - first:
+      213: 8385981428941550921
+    second: claw slash spritesheet_86
+  - first:
+      213: 8026628463221863802
+    second: claw slash spritesheet_87
+  - first:
+      213: 4523684666230360798
+    second: claw slash spritesheet_88
+  - first:
+      213: -7355669558777865438
+    second: claw slash spritesheet_89
+  - first:
+      213: -2967245339772360715
+    second: claw slash spritesheet_90
+  - first:
+      213: 4872778787616139205
+    second: claw slash spritesheet_91
+  - first:
+      213: -4084551924375275826
+    second: claw slash spritesheet_92
+  - first:
+      213: 5733141372524697483
+    second: claw slash spritesheet_93
+  - first:
+      213: 1483398998262088373
+    second: claw slash spritesheet_94
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: claw slash spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 127
+        width: 237
+        height: 348
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c73564030b11d580800000000000000
+      internalID: -8804226096760014907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: claw slash spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 127
+        width: 226
+        height: 332
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42f5cb561ecf93d50800000000000000
+      internalID: 6717678364204490532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: claw slash spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 134
+        width: 197
+        height: 278
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33a9e21f259535c80800000000000000
+      internalID: -8335220272564102605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: claw slash spritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 751
+        y: 135
+        width: 177
+        height: 258
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fbb78f25303954b0800000000000000
+      internalID: -5451272868966450186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: claw slash spritesheet_26
+      rect:
+        serializedVersion: 2
+        x: 985
+        y: 135
+        width: 130
+        height: 224
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65a07eba477ccdf30800000000000000
+      internalID: 4601772223179983446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: claw slash spritesheet_37
+      rect:
+        serializedVersion: 2
+        x: 1194
+        y: 136
+        width: 104
+        height: 186
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d936403321a6ac730800000000000000
+      internalID: 4020142243779470237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: claw slash spritesheet_69
+      rect:
+        serializedVersion: 2
+        x: 1379
+        y: 142
+        width: 61
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4743c5b2d85dfd7c0800000000000000
+      internalID: -4044279138060848012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 3cd2c17cd7e0acbc1b0655b1cd0e11b9
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      claw slash spritesheet_0: -8804226096760014907
+      claw slash spritesheet_1: 3310881534190818923
+      claw slash spritesheet_10: -8335220272564102605
+      claw slash spritesheet_11: -3307605433619547681
+      claw slash spritesheet_12: -3158164474063499496
+      claw slash spritesheet_13: -5451272868966450186
+      claw slash spritesheet_14: 1184134630044271037
+      claw slash spritesheet_15: 8508209389700221301
+      claw slash spritesheet_16: 2136683910189964389
+      claw slash spritesheet_17: 1202322195333677400
+      claw slash spritesheet_18: -2082605070124899885
+      claw slash spritesheet_19: 2167243183847852289
+      claw slash spritesheet_2: -2572763167001785861
+      claw slash spritesheet_20: 4803732523402823302
+      claw slash spritesheet_21: 7157202915370895892
+      claw slash spritesheet_22: 4761734354614974195
+      claw slash spritesheet_23: -1895147743390616337
+      claw slash spritesheet_24: 2135663181328515044
+      claw slash spritesheet_25: -588268407516319315
+      claw slash spritesheet_26: 4601772223179983446
+      claw slash spritesheet_27: -6434949343179820295
+      claw slash spritesheet_28: 8223343979983693139
+      claw slash spritesheet_29: 9084453799410283318
+      claw slash spritesheet_3: 6717678364204490532
+      claw slash spritesheet_30: -8409173355734726675
+      claw slash spritesheet_31: -6024551430873877514
+      claw slash spritesheet_32: 8993679705320921967
+      claw slash spritesheet_33: -5630251333524384193
+      claw slash spritesheet_34: -4937792634451596371
+      claw slash spritesheet_35: 4248357841311948463
+      claw slash spritesheet_36: -2589101916867340100
+      claw slash spritesheet_37: 4020142243779470237
+      claw slash spritesheet_38: 2769309462228285603
+      claw slash spritesheet_39: 1084320104778454942
+      claw slash spritesheet_4: 2087255525395914527
+      claw slash spritesheet_40: -611169819849534352
+      claw slash spritesheet_41: -3049973291637662679
+      claw slash spritesheet_42: 6250180410423755138
+      claw slash spritesheet_43: -1907158122824743239
+      claw slash spritesheet_44: 2739970949469268386
+      claw slash spritesheet_45: 6877059855777648652
+      claw slash spritesheet_46: 5136941727981314697
+      claw slash spritesheet_47: -8773587730544496415
+      claw slash spritesheet_48: 9086894546527968265
+      claw slash spritesheet_49: -3608153907498119871
+      claw slash spritesheet_5: -4397257989660742089
+      claw slash spritesheet_50: -4285597521945599738
+      claw slash spritesheet_51: -7818473706688505339
+      claw slash spritesheet_52: -3632276597880655997
+      claw slash spritesheet_53: 8761053005705861169
+      claw slash spritesheet_54: -5326478249014153311
+      claw slash spritesheet_55: -8313015047373619034
+      claw slash spritesheet_56: -7685430160308561122
+      claw slash spritesheet_57: -8384955785247501955
+      claw slash spritesheet_58: -3232827798857933023
+      claw slash spritesheet_59: 333659427024052846
+      claw slash spritesheet_6: 8727208971573474286
+      claw slash spritesheet_60: -2211953373035848128
+      claw slash spritesheet_61: -7607331871332035771
+      claw slash spritesheet_62: -4094521990524295370
+      claw slash spritesheet_63: 3123732093659419999
+      claw slash spritesheet_64: 515990728640535753
+      claw slash spritesheet_65: -685935425895040225
+      claw slash spritesheet_66: 8803531984755207603
+      claw slash spritesheet_67: 1394932788356194850
+      claw slash spritesheet_68: -930581734308383216
+      claw slash spritesheet_69: -4044279138060848012
+      claw slash spritesheet_7: -7065905469115390647
+      claw slash spritesheet_70: 8279428008740119167
+      claw slash spritesheet_71: -2312444378392850524
+      claw slash spritesheet_72: -5176636602604868308
+      claw slash spritesheet_73: 5305649155137620231
+      claw slash spritesheet_74: -3527916516285768585
+      claw slash spritesheet_75: -4138353696623048958
+      claw slash spritesheet_76: -6781272763981895814
+      claw slash spritesheet_77: -1293501604761764682
+      claw slash spritesheet_78: -2463534543382185080
+      claw slash spritesheet_79: 4179226892984341620
+      claw slash spritesheet_8: -3135559211820163827
+      claw slash spritesheet_80: 6912736581856693761
+      claw slash spritesheet_81: -8469852106168896294
+      claw slash spritesheet_82: 8102326521225448789
+      claw slash spritesheet_83: -4646154412321088073
+      claw slash spritesheet_84: 1991169419929865733
+      claw slash spritesheet_85: -4226942014445481736
+      claw slash spritesheet_86: 8385981428941550921
+      claw slash spritesheet_87: 8026628463221863802
+      claw slash spritesheet_88: 4523684666230360798
+      claw slash spritesheet_89: -7355669558777865438
+      claw slash spritesheet_9: -7309760975425859278
+      claw slash spritesheet_90: -2967245339772360715
+      claw slash spritesheet_91: 4872778787616139205
+      claw slash spritesheet_92: -4084551924375275826
+      claw slash spritesheet_93: 5733141372524697483
+      claw slash spritesheet_94: 1483398998262088373
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -4,10 +4,14 @@ using UnityEngine;
 [RequireComponent(typeof(Animator))]
 public class PlayerCombat : MonoBehaviour
 {
+    [Header("Referências")]
+    public StatusJogadorSO statusDamon; 
+
     [Header("Áudio")]
     public AudioSource audioSource; 
     public AudioClip somDisparoBesta;
     public AudioClip somEstocada;
+    public AudioClip somGarra;
 
     [Header("Estado de Combate")]
     public bool isAttacking = false;
@@ -19,6 +23,7 @@ public class PlayerCombat : MonoBehaviour
     
     [Header("Configurações de Ataque Físico")]
     public float danoAtaque = 15f; 
+    public float danoGarra = 20f;
     public Vector2 hitboxSize = new Vector2(2f, 2.5f); 
     public bool isFlipped = false;
     public float offset_x;
@@ -27,6 +32,9 @@ public class PlayerCombat : MonoBehaviour
     [Header("Balanceamento (Cooldown)")]
     public float tempoRecargaBesta = 0.75f;
     private float cronometroRecarga = 0f;
+    
+    public float tempoRecargaGarra = 1.5f;
+    private float cronometroRecargaGarra = 0f;
 
     private Animator anim;
     private PlayerEntity atributos;
@@ -47,11 +55,17 @@ public class PlayerCombat : MonoBehaviour
         {
             cronometroRecarga -= Time.deltaTime;
         }
+        
+        if (cronometroRecargaGarra > 0)
+        {
+            cronometroRecargaGarra -= Time.deltaTime;
+        }
 
         if (isAttacking) return;
 
         bool apertouAtaqueCurto = Input.GetKeyDown(KeyCode.Z) || Input.GetKeyDown(KeyCode.J);
         bool apertouAtaqueLongo = Input.GetKeyDown(KeyCode.X) || Input.GetKeyDown(KeyCode.K);
+        bool apertouAtaqueGarra = Input.GetKeyDown(KeyCode.C) || Input.GetKeyDown(KeyCode.L);
 
         if (apertouAtaqueCurto) 
         { 
@@ -68,6 +82,17 @@ public class PlayerCombat : MonoBehaviour
             anim.SetTrigger("attackLong"); 
             TravarCombate(); 
             cronometroRecarga = tempoRecargaBesta; 
+        }
+        
+        if (apertouAtaqueGarra && statusDamon.garraDesbloqueada && cronometroRecargaGarra <= 0f)
+        {
+            anim.SetTrigger("clawAttack");
+            if (audioSource != null && somGarra != null)
+            {
+                audioSource.PlayOneShot(somGarra);
+            }
+            TravarCombate();
+            cronometroRecargaGarra = tempoRecargaGarra;
         }
     }
 
@@ -87,7 +112,35 @@ public class PlayerCombat : MonoBehaviour
     public void TravarCombate() => isAttacking = true;
     public void DestravarCombate() => isAttacking = false;
 
-    public void DispararEfeitoEstocada() { if (vfxAnimator != null) vfxAnimator.SetTrigger("Attack"); }
+    public void DispararEfeitoEstocada() 
+    { 
+        if (vfxAnimator != null) 
+        {
+            vfxAnimator.SetTrigger("Attack");
+            FlipVFX();
+        }
+    }
+    
+    public void DispararEfeitoGarra() 
+    { 
+        if (vfxAnimator != null) 
+        {
+            vfxAnimator.SetTrigger("Claw");
+            FlipVFX();
+        }
+    }
+
+    private void FlipVFX()
+    {
+        if (vfxAnimator != null)
+        {
+            SpriteRenderer vfxSprite = vfxAnimator.GetComponent<SpriteRenderer>();
+            if (vfxSprite != null)
+            {
+                vfxSprite.flipX = isFlipped;
+            }
+        }
+    }
 
     public void CastAttackHitbox()
     {   
@@ -98,13 +151,34 @@ public class PlayerCombat : MonoBehaviour
         
         foreach (Collider2D hit in hits)
         {
-            // SEGURANÇA ANTIGATILHO: 
-            // Se o colisor for um Trigger (área de visão/patrulha), ignora e vai para o próximo
             if (hit.isTrigger) continue;
 
             if (hit.CompareTag("Enemy") && hit.TryGetComponent(out Entity scriptInimigo))
             {
                 scriptInimigo.TomarDano(danoAtaque, "enemy");
+            }
+        }
+    }
+    
+    public void CastClawHitbox()
+    {   
+        float hitOffset = isFlipped ? -offset_x : offset_x;
+        
+        Vector2 hitboxPos = (Vector2)transform.position + new Vector2(hitOffset, offset_y);
+        Collider2D[] hits = Physics2D.OverlapBoxAll(hitboxPos, hitboxSize, 0f);
+        
+        foreach (Collider2D hit in hits)
+        {
+            if (hit.isTrigger) continue;
+
+            if (hit.CompareTag("Enemy") && hit.TryGetComponent(out Entity scriptInimigo))
+            {
+                scriptInimigo.TomarDano(danoGarra, "enemy");
+            }
+            
+            if (hit.TryGetComponent(out ObjetoQuebravel objetoQuebravel))
+            {
+                objetoQuebravel.Quebrar();
             }
         }
     }
