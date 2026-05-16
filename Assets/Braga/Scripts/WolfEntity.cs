@@ -1,6 +1,7 @@
 using UnityEngine;
 
-public class WolfEntity : Entity
+// Mudamos a herança aqui!
+public class WolfEntity : EnemyEntity 
 {
     [Header("Sons do Lobo")]
     public AudioSource audioSource;
@@ -11,16 +12,13 @@ public class WolfEntity : Entity
     protected override void ConfigurarAtributos()
     {
         vidaMaxima = 30f;
-        // vidaAtual é definido automaticamente pelo Awake da Entity
     }
 
     public override void TomarDano(float dano, string type)
     {
         float vidaAntes = vidaAtual;
-
         base.TomarDano(dano, type);
 
-        // Toca o som apenas se o dano realmente entrou
         if (vidaAtual < vidaAntes)
         {
             if (audioSource != null && somDanoLobo != null)
