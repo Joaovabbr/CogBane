@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 public class werewolfAI : MonoBehaviour
 {
@@ -20,6 +21,8 @@ public class werewolfAI : MonoBehaviour
     public float offset_y;
     
     public bool flipped;
+    private int attackCount = 0;
+    private bool restDown;
 
     void Start()
     {
@@ -34,8 +37,6 @@ public class werewolfAI : MonoBehaviour
 
     void Update()
     {
-        print("Estado: "+state);
-        print("Boleano do uivo: "+howl);
         float razaoVida = werewolf.vidaAtual / werewolf.vidaMaxima * 100;
         
         if ((razaoVida <= 75 && howlCount == 4) || (razaoVida <= 50 && howlCount == 3) || (razaoVida <= 25 && howlCount == 2) || (razaoVida <= 5 && howlCount == 1))
@@ -47,14 +48,23 @@ public class werewolfAI : MonoBehaviour
         }
 
         if (razaoVida <= 0) state = "dead";
+        if (state == "dead") return; 
         
-        if (state != "attacking" && state != "dead")
+        if (state != "attacking" && state != "rest")
         {
-            if (atackRange) state = "attacking";
-            else state = "running";
+            if (attackCount >= 3) 
+            {
+                state = "rest";
+            }
+            else if (atackRange) 
+            {
+                state = "attacking";
+            }
+            else 
+            {
+                state = "running";
+            }
         }
-
-        if (state == "dead") return;
 
         if (state == "running")
         {
@@ -71,6 +81,7 @@ public class werewolfAI : MonoBehaviour
             if (cronometroAtack == 0)
             {
                 speed = 0;
+                attackCount++;
                 if (!howl)
                 {
                     anim.SetTrigger("attacking");
@@ -90,11 +101,34 @@ public class werewolfAI : MonoBehaviour
                 cronometroAtack = 0;
             }
         }
+        else if (state == "rest")
+        {
+            if (!restDown)
+            {
+                speed = 0;
+                restDown = true;
+                StartCoroutine(RotinaDescanso()); 
+            }
+        }
+    }
+
+    private IEnumerator RotinaDescanso()
+    {
+        anim.SetTrigger("rest_down");
+        
+        yield return new WaitForSeconds(2f);
+        
+        anim.SetTrigger("rest_up");
+        
+        yield return new WaitForSeconds(2f); 
+        
+        state = "running";
+        attackCount = 0;
+        restDown = false;
     }
 
     public void CastAttackHitbox()
     {
-        print("chamou attack");
         offset_x = flipped ? -Mathf.Abs(offset_x) : Mathf.Abs(offset_x);
         Vector2 hitboxPos = (Vector2)transform.position + new Vector2(offset_x, offset_y);
         Collider2D[] hits = Physics2D.OverlapBoxAll(hitboxPos, hitboxSize, 0f);
@@ -112,7 +146,6 @@ public class werewolfAI : MonoBehaviour
     
     public void CastHowlHitbox()
     {   
-        print("chamou howl");
         Vector2 hitboxPos = (Vector2)transform.position + new Vector2(0, 2);
         Collider2D[] hits = Physics2D.OverlapCircleAll(hitboxPos, howlHitboxRadius);
         foreach (Collider2D hit in hits)
@@ -129,7 +162,6 @@ public class werewolfAI : MonoBehaviour
     
     public void FinishHowl()
     {
-        print("Finalizou Howl");
         howl = false;
         werewolf.invencible = false;
         cronometroAtack = 0;
