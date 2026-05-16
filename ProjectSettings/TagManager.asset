@@ -47,6 +47,9 @@ TagManager:
   - name: Player
     uniqueID: 4091008687
     locked: 0
+  - name: Inimigo
+    uniqueID: 2404194135
+    locked: 0
   m_RenderingLayers:
   - Default
   m_MigratedRenderPipelines: []
