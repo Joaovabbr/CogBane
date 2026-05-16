@@ -155,3 +155,5 @@ MonoBehaviour:
   idUnico: 
   velocidadeFlutuar: 2
   alturaFlutuar: 0.2
+  somColeta: {fileID: 8300000, guid: dfe2085d96188f49bb0fb32b53b94fa1, type: 3}
+  volumeColeta: 2

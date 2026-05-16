@@ -4,11 +4,13 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D))]
 public class PlayerMovement : MonoBehaviour
 {
+    [Header("Áudio")]
+    public AudioSource audioSource; // Arraste o Damon para cá
+    public AudioClip somPouso;      // Arraste o som de pouso aqui
+
     private PlayerEntity atributos; 
     private Rigidbody2D rb;
     private Animator anim;
-    
-    // NOVO: Colisor necessário para calcular a distância até o pé
     private Collider2D col; 
 
     private float tempoPressionado = 0f;
@@ -17,8 +19,9 @@ public class PlayerMovement : MonoBehaviour
     public PlayerCombat playerCombat;
 
     [Header("Configurações de Chão")]
-    public LayerMask groundLayer; // Layer que representa o chão
+    public LayerMask groundLayer; 
     private bool isGrounded;
+    private bool wasGrounded = true; 
     private float distanceToGround;
 
     void Start()
@@ -26,29 +29,44 @@ public class PlayerMovement : MonoBehaviour
         atributos = GetComponent<PlayerEntity>();
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
-        
-        // NOVO: Pega o colisor e calcula a distância do centro até o pé do player
         col = GetComponent<Collider2D>(); 
         distanceToGround = col.bounds.extents.y;
+
+        if (audioSource == null) audioSource = GetComponent<AudioSource>();
     }
 
     void Update()
     {
-        // Se estiver morto, ignora todos os comandos
         if (atributos.vidaAtual <= 0) return;
 
-        // NOVO: Lógica de Raycast baseada na imagem para detectar se está no chão
+     
         isGrounded = Physics2D.Raycast(transform.position, Vector2.down, distanceToGround + 0.02f, groundLayer);
+
+        if (!wasGrounded && isGrounded && rb.linearVelocity.y <= 0)
+        {
+            if (audioSource != null && somPouso != null)
+            {
+                audioSource.pitch = Random.Range(0.9f, 1.1f);
+                audioSource.PlayOneShot(somPouso);
+            }
+        }
         
-        // NOVO: O Animator agora é atualizado automaticamente baseado no Raycast
+        wasGrounded = isGrounded; 
+
+
         anim.SetBool("isJumping", !isGrounded);
 
+        if (playerCombat != null && playerCombat.isAttacking)
+        {
+            rb.linearVelocity = new Vector2(0, rb.linearVelocity.y);
+            anim.SetFloat("Speed", 0f); 
+            cronometroInatividade = 0f; 
+            return; 
+        }
+
         float movX = Input.GetAxisRaw("Horizontal");
-        
-        // ATUALIZADO: Aceita tanto W quanto Espaço para pular
         bool apertouPulo = Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.UpArrow);
 
-        // 1. VERIFICAÇÃO DE ATIVIDADE
         if (movX != 0 || apertouPulo)
         {
             cronometroInatividade = 0f; 
@@ -56,7 +74,6 @@ public class PlayerMovement : MonoBehaviour
         else
         {
             cronometroInatividade += Time.deltaTime;
-            // Lê o tempo de inatividade configurado no PlayerEntity
             if (cronometroInatividade >= atributos.tempoParaEntrarIdle)
             {
                 anim.SetTrigger("playIdle"); 
@@ -64,13 +81,10 @@ public class PlayerMovement : MonoBehaviour
             }
         }
 
-        // 2. LÓGICA DE MOVIMENTO E ROTAÇÃO
         float velAtual = 0f;
         if (movX != 0) 
         {
             tempoPressionado += Time.deltaTime;
-            
-            // Lê o tempo de corrida configurado no PlayerEntity
             if (tempoPressionado >= atributos.tempoParaCorrer) 
             {
                 velAtual = atributos.velocidadeCorrer; 
@@ -85,6 +99,7 @@ public class PlayerMovement : MonoBehaviour
             if (movX > 0)
             {
                 transform.eulerAngles = new Vector3(0, 0, 0);
+                if (playerCombat != null) playerCombat.isFlipped = false;
             } 
             else if (movX < 0)
             {
@@ -100,11 +115,10 @@ public class PlayerMovement : MonoBehaviour
 
         rb.linearVelocity = new Vector2(movX * velAtual, rb.linearVelocity.y);
 
-        // 3. LÓGICA DE PULO (Atualizada com a lógica de Grounded da imagem)
         if (apertouPulo && isGrounded)
         {
-            // Lê a força de pulo configurada no PlayerEntity
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, atributos.forcaPulo);
+            audioSource.pitch = 1f; 
         }
     }
 }
