@@ -10,10 +10,16 @@ public class PlayerInventory : MonoBehaviour
     public float valorDeCura = 30f;
 
     private PlayerEntity atributos;
+    private bool dentroAreaFullHeal = false;
 
     void Start()
     {
         atributos = GetComponent<PlayerEntity>();
+
+        if (statusDamon.quantidadePocoes > statusDamon.maxPocoes)
+        {
+            statusDamon.maxPocoes = statusDamon.quantidadePocoes;
+        }
 
         if (UIManager.Instancia != null && statusDamon != null)
         {
@@ -29,11 +35,21 @@ public class PlayerInventory : MonoBehaviour
         {
             UsarPocao();
         }
+
+        if (Input.GetKeyDown(KeyCode.R) && dentroAreaFullHeal)
+        {
+            UsarFullHeal();
+        }
     }
 
     public void AdicionarPocao(int quantidade)
     {
         statusDamon.quantidadePocoes += quantidade;
+        
+        if (statusDamon.quantidadePocoes > statusDamon.maxPocoes)
+        {
+            statusDamon.maxPocoes = statusDamon.quantidadePocoes;
+        }
         
         if (UIManager.Instancia != null)
         {
@@ -54,5 +70,33 @@ public class PlayerInventory : MonoBehaviour
                 UIManager.Instancia.AtualizarContadorPocoes(statusDamon.quantidadePocoes);
             }
         }
+    }
+
+    public void UsarFullHeal()
+    {
+        float curaTotal = statusDamon.vidaMaxima - statusDamon.vidaAtual;
+        if (curaTotal > 0)
+        {
+            atributos.Curar(curaTotal);
+        }
+
+        statusDamon.quantidadePocoes = statusDamon.maxPocoes;
+
+        if (UIManager.Instancia != null)
+        {
+            UIManager.Instancia.AtualizarContadorPocoes(statusDamon.quantidadePocoes);
+        }
+
+        Debug.Log($"Full Heal usado! Vida restaurada. Poções: {statusDamon.quantidadePocoes}/{statusDamon.maxPocoes}");
+    }
+
+    public void EntrarAreaFullHeal()
+    {
+        dentroAreaFullHeal = true;
+    }
+
+    public void SairAreaFullHeal()
+    {
+        dentroAreaFullHeal = false;
     }
 }
