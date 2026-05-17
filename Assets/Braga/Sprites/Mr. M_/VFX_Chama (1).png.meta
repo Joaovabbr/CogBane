@@ -1,0 +1,815 @@
+fileFormatVersion: 2
+guid: 25acc6565c04b594382eab8ff62ea19b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2974917248415873926
+    second: VFX_Chama (1)_0
+  - first:
+      213: 4165075301168986816
+    second: VFX_Chama (1)_1
+  - first:
+      213: -8516147414225115929
+    second: VFX_Chama (1)_2
+  - first:
+      213: -1145316724317705495
+    second: VFX_Chama (1)_3
+  - first:
+      213: 7636213188026656517
+    second: VFX_Chama (1)_4
+  - first:
+      213: -2681817271829828860
+    second: VFX_Chama (1)_5
+  - first:
+      213: 677687577720765136
+    second: VFX_Chama (1)_6
+  - first:
+      213: 7067293891582925145
+    second: VFX_Chama (1)_7
+  - first:
+      213: -8097967195882660054
+    second: VFX_Chama (1)_8
+  - first:
+      213: 7289608178561731445
+    second: VFX_Chama (1)_9
+  - first:
+      213: 6764450463911081118
+    second: VFX_Chama (1)_10
+  - first:
+      213: 4161054519106104763
+    second: VFX_Chama (1)_11
+  - first:
+      213: -9133496743670726551
+    second: VFX_Chama (1)_12
+  - first:
+      213: 3107172507262189113
+    second: VFX_Chama (1)_13
+  - first:
+      213: -8370246781780701456
+    second: VFX_Chama (1)_14
+  - first:
+      213: 8728555744436377113
+    second: VFX_Chama (1)_15
+  - first:
+      213: 5485072514398145699
+    second: VFX_Chama (1)_16
+  - first:
+      213: -1376518000123444343
+    second: VFX_Chama (1)_17
+  - first:
+      213: 2648221113387118337
+    second: VFX_Chama (1)_18
+  - first:
+      213: -3639277582359226225
+    second: VFX_Chama (1)_19
+  - first:
+      213: -7604897814003223572
+    second: VFX_Chama (1)_20
+  - first:
+      213: 5151248158873626266
+    second: VFX_Chama (1)_21
+  - first:
+      213: 6617548813324993025
+    second: VFX_Chama (1)_22
+  - first:
+      213: -3459147860709523461
+    second: VFX_Chama (1)_23
+  - first:
+      213: 1359488938088161034
+    second: VFX_Chama (1)_24
+  - first:
+      213: -6987132548569387421
+    second: VFX_Chama (1)_25
+  - first:
+      213: 6936147839520518557
+    second: VFX_Chama (1)_26
+  - first:
+      213: 4886414293896916897
+    second: VFX_Chama (1)_27
+  - first:
+      213: 1216287501298711009
+    second: VFX_Chama (1)_28
+  - first:
+      213: 443182308288259581
+    second: VFX_Chama (1)_29
+  - first:
+      213: 4531286686550831983
+    second: VFX_Chama (1)_30
+  - first:
+      213: -3328881007964408124
+    second: VFX_Chama (1)_31
+  - first:
+      213: -3819789847500283689
+    second: VFX_Chama (1)_32
+  - first:
+      213: 9110507141058382098
+    second: VFX_Chama (1)_33
+  - first:
+      213: -2842281931669780741
+    second: VFX_Chama (1)_34
+  - first:
+      213: 8422194484006075243
+    second: VFX_Chama (1)_35
+  - first:
+      213: 5127110806572710710
+    second: VFX_Chama (1)_36
+  - first:
+      213: -841573836395671711
+    second: VFX_Chama (1)_37
+  - first:
+      213: 8149680940686944801
+    second: VFX_Chama (1)_38
+  - first:
+      213: -8017834402131465787
+    second: VFX_Chama (1)_39
+  - first:
+      213: 3274263365539405882
+    second: VFX_Chama (1)_40
+  - first:
+      213: 3716065689474713585
+    second: VFX_Chama (1)_41
+  - first:
+      213: 4815725051117769310
+    second: VFX_Chama (1)_42
+  - first:
+      213: -1601983615786835648
+    second: VFX_Chama (1)_43
+  - first:
+      213: -7384185371621566286
+    second: VFX_Chama (1)_44
+  - first:
+      213: 2571434953580433277
+    second: VFX_Chama (1)_45
+  - first:
+      213: 8207719187689849066
+    second: VFX_Chama (1)_46
+  - first:
+      213: 8063892271520520397
+    second: VFX_Chama (1)_47
+  - first:
+      213: -3727866191355207335
+    second: VFX_Chama (1)_48
+  - first:
+      213: -8038954160746829373
+    second: VFX_Chama (1)_49
+  - first:
+      213: 5497017353800518347
+    second: VFX_Chama (1)_50
+  - first:
+      213: 8508858940415657609
+    second: VFX_Chama (1)_51
+  - first:
+      213: 655231811271897291
+    second: VFX_Chama (1)_52
+  - first:
+      213: -5393794009436204481
+    second: VFX_Chama (1)_53
+  - first:
+      213: -3993551694864221770
+    second: VFX_Chama (1)_54
+  - first:
+      213: -6132746673229908485
+    second: VFX_Chama (1)_55
+  - first:
+      213: 7737892914299541700
+    second: VFX_Chama (1)_56
+  - first:
+      213: -1565733255235061825
+    second: VFX_Chama (1)_57
+  - first:
+      213: -2367661695734776812
+    second: VFX_Chama (1)_58
+  - first:
+      213: 5386909525885497622
+    second: VFX_Chama (1)_59
+  - first:
+      213: 6741480888480572696
+    second: VFX_Chama (1)_60
+  - first:
+      213: -4072779873409081987
+    second: VFX_Chama (1)_61
+  - first:
+      213: -5217903900335446254
+    second: VFX_Chama (1)_62
+  - first:
+      213: -1112241491455845905
+    second: VFX_Chama (1)_63
+  - first:
+      213: -946145931190030840
+    second: VFX_Chama (1)_64
+  - first:
+      213: 5166026633117420775
+    second: VFX_Chama (1)_65
+  - first:
+      213: -5402222493883061273
+    second: VFX_Chama (1)_66
+  - first:
+      213: -4685668363463719670
+    second: VFX_Chama (1)_67
+  - first:
+      213: 6429563322732570966
+    second: VFX_Chama (1)_68
+  - first:
+      213: -1836289962640702327
+    second: VFX_Chama (1)_69
+  - first:
+      213: 7495155563672836877
+    second: VFX_Chama (1)_70
+  - first:
+      213: -9168488939148648675
+    second: VFX_Chama (1)_71
+  - first:
+      213: -5209577443367976332
+    second: VFX_Chama (1)_72
+  - first:
+      213: 8837844752501938040
+    second: VFX_Chama (1)_73
+  - first:
+      213: -7897626129090958647
+    second: VFX_Chama (1)_74
+  - first:
+      213: 6044572335984817760
+    second: VFX_Chama (1)_75
+  - first:
+      213: 8256653147377647212
+    second: VFX_Chama (1)_76
+  - first:
+      213: -577474064396035408
+    second: VFX_Chama (1)_77
+  - first:
+      213: 8947018911742524464
+    second: VFX_Chama (1)_78
+  - first:
+      213: 5707851610069975022
+    second: VFX_Chama (1)_79
+  - first:
+      213: 8842553281860079061
+    second: VFX_Chama (1)_80
+  - first:
+      213: -8957928446235585868
+    second: VFX_Chama (1)_81
+  - first:
+      213: -5655911407405253124
+    second: VFX_Chama (1)_82
+  - first:
+      213: 6558222448105373569
+    second: VFX_Chama (1)_83
+  - first:
+      213: 8183749087246441345
+    second: VFX_Chama (1)_84
+  - first:
+      213: 6078967031531636418
+    second: VFX_Chama (1)_85
+  - first:
+      213: 7693432383646284995
+    second: VFX_Chama (1)_86
+  - first:
+      213: -7234235545565109798
+    second: VFX_Chama (1)_87
+  - first:
+      213: -6395287982196706537
+    second: VFX_Chama (1)_88
+  - first:
+      213: -1018396136191400469
+    second: VFX_Chama (1)_89
+  - first:
+      213: -4939133632915500574
+    second: VFX_Chama (1)_90
+  - first:
+      213: 751239107830966656
+    second: VFX_Chama (1)_91
+  - first:
+      213: -5797090203870345531
+    second: VFX_Chama (1)_92
+  - first:
+      213: -8642142001722493579
+    second: VFX_Chama (1)_93
+  - first:
+      213: 4785356328899328739
+    second: VFX_Chama (1)_94
+  - first:
+      213: -8229722463913298218
+    second: VFX_Chama (1)_95
+  - first:
+      213: 4369288203167455300
+    second: VFX_Chama (1)_96
+  - first:
+      213: -1503898365483296363
+    second: VFX_Chama (1)_97
+  - first:
+      213: -7758940405128683384
+    second: VFX_Chama (1)_98
+  - first:
+      213: 8622081596366164273
+    second: VFX_Chama (1)_99
+  - first:
+      213: 7001157395117592375
+    second: VFX_Chama (1)_100
+  - first:
+      213: -8198670529556358863
+    second: VFX_Chama (1)_101
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: VFX_Chama (1)_0
+      rect:
+        serializedVersion: 2
+        x: 1251
+        y: 554
+        width: 260
+        height: 372
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68bb204c977094920800000000000000
+      internalID: 2974917248415873926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX_Chama (1)_1
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 86
+        width: 218
+        height: 348
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ca3eec3be15dc930800000000000000
+      internalID: 4165075301168986816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX_Chama (1)_2
+      rect:
+        serializedVersion: 2
+        x: 1017
+        y: 556
+        width: 213
+        height: 328
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e420481c0190d980800000000000000
+      internalID: -8516147414225115929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX_Chama (1)_3
+      rect:
+        serializedVersion: 2
+        x: 1030
+        y: 85
+        width: 210
+        height: 347
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9eaaab3e1840b10f0800000000000000
+      internalID: -1145316724317705495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX_Chama (1)_4
+      rect:
+        serializedVersion: 2
+        x: 1325
+        y: 91
+        width: 193
+        height: 288
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5076b75af6749f960800000000000000
+      internalID: 7636213188026656517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX_Chama (1)_7
+      rect:
+        serializedVersion: 2
+        x: 765
+        y: 554
+        width: 224
+        height: 301
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 959961ba952141260800000000000000
+      internalID: 7067293891582925145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX_Chama (1)_12
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 552
+        width: 146
+        height: 186
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 960c15c5a1d4f3180800000000000000
+      internalID: -9133496743670726551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX_Chama (1)_15
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 529
+        width: 184
+        height: 259
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9165355243f022970800000000000000
+      internalID: 8728555744436377113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX_Chama (1)_16
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 529
+        width: 132
+        height: 174
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3acc5f30464ee1c40800000000000000
+      internalID: 5485072514398145699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX_Chama (1)_20
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 562
+        width: 110
+        height: 118
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce3713b0bb9f57690800000000000000
+      internalID: -7604897814003223572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX_Chama (1)_29
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 101
+        width: 228
+        height: 347
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df5624816ff762600800000000000000
+      internalID: 443182308288259581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX_Chama (1)_31
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 88
+        width: 216
+        height: 349
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c6bcb44c507dc1d0800000000000000
+      internalID: -3328881007964408124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 0afc87b529ac2ee46aa3fb5fe0ec9824
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      VFX_Chama (1)_0: 2974917248415873926
+      VFX_Chama (1)_1: 4165075301168986816
+      VFX_Chama (1)_10: 6764450463911081118
+      VFX_Chama (1)_100: 7001157395117592375
+      VFX_Chama (1)_101: -8198670529556358863
+      VFX_Chama (1)_11: 4161054519106104763
+      VFX_Chama (1)_12: -9133496743670726551
+      VFX_Chama (1)_13: 3107172507262189113
+      VFX_Chama (1)_14: -8370246781780701456
+      VFX_Chama (1)_15: 8728555744436377113
+      VFX_Chama (1)_16: 5485072514398145699
+      VFX_Chama (1)_17: -1376518000123444343
+      VFX_Chama (1)_18: 2648221113387118337
+      VFX_Chama (1)_19: -3639277582359226225
+      VFX_Chama (1)_2: -8516147414225115929
+      VFX_Chama (1)_20: -7604897814003223572
+      VFX_Chama (1)_21: 5151248158873626266
+      VFX_Chama (1)_22: 6617548813324993025
+      VFX_Chama (1)_23: -3459147860709523461
+      VFX_Chama (1)_24: 1359488938088161034
+      VFX_Chama (1)_25: -6987132548569387421
+      VFX_Chama (1)_26: 6936147839520518557
+      VFX_Chama (1)_27: 4886414293896916897
+      VFX_Chama (1)_28: 1216287501298711009
+      VFX_Chama (1)_29: 443182308288259581
+      VFX_Chama (1)_3: -1145316724317705495
+      VFX_Chama (1)_30: 4531286686550831983
+      VFX_Chama (1)_31: -3328881007964408124
+      VFX_Chama (1)_32: -3819789847500283689
+      VFX_Chama (1)_33: 9110507141058382098
+      VFX_Chama (1)_34: -2842281931669780741
+      VFX_Chama (1)_35: 8422194484006075243
+      VFX_Chama (1)_36: 5127110806572710710
+      VFX_Chama (1)_37: -841573836395671711
+      VFX_Chama (1)_38: 8149680940686944801
+      VFX_Chama (1)_39: -8017834402131465787
+      VFX_Chama (1)_4: 7636213188026656517
+      VFX_Chama (1)_40: 3274263365539405882
+      VFX_Chama (1)_41: 3716065689474713585
+      VFX_Chama (1)_42: 4815725051117769310
+      VFX_Chama (1)_43: -1601983615786835648
+      VFX_Chama (1)_44: -7384185371621566286
+      VFX_Chama (1)_45: 2571434953580433277
+      VFX_Chama (1)_46: 8207719187689849066
+      VFX_Chama (1)_47: 8063892271520520397
+      VFX_Chama (1)_48: -3727866191355207335
+      VFX_Chama (1)_49: -8038954160746829373
+      VFX_Chama (1)_5: -2681817271829828860
+      VFX_Chama (1)_50: 5497017353800518347
+      VFX_Chama (1)_51: 8508858940415657609
+      VFX_Chama (1)_52: 655231811271897291
+      VFX_Chama (1)_53: -5393794009436204481
+      VFX_Chama (1)_54: -3993551694864221770
+      VFX_Chama (1)_55: -6132746673229908485
+      VFX_Chama (1)_56: 7737892914299541700
+      VFX_Chama (1)_57: -1565733255235061825
+      VFX_Chama (1)_58: -2367661695734776812
+      VFX_Chama (1)_59: 5386909525885497622
+      VFX_Chama (1)_6: 677687577720765136
+      VFX_Chama (1)_60: 6741480888480572696
+      VFX_Chama (1)_61: -4072779873409081987
+      VFX_Chama (1)_62: -5217903900335446254
+      VFX_Chama (1)_63: -1112241491455845905
+      VFX_Chama (1)_64: -946145931190030840
+      VFX_Chama (1)_65: 5166026633117420775
+      VFX_Chama (1)_66: -5402222493883061273
+      VFX_Chama (1)_67: -4685668363463719670
+      VFX_Chama (1)_68: 6429563322732570966
+      VFX_Chama (1)_69: -1836289962640702327
+      VFX_Chama (1)_7: 7067293891582925145
+      VFX_Chama (1)_70: 7495155563672836877
+      VFX_Chama (1)_71: -9168488939148648675
+      VFX_Chama (1)_72: -5209577443367976332
+      VFX_Chama (1)_73: 8837844752501938040
+      VFX_Chama (1)_74: -7897626129090958647
+      VFX_Chama (1)_75: 6044572335984817760
+      VFX_Chama (1)_76: 8256653147377647212
+      VFX_Chama (1)_77: -577474064396035408
+      VFX_Chama (1)_78: 8947018911742524464
+      VFX_Chama (1)_79: 5707851610069975022
+      VFX_Chama (1)_8: -8097967195882660054
+      VFX_Chama (1)_80: 8842553281860079061
+      VFX_Chama (1)_81: -8957928446235585868
+      VFX_Chama (1)_82: -5655911407405253124
+      VFX_Chama (1)_83: 6558222448105373569
+      VFX_Chama (1)_84: 8183749087246441345
+      VFX_Chama (1)_85: 6078967031531636418
+      VFX_Chama (1)_86: 7693432383646284995
+      VFX_Chama (1)_87: -7234235545565109798
+      VFX_Chama (1)_88: -6395287982196706537
+      VFX_Chama (1)_89: -1018396136191400469
+      VFX_Chama (1)_9: 7289608178561731445
+      VFX_Chama (1)_90: -4939133632915500574
+      VFX_Chama (1)_91: 751239107830966656
+      VFX_Chama (1)_92: -5797090203870345531
+      VFX_Chama (1)_93: -8642142001722493579
+      VFX_Chama (1)_94: 4785356328899328739
+      VFX_Chama (1)_95: -8229722463913298218
+      VFX_Chama (1)_96: 4369288203167455300
+      VFX_Chama (1)_97: -1503898365483296363
+      VFX_Chama (1)_98: -7758940405128683384
+      VFX_Chama (1)_99: 8622081596366164273
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

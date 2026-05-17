@@ -120,12 +120,11 @@ public class EnemyAI : MonoBehaviour
               
                 if (audioSource != null && somAtaqueLobo != null)
                 {
-                    // Adicionamos o volumeAtaque como segundo parâmetro!
                     audioSource.PlayOneShot(somAtaqueLobo, volumeAtaque);
                 }
             } 
             CronometroAtack += Time.deltaTime;
-            if (CronometroAtack >= 2)
+            if (CronometroAtack >= 0.5)
             {
                 state = "running";
                 CronometroAtack = 0;
@@ -192,7 +191,6 @@ public class EnemyAI : MonoBehaviour
 
     private void OnDrawGizmosSelected()
     {
-        // Consertado para usar uma variável local, igual fizemos no Damon!
         float gizmoOffset = isFlipped ? -2f : 2f;
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere((Vector2)transform.position + new Vector2(gizmoOffset, 0), 1f);

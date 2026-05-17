@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3231089253327086112}
   - component: {fileID: 2025441874911896098}
   - component: {fileID: 8584091514976483465}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: area_ataque
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -97,7 +97,7 @@ GameObject:
   - component: {fileID: 2715391224896528045}
   - component: {fileID: 8962267606741379571}
   - component: {fileID: 6375082499885554730}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Werewolf
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -213,7 +213,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 25
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 1
@@ -244,6 +244,7 @@ MonoBehaviour:
   speed: 5
   atackRange: 0
   hitboxSize: {x: 2.72, y: 6.66}
+  howlHitboxRadius: 4.78
   offset_x: 3.06
   offset_y: 2.22
   flipped: 0
@@ -261,8 +262,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   vidaMaxima: 0
   vidaAtual: 0
-  spriteRenderer: {fileID: 0}
-  tempoParaSumir: 2
   invencible: 0
 --- !u!60 &6375082499885554730
 PolygonCollider2D:

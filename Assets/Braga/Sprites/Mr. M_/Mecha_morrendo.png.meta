@@ -1,0 +1,437 @@
+fileFormatVersion: 2
+guid: 7553a4044e5a8f4409bc632a99cb24e3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8301435688811925690
+    second: Mecha_morrendo_0
+  - first:
+      213: -7350962545755718021
+    second: Mecha_morrendo_1
+  - first:
+      213: -6986892326302819483
+    second: Mecha_morrendo_2
+  - first:
+      213: 734085129141137221
+    second: Mecha_morrendo_3
+  - first:
+      213: -7280568409306614505
+    second: Mecha_morrendo_4
+  - first:
+      213: 7580358069966286929
+    second: Mecha_morrendo_5
+  - first:
+      213: 1748416387878224139
+    second: Mecha_morrendo_6
+  - first:
+      213: -5566283696439100938
+    second: Mecha_morrendo_7
+  - first:
+      213: 3486506185889874649
+    second: Mecha_morrendo_8
+  - first:
+      213: -4513531761620878653
+    second: Mecha_morrendo_9
+  - first:
+      213: 177796279669039804
+    second: Mecha_morrendo_10
+  - first:
+      213: -377792171856956552
+    second: Mecha_morrendo_11
+  - first:
+      213: -2965529380144140086
+    second: Mecha_morrendo_12
+  - first:
+      213: 8476920752960763610
+    second: Mecha_morrendo_13
+  - first:
+      213: 5393594980101379854
+    second: Mecha_morrendo_14
+  - first:
+      213: -5037482152488743727
+    second: Mecha_morrendo_15
+  - first:
+      213: -6352968174991290574
+    second: Mecha_morrendo_16
+  - first:
+      213: -5894678677683405434
+    second: Mecha_morrendo_17
+  - first:
+      213: 4805346983908341410
+    second: Mecha_morrendo_18
+  - first:
+      213: -8991012530960656902
+    second: Mecha_morrendo_19
+  - first:
+      213: -4884279897073338107
+    second: Mecha_morrendo_20
+  - first:
+      213: 2336097492575424722
+    second: Mecha_morrendo_21
+  - first:
+      213: -2216503424970555297
+    second: Mecha_morrendo_22
+  - first:
+      213: 1018253381972894126
+    second: Mecha_morrendo_23
+  - first:
+      213: -8670411408365514301
+    second: Mecha_morrendo_24
+  - first:
+      213: -5426178933399882698
+    second: Mecha_morrendo_25
+  - first:
+      213: -3985339215863110720
+    second: Mecha_morrendo_26
+  - first:
+      213: 9178562175032504933
+    second: Mecha_morrendo_27
+  - first:
+      213: 4426019673166648282
+    second: Mecha_morrendo_28
+  - first:
+      213: -2802163879615381848
+    second: Mecha_morrendo_29
+  - first:
+      213: 1756421531977165814
+    second: Mecha_morrendo_30
+  - first:
+      213: 4193910566837310262
+    second: Mecha_morrendo_31
+  - first:
+      213: 3503644576286950182
+    second: Mecha_morrendo_32
+  - first:
+      213: -5561158416071976842
+    second: Mecha_morrendo_33
+  - first:
+      213: -8917909155158530271
+    second: Mecha_morrendo_34
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Mecha_morrendo_4
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 422
+        width: 377
+        height: 439
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71539581b9936fa90800000000000000
+      internalID: -7280568409306614505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mecha_morrendo_5
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 424
+        width: 376
+        height: 447
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1503b9e8087d23960800000000000000
+      internalID: 7580358069966286929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mecha_morrendo_7
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 424
+        width: 400
+        height: 422
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f9f2b2387690c2b0800000000000000
+      internalID: -5566283696439100938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mecha_morrendo_9
+      rect:
+        serializedVersion: 2
+        x: 1240
+        y: 431
+        width: 464
+        height: 388
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3caf42ac6c6bc51c0800000000000000
+      internalID: -4513531761620878653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mecha_morrendo_23
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 20
+        width: 421
+        height: 320
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea1a5d35e00912e00800000000000000
+      internalID: 1018253381972894126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mecha_morrendo_29
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 20
+        width: 397
+        height: 297
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ae38194cc6bc19d0800000000000000
+      internalID: -2802163879615381848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mecha_morrendo_30
+      rect:
+        serializedVersion: 2
+        x: 837
+        y: 19
+        width: 410
+        height: 293
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fba851d310106810800000000000000
+      internalID: 1756421531977165814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: e5fa2e1aa859faa4d902044fc7836481
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Mecha_morrendo_0: -8301435688811925690
+      Mecha_morrendo_1: -7350962545755718021
+      Mecha_morrendo_10: 177796279669039804
+      Mecha_morrendo_11: -377792171856956552
+      Mecha_morrendo_12: -2965529380144140086
+      Mecha_morrendo_13: 8476920752960763610
+      Mecha_morrendo_14: 5393594980101379854
+      Mecha_morrendo_15: -5037482152488743727
+      Mecha_morrendo_16: -6352968174991290574
+      Mecha_morrendo_17: -5894678677683405434
+      Mecha_morrendo_18: 4805346983908341410
+      Mecha_morrendo_19: -8991012530960656902
+      Mecha_morrendo_2: -6986892326302819483
+      Mecha_morrendo_20: -4884279897073338107
+      Mecha_morrendo_21: 2336097492575424722
+      Mecha_morrendo_22: -2216503424970555297
+      Mecha_morrendo_23: 1018253381972894126
+      Mecha_morrendo_24: -8670411408365514301
+      Mecha_morrendo_25: -5426178933399882698
+      Mecha_morrendo_26: -3985339215863110720
+      Mecha_morrendo_27: 9178562175032504933
+      Mecha_morrendo_28: 4426019673166648282
+      Mecha_morrendo_29: -2802163879615381848
+      Mecha_morrendo_3: 734085129141137221
+      Mecha_morrendo_30: 1756421531977165814
+      Mecha_morrendo_31: 4193910566837310262
+      Mecha_morrendo_32: 3503644576286950182
+      Mecha_morrendo_33: -5561158416071976842
+      Mecha_morrendo_34: -8917909155158530271
+      Mecha_morrendo_4: -7280568409306614505
+      Mecha_morrendo_5: 7580358069966286929
+      Mecha_morrendo_6: 1748416387878224139
+      Mecha_morrendo_7: -5566283696439100938
+      Mecha_morrendo_8: 3486506185889874649
+      Mecha_morrendo_9: -4513531761620878653
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,467 @@
+fileFormatVersion: 2
+guid: 22c72050eb38dcb48bfa33f8ac792e47
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2701519258156654694
+    second: caminhada_mecha_0
+  - first:
+      213: 1384599069942551610
+    second: caminhada_mecha_1
+  - first:
+      213: 6898426951456950085
+    second: caminhada_mecha_2
+  - first:
+      213: 1398249594547203269
+    second: caminhada_mecha_3
+  - first:
+      213: 5526990022300216920
+    second: caminhada_mecha_4
+  - first:
+      213: -6858660025685629087
+    second: caminhada_mecha_5
+  - first:
+      213: 6190271586845560207
+    second: caminhada_mecha_6
+  - first:
+      213: -6215909385561309124
+    second: caminhada_mecha_7
+  - first:
+      213: 6260116178232249283
+    second: caminhada_mecha_8
+  - first:
+      213: 7262982019088305944
+    second: caminhada_mecha_9
+  - first:
+      213: -4981707425533585773
+    second: caminhada_mecha_10
+  - first:
+      213: -6065552623821466487
+    second: caminhada_mecha_11
+  - first:
+      213: -4086846151894906384
+    second: caminhada_mecha_12
+  - first:
+      213: -4129856518348609174
+    second: caminhada_mecha_13
+  - first:
+      213: 5941743875232005045
+    second: caminhada_mecha_14
+  - first:
+      213: 6778148859905761873
+    second: caminhada_mecha_15
+  - first:
+      213: -3511817605656295833
+    second: caminhada_mecha_16
+  - first:
+      213: 2252550684093769936
+    second: caminhada_mecha_17
+  - first:
+      213: -1692982290301490912
+    second: caminhada_mecha_18
+  - first:
+      213: -7402868095734849627
+    second: caminhada_mecha_19
+  - first:
+      213: -1492724872405148540
+    second: caminhada_mecha_20
+  - first:
+      213: 2321391798896628055
+    second: caminhada_mecha_21
+  - first:
+      213: -7683885741241802707
+    second: caminhada_mecha_22
+  - first:
+      213: 2150281766569901261
+    second: caminhada_mecha_23
+  - first:
+      213: 9116648327868251238
+    second: caminhada_mecha_24
+  - first:
+      213: 653019341493439850
+    second: caminhada_mecha_25
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: caminhada_mecha_4
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 508
+        width: 367
+        height: 420
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85e255c5420d3bc40800000000000000
+      internalID: 5526990022300216920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caminhada_mecha_5
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 508
+        width: 372
+        height: 422
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16726dd9b0521d0a0800000000000000
+      internalID: -6858660025685629087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caminhada_mecha_6
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 510
+        width: 383
+        height: 409
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8d8f15f53348e550800000000000000
+      internalID: 6190271586845560207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caminhada_mecha_9
+      rect:
+        serializedVersion: 2
+        x: 1206
+        y: 508
+        width: 377
+        height: 420
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81fcec95aab4bc460800000000000000
+      internalID: 7262982019088305944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caminhada_mecha_10
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 43
+        width: 373
+        height: 401
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 396152e9d7b6ddab0800000000000000
+      internalID: -4981707425533585773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caminhada_mecha_12
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 42
+        width: 373
+        height: 405
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f9c1a0f31b9847c0800000000000000
+      internalID: -4086846151894906384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caminhada_mecha_18
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 39
+        width: 361
+        height: 407
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0296d87a3915188e0800000000000000
+      internalID: -1692982290301490912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caminhada_mecha_23
+      rect:
+        serializedVersion: 2
+        x: 1215
+        y: 39
+        width: 357
+        height: 406
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dccf56fbfd557dd10800000000000000
+      internalID: 2150281766569901261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caminhada_mecha_24
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 298
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66cfeb42a57d48e70800000000000000
+      internalID: 9116648327868251238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caminhada_mecha_25
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 291
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6d0d2991adff0900800000000000000
+      internalID: 653019341493439850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: c5c2bdfc98f260744b8bcb28fccde8cc
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      caminhada_mecha_0: 2701519258156654694
+      caminhada_mecha_1: 1384599069942551610
+      caminhada_mecha_10: -4981707425533585773
+      caminhada_mecha_11: -6065552623821466487
+      caminhada_mecha_12: -4086846151894906384
+      caminhada_mecha_13: -4129856518348609174
+      caminhada_mecha_14: 5941743875232005045
+      caminhada_mecha_15: 6778148859905761873
+      caminhada_mecha_16: -3511817605656295833
+      caminhada_mecha_17: 2252550684093769936
+      caminhada_mecha_18: -1692982290301490912
+      caminhada_mecha_19: -7402868095734849627
+      caminhada_mecha_2: 6898426951456950085
+      caminhada_mecha_20: -1492724872405148540
+      caminhada_mecha_21: 2321391798896628055
+      caminhada_mecha_22: -7683885741241802707
+      caminhada_mecha_23: 2150281766569901261
+      caminhada_mecha_24: 9116648327868251238
+      caminhada_mecha_25: 653019341493439850
+      caminhada_mecha_3: 1398249594547203269
+      caminhada_mecha_4: 5526990022300216920
+      caminhada_mecha_5: -6858660025685629087
+      caminhada_mecha_6: 6190271586845560207
+      caminhada_mecha_7: -6215909385561309124
+      caminhada_mecha_8: 6260116178232249283
+      caminhada_mecha_9: 7262982019088305944
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

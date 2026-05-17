@@ -1,0 +1,535 @@
+fileFormatVersion: 2
+guid: 7938a2d4b1d22ce43bdf58534c129763
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5095289107553895711
+    second: VFX_broca_0
+  - first:
+      213: -6379452233090529128
+    second: VFX_broca_1
+  - first:
+      213: 3229931648952372954
+    second: VFX_broca_2
+  - first:
+      213: 6601666673981624136
+    second: VFX_broca_3
+  - first:
+      213: -3539149362004889732
+    second: VFX_broca_4
+  - first:
+      213: -3433929744237432492
+    second: VFX_broca_5
+  - first:
+      213: -8759809566226256551
+    second: VFX_broca_6
+  - first:
+      213: -7410166358953946095
+    second: VFX_broca_7
+  - first:
+      213: 8471531819115885984
+    second: VFX_broca_8
+  - first:
+      213: 1507568160769068148
+    second: VFX_broca_9
+  - first:
+      213: 8392102965874999803
+    second: VFX_broca_10
+  - first:
+      213: 1319879077894526847
+    second: VFX_broca_11
+  - first:
+      213: -5840080647760133099
+    second: VFX_broca_12
+  - first:
+      213: -2881799727858212750
+    second: VFX_broca_13
+  - first:
+      213: 8954377992526461486
+    second: VFX_broca_14
+  - first:
+      213: -1873825989379094880
+    second: VFX_broca_15
+  - first:
+      213: -8077633073547971682
+    second: VFX_broca_16
+  - first:
+      213: 5069101107686285894
+    second: VFX_broca_17
+  - first:
+      213: -6594030134554902995
+    second: VFX_broca_18
+  - first:
+      213: 4924350605911096765
+    second: VFX_broca_19
+  - first:
+      213: -4902619852109937941
+    second: VFX_broca_20
+  - first:
+      213: -3606707699912470531
+    second: VFX_broca_21
+  - first:
+      213: 7928237873735905014
+    second: VFX_broca_22
+  - first:
+      213: 7053973178507724733
+    second: VFX_broca_23
+  - first:
+      213: -6932569711682775119
+    second: VFX_broca_24
+  - first:
+      213: 8209255340393953283
+    second: VFX_broca_25
+  - first:
+      213: 1283552784211880837
+    second: VFX_broca_26
+  - first:
+      213: -2562806869084605122
+    second: VFX_broca_27
+  - first:
+      213: 644079153037624195
+    second: VFX_broca_28
+  - first:
+      213: 8058697366279933309
+    second: VFX_broca_29
+  - first:
+      213: 6234235262783090753
+    second: VFX_broca_30
+  - first:
+      213: 8614225059353788889
+    second: VFX_broca_31
+  - first:
+      213: 6372938646633631885
+    second: VFX_broca_32
+  - first:
+      213: -9131744630299053555
+    second: VFX_broca_33
+  - first:
+      213: -2823240101648645178
+    second: VFX_broca_34
+  - first:
+      213: -5711146378136569858
+    second: VFX_broca_35
+  - first:
+      213: -6229188605686914310
+    second: VFX_broca_36
+  - first:
+      213: 8371170866193086692
+    second: VFX_broca_37
+  - first:
+      213: 189789088136843762
+    second: VFX_broca_38
+  - first:
+      213: 5071714172017754629
+    second: VFX_broca_39
+  - first:
+      213: 4142029034817029215
+    second: VFX_broca_40
+  - first:
+      213: -1340418332240572035
+    second: VFX_broca_41
+  - first:
+      213: -4142374640574219276
+    second: VFX_broca_42
+  - first:
+      213: 7820534177758900265
+    second: VFX_broca_43
+  - first:
+      213: 8452365002370841527
+    second: VFX_broca_44
+  - first:
+      213: 2361545066443554891
+    second: VFX_broca_45
+  - first:
+      213: 840027495189494347
+    second: VFX_broca_46
+  - first:
+      213: 8909463144659067966
+    second: VFX_broca_47
+  - first:
+      213: 8215317436855807056
+    second: VFX_broca_48
+  - first:
+      213: 6818772551542888670
+    second: VFX_broca_49
+  - first:
+      213: -2586058625701845397
+    second: VFX_broca_50
+  - first:
+      213: 3659480104067917278
+    second: VFX_broca_51
+  - first:
+      213: -7021355709809788239
+    second: VFX_broca_52
+  - first:
+      213: -7568245241370739243
+    second: VFX_broca_53
+  - first:
+      213: 2213591143768574003
+    second: VFX_broca_54
+  - first:
+      213: 6757677796760767360
+    second: VFX_broca_55
+  - first:
+      213: 891301159351790061
+    second: VFX_broca_56
+  - first:
+      213: 4433530698524656593
+    second: VFX_broca_57
+  - first:
+      213: 5505983869748310941
+    second: VFX_broca_58
+  - first:
+      213: -3703835393118807375
+    second: VFX_broca_59
+  - first:
+      213: 9166305520842419428
+    second: VFX_broca_60
+  - first:
+      213: -126071207022390756
+    second: VFX_broca_61
+  - first:
+      213: 3608998272288857702
+    second: VFX_broca_62
+  - first:
+      213: 5424481205229750510
+    second: VFX_broca_63
+  - first:
+      213: 5234881353519063615
+    second: VFX_broca_64
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: VFX_broca_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 584
+        width: 275
+        height: 263
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ea355c7d85e949b0800000000000000
+      internalID: -5095289107553895711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX_broca_13
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 596
+        width: 284
+        height: 300
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 270a13b7a6ac108d0800000000000000
+      internalID: -2881799727858212750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX_broca_14
+      rect:
+        serializedVersion: 2
+        x: 571
+        y: 598
+        width: 298
+        height: 347
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2a7d158757544c70800000000000000
+      internalID: 8954377992526461486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX_broca_17
+      rect:
+        serializedVersion: 2
+        x: 878
+        y: 597
+        width: 339
+        height: 360
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6422e26a990195640800000000000000
+      internalID: 5069101107686285894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX_broca_22
+      rect:
+        serializedVersion: 2
+        x: 1239
+        y: 579
+        width: 297
+        height: 426
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fea3de2752c60e60800000000000000
+      internalID: 7928237873735905014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX_broca_63
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 90
+        width: 354
+        height: 425
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee880808ae0a74b40800000000000000
+      internalID: 5424481205229750510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: ae67dee03280e59418161bc8a2c60654
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      VFX_broca_0: -5095289107553895711
+      VFX_broca_1: -6379452233090529128
+      VFX_broca_10: 8392102965874999803
+      VFX_broca_11: 1319879077894526847
+      VFX_broca_12: -5840080647760133099
+      VFX_broca_13: -2881799727858212750
+      VFX_broca_14: 8954377992526461486
+      VFX_broca_15: -1873825989379094880
+      VFX_broca_16: -8077633073547971682
+      VFX_broca_17: 5069101107686285894
+      VFX_broca_18: -6594030134554902995
+      VFX_broca_19: 4924350605911096765
+      VFX_broca_2: 3229931648952372954
+      VFX_broca_20: -4902619852109937941
+      VFX_broca_21: -3606707699912470531
+      VFX_broca_22: 7928237873735905014
+      VFX_broca_23: 7053973178507724733
+      VFX_broca_24: -6932569711682775119
+      VFX_broca_25: 8209255340393953283
+      VFX_broca_26: 1283552784211880837
+      VFX_broca_27: -2562806869084605122
+      VFX_broca_28: 644079153037624195
+      VFX_broca_29: 8058697366279933309
+      VFX_broca_3: 6601666673981624136
+      VFX_broca_30: 6234235262783090753
+      VFX_broca_31: 8614225059353788889
+      VFX_broca_32: 6372938646633631885
+      VFX_broca_33: -9131744630299053555
+      VFX_broca_34: -2823240101648645178
+      VFX_broca_35: -5711146378136569858
+      VFX_broca_36: -6229188605686914310
+      VFX_broca_37: 8371170866193086692
+      VFX_broca_38: 189789088136843762
+      VFX_broca_39: 5071714172017754629
+      VFX_broca_4: -3539149362004889732
+      VFX_broca_40: 4142029034817029215
+      VFX_broca_41: -1340418332240572035
+      VFX_broca_42: -4142374640574219276
+      VFX_broca_43: 7820534177758900265
+      VFX_broca_44: 8452365002370841527
+      VFX_broca_45: 2361545066443554891
+      VFX_broca_46: 840027495189494347
+      VFX_broca_47: 8909463144659067966
+      VFX_broca_48: 8215317436855807056
+      VFX_broca_49: 6818772551542888670
+      VFX_broca_5: -3433929744237432492
+      VFX_broca_50: -2586058625701845397
+      VFX_broca_51: 3659480104067917278
+      VFX_broca_52: -7021355709809788239
+      VFX_broca_53: -7568245241370739243
+      VFX_broca_54: 2213591143768574003
+      VFX_broca_55: 6757677796760767360
+      VFX_broca_56: 891301159351790061
+      VFX_broca_57: 4433530698524656593
+      VFX_broca_58: 5505983869748310941
+      VFX_broca_59: -3703835393118807375
+      VFX_broca_6: -8759809566226256551
+      VFX_broca_60: 9166305520842419428
+      VFX_broca_61: -126071207022390756
+      VFX_broca_62: 3608998272288857702
+      VFX_broca_63: 5424481205229750510
+      VFX_broca_64: 5234881353519063615
+      VFX_broca_7: -7410166358953946095
+      VFX_broca_8: 8471531819115885984
+      VFX_broca_9: 1507568160769068148
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
