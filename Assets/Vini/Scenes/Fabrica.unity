@@ -2670,6 +2670,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2717746423940159616, guid: f7f084ed2b060bd268cbf7ab70d8d9ee, type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 4254921388895886516, guid: f7f084ed2b060bd268cbf7ab70d8d9ee, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -5669,19 +5673,72 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1614531467627511856, guid: c54088311b9fc094d85c3691f9b56d2d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2003656369}
   m_SourcePrefab: {fileID: 100100000, guid: c54088311b9fc094d85c3691f9b56d2d, type: 3}
 --- !u!114 &2003656367 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6975002229627061683, guid: c54088311b9fc094d85c3691f9b56d2d, type: 3}
   m_PrefabInstance: {fileID: 2003656366}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 2003656368}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7d382db595640f743809da9c13072589, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BossEntity
+--- !u!1 &2003656368 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1614531467627511856, guid: c54088311b9fc094d85c3691f9b56d2d, type: 3}
+  m_PrefabInstance: {fileID: 2003656366}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2003656369
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2003656368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7595a2191334a97aa35a7ea6c1c4049, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BossDialogueMrM
+  dialogosIntro:
+  - "Mr M, o que voc\xEA fez com a floresta?"
+  - Eu apenas estou fazendo um favor para a humanidade...
+  - "Com a minha t\xE9cnologia n\xF3s seremos impar\xE1veis... EU SEREI IMPAR\xC1VEL"
+  - "Agora sinta uma fra\xE7\xE3o do poder da Cog & Anchor!!! "
+  - Maldito...
+  retratosIntro:
+  - {fileID: 1832072279166882629, guid: 74491871f67c3848fb4aef4c4d0db04e, type: 3}
+  - {fileID: -5940077301644606091, guid: 7a4ab9b9b92e9028d8dd47439eb5af75, type: 3}
+  - {fileID: -5940077301644606091, guid: 7a4ab9b9b92e9028d8dd47439eb5af75, type: 3}
+  - {fileID: -5940077301644606091, guid: 7a4ab9b9b92e9028d8dd47439eb5af75, type: 3}
+  - {fileID: 1832072279166882629, guid: 74491871f67c3848fb4aef4c4d0db04e, type: 3}
+  nomesIntro:
+  - Damon Graves
+  - Mr. M
+  - Mr. M
+  - Mr. M
+  - Damon Graves
+  dialogosDerrota:
+  - "Acabou Mr. M, se renda antes que eu mate voc\xEA."
+  - "Eu nunca me renderei, mesmo se eu morrer agora, a minha t\xE9cnologia jamais
+    morrer\xE1... Marque minhas palavras Damon Graves... "
+  - "EU AINDA TEREI A MINHA VINGAN\xC7A"
+  retratosDerrota:
+  - {fileID: 1832072279166882629, guid: 74491871f67c3848fb4aef4c4d0db04e, type: 3}
+  - {fileID: -5940077301644606091, guid: 7a4ab9b9b92e9028d8dd47439eb5af75, type: 3}
+  - {fileID: -5940077301644606091, guid: 7a4ab9b9b92e9028d8dd47439eb5af75, type: 3}
+  nomesDerrota:
+  - Damon Graves
+  - Mr. M
+  - Mr. M
+  distanciaParaIniciar: 10
+  nomeCenaFinal: GameClear
 --- !u!1 &2051002004
 GameObject:
   m_ObjectHideFlags: 0

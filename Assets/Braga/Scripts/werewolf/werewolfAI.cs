@@ -45,7 +45,7 @@ public class werewolfAI : MonoBehaviour
         cronometroAtack = 0;
         atackRange = false;
         howl = false;
-        speed = 6;
+        speed = 4.5;
     }
 
     void Update()

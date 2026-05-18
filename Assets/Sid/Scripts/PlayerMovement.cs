@@ -87,7 +87,7 @@ public class PlayerMovement : MonoBehaviour
                 isPlayingIdle = true;
                 cronometroInatividade = 0f;
                 rb.linearVelocity = new Vector2(0, rb.linearVelocity.y);
-                rb.linearDamping = 20f;
+                rb.linearDamping =   20f;
             }
         }
 

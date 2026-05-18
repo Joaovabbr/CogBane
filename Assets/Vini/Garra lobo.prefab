@@ -186,6 +186,7 @@ GameObject:
   - component: {fileID: 7442823925812507912}
   - component: {fileID: -2676956794738083298}
   - component: {fileID: 3788708894193740637}
+  - component: {fileID: 7560014202512038921}
   m_Layer: 0
   m_Name: Garra lobo
   m_TagString: Untagged
@@ -273,3 +274,22 @@ MonoBehaviour:
   somColeta: {fileID: 8300000, guid: 6d376a43b47ae4e099e634cd5ef1ff24, type: 3}
   idUnicoUpgrade: upgrade_garra_boss
   statusDamon: {fileID: 11400000, guid: fcdf081692f843d528e382cbc0fe2fc4, type: 2}
+--- !u!114 &7560014202512038921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6861863308483608258}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e9662e1e95b1c8e29f4f78a00c58c05, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueTrigger
+  dialogos:
+  - "Essas garras s\xE3o extremamente afiadas... acredito que elas conseguem cortar
+    at\xE9 a mais dura das vinhas dessa floresta."
+  retratos:
+  - {fileID: 1832072279166882629, guid: 74491871f67c3848fb4aef4c4d0db04e, type: 3}
+  nomes:
+  - Damon Graves

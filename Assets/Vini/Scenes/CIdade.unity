@@ -13224,7 +13224,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SceneTransitionWithFade
   targetSceneName: Fabrica
-  spawnPosition: {x: -5, y: -6, z: 0}
+  spawnPosition: {x: 10, y: -6, z: 0}
   fadeDuration: 0.5
 --- !u!61 &1480084269
 BoxCollider2D:
