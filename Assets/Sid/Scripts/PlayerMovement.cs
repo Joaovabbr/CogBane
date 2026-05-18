@@ -5,8 +5,8 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     [Header("Áudio")]
-    public AudioSource audioSource; // Arraste o Damon para cá
-    public AudioClip somPouso;      // Arraste o som de pouso aqui
+    public AudioSource audioSource; 
+    public AudioClip somPouso;      
 
     private PlayerEntity atributos; 
     private Rigidbody2D rb;
@@ -15,6 +15,8 @@ public class PlayerMovement : MonoBehaviour
 
     private float tempoPressionado = 0f;
     private float cronometroInatividade = 0f;
+    private bool isPlayingIdle = false;
+    private float dampingOriginal;
 
     public PlayerCombat playerCombat;
 
@@ -31,6 +33,7 @@ public class PlayerMovement : MonoBehaviour
         anim = GetComponent<Animator>();
         col = GetComponent<Collider2D>(); 
         distanceToGround = col.bounds.extents.y;
+        dampingOriginal = rb.linearDamping;
 
         if (audioSource == null) audioSource = GetComponent<AudioSource>();
     }
@@ -39,7 +42,6 @@ public class PlayerMovement : MonoBehaviour
     {
         if (atributos.vidaAtual <= 0) return;
 
-     
         isGrounded = Physics2D.Raycast(transform.position, Vector2.down, distanceToGround + 0.02f, groundLayer);
 
         if (!wasGrounded && isGrounded && rb.linearVelocity.y <= 0)
@@ -52,15 +54,15 @@ public class PlayerMovement : MonoBehaviour
         }
         
         wasGrounded = isGrounded; 
-
-
         anim.SetBool("isJumping", !isGrounded);
 
         if (playerCombat != null && playerCombat.isAttacking)
         {
             rb.linearVelocity = new Vector2(0, rb.linearVelocity.y);
             anim.SetFloat("Speed", 0f); 
-            cronometroInatividade = 0f; 
+            cronometroInatividade = 0f;
+            isPlayingIdle = false;
+            rb.linearDamping = dampingOriginal;
             return; 
         }
 
@@ -69,6 +71,11 @@ public class PlayerMovement : MonoBehaviour
 
         if (movX != 0 || apertouPulo)
         {
+            if (isPlayingIdle)
+            {
+                isPlayingIdle = false;
+                rb.linearDamping = dampingOriginal;
+            }
             cronometroInatividade = 0f; 
         }
         else
@@ -76,9 +83,19 @@ public class PlayerMovement : MonoBehaviour
             cronometroInatividade += Time.deltaTime;
             if (cronometroInatividade >= atributos.tempoParaEntrarIdle)
             {
-                anim.SetTrigger("playIdle"); 
-                cronometroInatividade = 0f;  
+                anim.SetTrigger("playIdle");
+                isPlayingIdle = true;
+                cronometroInatividade = 0f;
+                rb.linearVelocity = new Vector2(0, rb.linearVelocity.y);
+                rb.linearDamping = 20f;
             }
+        }
+
+        if (isPlayingIdle)
+        {
+            rb.linearVelocity = new Vector2(0, rb.linearVelocity.y);
+            anim.SetFloat("Speed", 0f);
+            return;
         }
 
         float velAtual = 0f;

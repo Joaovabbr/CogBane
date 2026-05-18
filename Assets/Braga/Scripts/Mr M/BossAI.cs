@@ -87,7 +87,7 @@ public class BossAI : MonoBehaviour
         }
         else if (randomChoice < 75)
         {
-            currentAttack = "canhao";
+            currentAttack = "flamethrower";
         }   
         else
         {
