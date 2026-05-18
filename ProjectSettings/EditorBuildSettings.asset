@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Sid/Scenes/MainMenu.unity
     guid: 54abdd5b45444722a9b2aec8f1f5a672
   - enabled: 1
+    path: Assets/Braga/Scenes/IntroStory.unity
+    guid: fe25a1263486355448921a77db39b008
+  - enabled: 1
     path: Assets/Vini/Scenes/Floresta 1.unity
     guid: a730cb8281e3ae678acbcf17e6486f9e
   - enabled: 1
@@ -38,5 +41,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Vini/Scenes/Fabrica.unity
     guid: f6604ed019902d4e8b7b50190ec5de6f
+  - enabled: 1
+    path: Assets/Braga/Scenes/FimJogo.unity
+    guid: 997098d59bfc45047aca55b50c71823d
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}

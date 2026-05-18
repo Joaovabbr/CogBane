@@ -25,7 +25,7 @@ public class GameManager : MonoBehaviour
 
     public void IniciarJogo()
     {
-        StartCoroutine(IniciarCena("Floresta 1"));
+        StartCoroutine(IniciarCena("IntroStory"));
     }
 
     private IEnumerator IniciarCena(string nomeDaCena)

@@ -1,5 +1,7 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
+using System.Collections;
 
 public abstract class Entity : MonoBehaviour
 {
@@ -56,5 +58,16 @@ public abstract class Entity : MonoBehaviour
         {
             col.enabled = false;
         }
+        
+        if (TryGetComponent(out BossAI scriptBoss))
+        {
+            StartCoroutine(EsperaECarregaFimDeJogo());
+        }
+    }
+    
+    private IEnumerator EsperaECarregaFimDeJogo()
+    {
+        yield return new WaitForSeconds(6f);
+        SceneManager.LoadScene("FimJogo");
     }
 }
