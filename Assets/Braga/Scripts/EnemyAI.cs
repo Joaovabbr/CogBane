@@ -52,7 +52,7 @@ public class EnemyAI : MonoBehaviour
         cronometroPatrolStop = 0.0f;
         CronometroAtack = 0.0f;
         dead = false;
-        damage = 30;
+        damage = 15;
         wolfEntity = this.GetComponent<WolfEntity>();
 
         if (audioSource == null) audioSource = GetComponent<AudioSource>();

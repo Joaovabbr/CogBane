@@ -389,7 +389,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   player: {fileID: 0}
-  speed: 5
+  speed: 3.5
   audioSource: {fileID: 5016333148332574115}
   sonsGarra:
   - {fileID: 8300000, guid: 84ee6e2cab3eaac17a207bfc27bfe615, type: 3}
