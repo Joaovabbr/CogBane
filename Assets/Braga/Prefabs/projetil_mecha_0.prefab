@@ -83,7 +83,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 10
   m_MaskInteraction: 0
   m_Sprite: {fileID: -8807255531863078728, guid: 9cded7ec35e37f14bacfbdfb5fc15d97, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -196,3 +196,4 @@ MonoBehaviour:
   projDamage: 20
   lifeTime: 4
   explosionEffectPrefab: {fileID: 736327101214400768, guid: cd10e48baaa89e74f8de6683ddc8ddb5, type: 3}
+  somExplosao: {fileID: 8300000, guid: 6abf8df0ec42e524187d129125433bb2, type: 3}

@@ -67,7 +67,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 2.35, y: 2.5}
+  m_Offset: {x: 3.18, y: 2.66}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -77,7 +77,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 2.83, y: 5.15}
+  m_Size: {x: 3.37, y: 5.71}
   m_EdgeRadius: 0
 --- !u!114 &4085057035796154613
 MonoBehaviour:
@@ -234,20 +234,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BossAI
   player: {fileID: 0}
-  speed: 2.5
+  speed: 3.5
   flamethrowerRange: 0
   drillRange: 0
   attackDamage: 30
-  drillHitboxSize: {x: 4.29, y: 11.9}
-  drillHitboxOffset: {x: 3.2, y: 5.58}
-  flamethrowerHitboxSize: {x: 6.82, y: 11.2}
-  flamethrowerHitboxOffset: {x: 5.21, y: 5.58}
+  drillHitboxSize: {x: 5.59, y: 11.9}
+  drillHitboxOffset: {x: 4.29, y: 5.58}
+  flamethrowerHitboxSize: {x: 11.01, y: 12.9}
+  flamethrowerHitboxOffset: {x: 6.68, y: 5.58}
   projectilePrefab: {fileID: 4509491925356943046, guid: 5776656351c2b2e49bdc0a9e71c8624e, type: 3}
   shootPoint: {fileID: 7782381747366008001}
   drillVFXPrefab: {fileID: 2230994955183264632, guid: f6f1107312e32a840883f5b42751cda4, type: 3}
   fireVFXPrefab: {fileID: 696715672010653112, guid: 1d8255e14c5313d4ca494d86a2ebceba, type: 3}
   vfxSpawnPointDrill: {fileID: 8510119670544266693}
   vfxSpawnPointFire: {fileID: 7066475208859946517}
+  somDrillStart: {fileID: 8300000, guid: 43520a3df8306a246bb700cacbc18692, type: 3}
+  somDrillAttack: {fileID: 8300000, guid: 233e9bb101a5d78498fd3aff446d5fe0, type: 3}
+  somFlamethrower: {fileID: 8300000, guid: 4d37278ad9195ee4ba61337797e00ae1, type: 3}
+  somCannonLaunch: {fileID: 8300000, guid: ecaf493593c0f9d4889ace25f28943a2, type: 3}
 --- !u!114 &6975002229627061683
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -263,6 +267,7 @@ MonoBehaviour:
   vidaMaxima: 0
   vidaAtual: 0
   invencible: 0
+  somTomarDano: {fileID: 8300000, guid: 3a08c030e95a5c5409bb6af34e62f83f, type: 3}
 --- !u!95 &4119006668714217842
 Animator:
   serializedVersion: 7
@@ -770,7 +775,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 1.49, y: 2.59}
+  m_Offset: {x: 2.01, y: 2.59}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -780,7 +785,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.75, y: 5.16}
+  m_Size: {x: 2.63, y: 5.16}
   m_EdgeRadius: 0
 --- !u!114 &2849369642258705365
 MonoBehaviour:

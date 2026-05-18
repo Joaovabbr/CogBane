@@ -29,10 +29,18 @@ public class BossAI : MonoBehaviour
     public Transform vfxSpawnPointDrill; 
     public Transform vfxSpawnPointFire;
     private bool VFXFlameSpawnned;
+    
+    private AudioSource audioSource;
+    public AudioClip somDrillStart;
+    public AudioClip somDrillAttack;
+    public AudioClip somFlamethrower;
+    public AudioClip somCannonLaunch;
+    
     void Start()
     {
         anim = GetComponent<Animator>();
         entity = GetComponent<BossEntity>();
+        audioSource = GetComponent<AudioSource>();
         state = "choosing";
         currentAttack = "";
         isAttacking = false;
@@ -79,7 +87,7 @@ public class BossAI : MonoBehaviour
         }
         else if (randomChoice < 75)
         {
-            currentAttack = "flamethrower";
+            currentAttack = "canhao";
         }   
         else
         {
@@ -119,7 +127,10 @@ public class BossAI : MonoBehaviour
     {
         isAttacking = true;
         state = "attacking";
-        
+        if (triggerName == "range_broca" && somDrillStart != null)
+        {
+            audioSource.PlayOneShot(somDrillStart);
+        }
         anim.ResetTrigger("caminhada"); 
         anim.SetTrigger(triggerName);
     }
@@ -133,8 +144,8 @@ public class BossAI : MonoBehaviour
             
             Instantiate(drillVFXPrefab, spawnPos, vfxSpawnPointDrill.rotation);
         }
-        
-        CastHitbox(drillHitboxOffset, drillHitboxSize);
+        if (somDrillAttack != null) audioSource.PlayOneShot(somDrillAttack);
+        CastHitbox(drillHitboxOffset, drillHitboxSize, attackDamage- 10);
     }
 
     public void CastFlamethrowerHitbox()
@@ -146,9 +157,10 @@ public class BossAI : MonoBehaviour
 
             Instantiate(fireVFXPrefab, spawnPos, vfxSpawnPointFire.rotation);
             VFXFlameSpawnned = true;
+            if (somFlamethrower != null) audioSource.PlayOneShot(somFlamethrower);
         }
-
-        CastHitbox(flamethrowerHitboxOffset, flamethrowerHitboxSize);
+        
+        CastHitbox(flamethrowerHitboxOffset, flamethrowerHitboxSize, attackDamage+10);
     }
 
     public void FireCannon()
@@ -156,6 +168,7 @@ public class BossAI : MonoBehaviour
         if (projectilePrefab != null && shootPoint != null)
         {
             Vector2 direction = (player.transform.position - shootPoint.position).normalized;
+            if (somCannonLaunch != null) audioSource.PlayOneShot(somCannonLaunch);
             
             float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
             angle += 180f;
@@ -163,7 +176,7 @@ public class BossAI : MonoBehaviour
         
             if (proj.TryGetComponent(out Rigidbody2D rb))
             {
-                float projSpeed = 15f; 
+                float projSpeed = 20f; 
                 rb.linearVelocity = direction * projSpeed; 
             }
         }
@@ -186,7 +199,7 @@ public class BossAI : MonoBehaviour
         state = "choosing";
     }
 
-    private void CastHitbox(Vector2 offset, Vector2 size)
+    private void CastHitbox(Vector2 offset, Vector2 size, int dmg)
     {
         float actualOffsetX = flipped ? -Mathf.Abs(offset.x) : Mathf.Abs(offset.x);
         Vector2 hitboxPos = (Vector2)transform.position + new Vector2(actualOffsetX, offset.y);
@@ -198,7 +211,7 @@ public class BossAI : MonoBehaviour
             {
                 if (hit.TryGetComponent(out Entity scriptInimigo))
                 {
-                    scriptInimigo.TomarDano(attackDamage-10, "player");
+                    scriptInimigo.TomarDano(dmg, "player");
                 }
             }
         }
@@ -216,4 +229,5 @@ public class BossAI : MonoBehaviour
         Vector2 flamePos = (Vector2)transform.position + new Vector2(flameX, flamethrowerHitboxOffset.y);
         Gizmos.DrawWireCube(flamePos, flamethrowerHitboxSize);
     }
+    
 }

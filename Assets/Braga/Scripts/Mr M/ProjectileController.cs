@@ -2,9 +2,11 @@ using UnityEngine;
 
 public class ProjectileController : MonoBehaviour
 {
-    public int projDamage = 40;
+    public int projDamage = 50;
     public float lifeTime = 3f; 
     public GameObject explosionEffectPrefab; 
+    
+    public AudioClip somExplosao;
 
     void Start()
     {
@@ -21,7 +23,7 @@ public class ProjectileController : MonoBehaviour
             }
             ExplodeAndDestroy();
         }
-        else if (hit.CompareTag("Ground")) 
+        else if (hit.gameObject.layer == LayerMask.NameToLayer("chao_cenario")) 
         {
             ExplodeAndDestroy();
         }
@@ -33,7 +35,10 @@ public class ProjectileController : MonoBehaviour
         {
             Instantiate(explosionEffectPrefab, transform.position, Quaternion.identity);
         }
-        
+        if (somExplosao != null)
+        {
+            AudioSource.PlayClipAtPoint(somExplosao, transform.position);
+        }
         Destroy(gameObject);
     }
 }
