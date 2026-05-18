@@ -1,0 +1,351 @@
+fileFormatVersion: 2
+guid: 9d79c15cfbb3d1946a9380aea3b0435b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4876590982778353756
+    second: ataquecima_mecha_0
+  - first:
+      213: 1120836640427596057
+    second: ataquecima_mecha_1
+  - first:
+      213: -6868415402829696888
+    second: ataquecima_mecha_2
+  - first:
+      213: -8119846139611005490
+    second: ataquecima_mecha_3
+  - first:
+      213: 9196161252982869018
+    second: ataquecima_mecha_4
+  - first:
+      213: 5351744469118509248
+    second: ataquecima_mecha_5
+  - first:
+      213: 50699843609107949
+    second: ataquecima_mecha_6
+  - first:
+      213: -6609292343483038263
+    second: ataquecima_mecha_7
+  - first:
+      213: 2415854841095256879
+    second: ataquecima_mecha_8
+  - first:
+      213: -3194434809703662245
+    second: ataquecima_mecha_9
+  - first:
+      213: -6440124945694733978
+    second: ataquecima_mecha_10
+  - first:
+      213: 1233057294092844242
+    second: ataquecima_mecha_11
+  - first:
+      213: -8150629046872474898
+    second: ataquecima_mecha_12
+  - first:
+      213: -5880487301507474630
+    second: ataquecima_mecha_13
+  - first:
+      213: -7839622457911677784
+    second: ataquecima_mecha_14
+  - first:
+      213: 6359508989627268215
+    second: ataquecima_mecha_15
+  - first:
+      213: 1145928268301907979
+    second: ataquecima_mecha_16
+  - first:
+      213: -8154638970952030746
+    second: ataquecima_mecha_17
+  - first:
+      213: -9180036940548051971
+    second: ataquecima_mecha_18
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ataquecima_mecha_8
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 112
+        width: 219
+        height: 374
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2bf360ad27d68120800000000000000
+      internalID: 2415854841095256879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataquecima_mecha_10
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 113
+        width: 233
+        height: 485
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 669cbbeab7410a6a0800000000000000
+      internalID: -6440124945694733978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataquecima_mecha_11
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 114
+        width: 193
+        height: 524
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2dcbb127313bc1110800000000000000
+      internalID: 1233057294092844242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataquecima_mecha_12
+      rect:
+        serializedVersion: 2
+        x: 993
+        y: 115
+        width: 188
+        height: 529
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eea7f25d01623ee80800000000000000
+      internalID: -8150629046872474898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataquecima_mecha_14
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 113
+        width: 215
+        height: 359
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8aceffe19e0143390800000000000000
+      internalID: -7839622457911677784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataquecima_mecha_17
+      rect:
+        serializedVersion: 2
+        x: 1677
+        y: 115
+        width: 223
+        height: 349
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e5e8d0af07e4de80800000000000000
+      internalID: -8154638970952030746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 4a58e08d225df674c92e0c825ff61350
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      ataquecima_mecha_0: 4876590982778353756
+      ataquecima_mecha_1: 1120836640427596057
+      ataquecima_mecha_10: -6440124945694733978
+      ataquecima_mecha_11: 1233057294092844242
+      ataquecima_mecha_12: -8150629046872474898
+      ataquecima_mecha_13: -5880487301507474630
+      ataquecima_mecha_14: -7839622457911677784
+      ataquecima_mecha_15: 6359508989627268215
+      ataquecima_mecha_16: 1145928268301907979
+      ataquecima_mecha_17: -8154638970952030746
+      ataquecima_mecha_18: -9180036940548051971
+      ataquecima_mecha_2: -6868415402829696888
+      ataquecima_mecha_3: -8119846139611005490
+      ataquecima_mecha_4: 9196161252982869018
+      ataquecima_mecha_5: 5351744469118509248
+      ataquecima_mecha_6: 50699843609107949
+      ataquecima_mecha_7: -6609292343483038263
+      ataquecima_mecha_8: 2415854841095256879
+      ataquecima_mecha_9: -3194434809703662245
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

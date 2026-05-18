@@ -242,7 +242,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerEntity
   vidaMaxima: 0
   vidaAtual: 0
-  invencible: 1
+  invencible: 0
   statusDamon: {fileID: 11400000, guid: fcdf081692f843d528e382cbc0fe2fc4, type: 2}
   velocidadeAndar: 0
   velocidadeCorrer: 0
@@ -289,6 +289,7 @@ MonoBehaviour:
   audioSource: {fileID: 912299377292964496}
   somDisparoBesta: {fileID: 8300000, guid: 3f12e0b4fbcf3c7fc893622fb75b3ded, type: 3}
   somEstocada: {fileID: 8300000, guid: af4f40f7182c4334c9ab77a445d62eaf, type: 3}
+  somGarra: {fileID: 0}
   sonsGarra:
   - {fileID: 8300000, guid: 84ee6e2cab3eaac17a207bfc27bfe615, type: 3}
   - {fileID: 8300000, guid: 7231f7347dd302e4b80d47fdbc259c4c, type: 3}
@@ -298,11 +299,13 @@ MonoBehaviour:
   vfxAnimator: {fileID: 7061158739498483770}
   danoAtaque: 15
   danoGarra: 20
+  danoGarra: 20
   hitboxSize: {x: 2.39, y: 0.99}
   isFlipped: 0
   offset_x: 1.83
   offset_y: 1.1
   tempoRecargaBesta: 0.75
+  tempoRecargaGarra: 1.5
   tempoRecargaGarra: 1.5
 --- !u!114 &3386795674716884093
 MonoBehaviour:
@@ -455,8 +458,8 @@ Transform:
   m_GameObject: {fileID: 7737042269922430177}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.142, y: 0.908, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalPosition: {x: 1.366, y: 0.96, z: 0}
+  m_LocalScale: {x: 0.17602001, y: 0.17812, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6069998898032438524}
@@ -512,10 +515,10 @@ SpriteRenderer:
   m_MaskInteraction: 0
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.21, y: 0.14}
+  m_Size: {x: 1.82, y: 0.92}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0
@@ -558,8 +561,8 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.21, y: 0.14}
-    newSize: {x: 0.21, y: 0.14}
+    oldSize: {x: 1.82, y: 0.92}
+    newSize: {x: 1.82, y: 0.92}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
