@@ -11,7 +11,7 @@ public class PlayerCombat : MonoBehaviour
     public AudioSource audioSource; 
     public AudioClip somDisparoBesta;
     public AudioClip somEstocada;
-    public AudioClip somGarra;
+    public AudioClip[] sonsGarra; 
 
     [Header("Estado de Combate")]
     public bool isAttacking = false;
@@ -50,6 +50,8 @@ public class PlayerCombat : MonoBehaviour
     void Update()
     {
         if (atributos.vidaAtual <= 0) return;
+        
+        isFlipped = (transform.eulerAngles.y != 0) || (transform.localScale.x < 0);
 
         if (cronometroRecarga > 0)
         {
@@ -87,10 +89,18 @@ public class PlayerCombat : MonoBehaviour
         if (apertouAtaqueGarra && statusDamon.garraDesbloqueada && cronometroRecargaGarra <= 0f)
         {
             anim.SetTrigger("clawAttack");
-            if (audioSource != null && somGarra != null)
+            
+            if (audioSource != null && sonsGarra.Length > 0)
             {
-                audioSource.PlayOneShot(somGarra);
+                int randomIndex = Random.Range(0, sonsGarra.Length);
+                AudioClip somSorteado = sonsGarra[randomIndex];
+                if (somSorteado != null)
+                {
+                    audioSource.pitch = Random.Range(0.9f, 1.1f);
+                    audioSource.PlayOneShot(somSorteado);
+                }
             }
+
             TravarCombate();
             cronometroRecargaGarra = tempoRecargaGarra;
         }
@@ -137,11 +147,11 @@ public class PlayerCombat : MonoBehaviour
             SpriteRenderer vfxSprite = vfxAnimator.GetComponent<SpriteRenderer>();
             if (vfxSprite != null)
             {
-                vfxSprite.flipX = isFlipped;
+                vfxSprite.flipX = false;
             }
         }
     }
-
+    
     public void CastAttackHitbox()
     {   
         float hitOffset = isFlipped ? -offset_x : offset_x;
@@ -169,16 +179,20 @@ public class PlayerCombat : MonoBehaviour
         
         foreach (Collider2D hit in hits)
         {
-            if (hit.isTrigger) continue;
-
-            if (hit.CompareTag("Enemy") && hit.TryGetComponent(out Entity scriptInimigo))
-            {
-                scriptInimigo.TomarDano(danoGarra, "enemy");
-            }
-            
+            // Tenta quebrar primeiro
             if (hit.TryGetComponent(out ObjetoQuebravel objetoQuebravel))
             {
                 objetoQuebravel.Quebrar();
+                continue; 
+            }
+            
+            // Depois ignora os gatilhos invisíveis
+            if (hit.isTrigger) continue;
+
+            // Por fim, aplica o dano nos inimigos
+            if (hit.CompareTag("Enemy") && hit.TryGetComponent(out Entity scriptInimigo))
+            {
+                scriptInimigo.TomarDano(danoGarra, "enemy");
             }
         }
     }

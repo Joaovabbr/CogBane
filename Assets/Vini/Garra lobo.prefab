@@ -270,5 +270,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::UpgradeGarra
   alturaFlutuacao: 0.3
   velocidadeFlutuacao: 2
+  somColeta: {fileID: 8300000, guid: 6d376a43b47ae4e099e634cd5ef1ff24, type: 3}
   idUnicoUpgrade: upgrade_garra_boss
   statusDamon: {fileID: 11400000, guid: fcdf081692f843d528e382cbc0fe2fc4, type: 2}

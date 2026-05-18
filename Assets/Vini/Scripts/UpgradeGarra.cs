@@ -7,6 +7,9 @@ public class UpgradeGarra : MonoBehaviour
     public float alturaFlutuacao = 0.3f;
     public float velocidadeFlutuacao = 2f;
     
+    [Header("Áudio")] 
+    public AudioClip somColeta;
+    
     [Header("Persistência")]
     public string idUnicoUpgrade = "upgrade_garra_boss";
     public StatusJogadorSO statusDamon; 
@@ -46,6 +49,10 @@ public class UpgradeGarra : MonoBehaviour
                     playerInventory.statusDamon.itensColetados.Add(idUnicoUpgrade);
                 }
                 
+                if (somColeta != null)
+                {
+                    AudioSource.PlayClipAtPoint(somColeta, transform.position);
+                }
                 Debug.Log(" Garra desbloqueada! Pressione C ou L para usar.");
                 
                 Destroy(gameObject);

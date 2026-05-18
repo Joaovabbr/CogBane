@@ -26,7 +26,6 @@ public class Projectile : MonoBehaviour
             {
                 scriptInimigo.TomarDano(danoAtaque, "enemy");
 
-                // Toca o som no local do impacto antes da flecha sumir
                 if (somImpacto != null)
                 {
                     AudioSource.PlayClipAtPoint(somImpacto, Camera.main.transform.position, 1f);

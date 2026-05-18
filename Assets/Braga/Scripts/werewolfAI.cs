@@ -2,12 +2,22 @@ using UnityEngine;
 using System.Collections;
 
 public class werewolfAI : MonoBehaviour
+
 {
     public GameObject player;
     public float speed;
     private string state;
     private Animator anim;
     private werewollfEntity werewolf;
+
+    [Header("Sons do Boss")]
+    public AudioSource audioSource;
+    public AudioClip[] sonsGarra; 
+    public AudioClip somUivo;
+    public AudioClip somDescanso;
+    
+    [Header("Efeitos Visuais")]
+    public Animator vfxGarraAnim; 
 
     private float cronometroAtack;
     private int howlCount = 4;
@@ -28,7 +38,10 @@ public class werewolfAI : MonoBehaviour
     {
         anim = GetComponent<Animator>();
         werewolf = GetComponent<werewollfEntity>();
-        state = "running";
+        
+        if (audioSource == null) audioSource = GetComponent<AudioSource>();
+
+        state = "waiting";
         cronometroAtack = 0;
         atackRange = false;
         howl = false;
@@ -45,10 +58,35 @@ public class werewolfAI : MonoBehaviour
             howlCount--;
             state = "attacking"; 
             cronometroAtack = 0;
+            
+            if (audioSource != null && audioSource.clip == somDescanso)
+            {
+                audioSource.Stop();
+            }
         }
 
-        if (razaoVida <= 0) state = "dead";
+        if (razaoVida <= 0) 
+        {
+            state = "dead";
+            if (audioSource != null && audioSource.clip == somDescanso)
+            {
+                audioSource.Stop();
+            }
+        }
+        
         if (state == "dead") return; 
+
+        if (state == "waiting")
+        {
+            if (razaoVida < 100) 
+            {
+                IniciarCombate();
+            }
+            else
+            {
+                return;
+            }
+        }
         
         if (state != "attacking" && state != "rest")
         {
@@ -116,15 +154,63 @@ public class werewolfAI : MonoBehaviour
     {
         anim.SetTrigger("rest_down");
         
+        if (audioSource != null && somDescanso != null)
+        {
+            audioSource.pitch = 1f; 
+            audioSource.clip = somDescanso;
+            audioSource.Play();
+        }
+        
         yield return new WaitForSeconds(2f);
+        
+        if (state == "dead") yield break;
         
         anim.SetTrigger("rest_up");
         
         yield return new WaitForSeconds(2f); 
         
+        if (state == "dead") yield break;
+        
+        if (audioSource != null && audioSource.clip == somDescanso)
+        {
+            audioSource.Stop();
+        }
+        
         state = "running";
         attackCount = 0;
         restDown = false;
+    }
+    
+    public void PlayAttackSound()
+    {
+        if (audioSource != null && sonsGarra.Length > 0)
+        {
+            int randomIndex = Random.Range(0, sonsGarra.Length);
+            AudioClip somSorteado = sonsGarra[randomIndex];
+
+            if (somSorteado != null)
+            {
+                audioSource.pitch = Random.Range(0.9f, 1.1f); 
+                audioSource.PlayOneShot(somSorteado);
+            }
+        }
+    }
+
+    public void PlayAttackVFX()
+    {
+        if (vfxGarraAnim != null)
+        {
+            vfxGarraAnim.SetTrigger("Claw"); 
+        }
+    }
+
+    public void PlayHowlSound()
+    {
+        if (audioSource != null && somUivo != null)
+        {
+            audioSource.pitch = 1f;
+            audioSource.PlayOneShot(somUivo);
+        }
     }
 
     public void CastAttackHitbox()
@@ -166,6 +252,14 @@ public class werewolfAI : MonoBehaviour
         werewolf.invencible = false;
         cronometroAtack = 0;
         state = "running";
+    }
+
+    public void IniciarCombate()
+    {
+        if (state == "waiting")
+        {
+            state = "running";
+        }
     }
 
     private void OnDrawGizmosSelected()

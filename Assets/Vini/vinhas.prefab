@@ -4885,7 +4885,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObjetoQuebravel
   efeitoQuebradura: {fileID: 0}
-  somQuebrar: {fileID: 0}
+  somQuebrar: {fileID: 8300000, guid: face0c543af6fce358bfd39f0f3d7834, type: 3}
 --- !u!61 &1820104787403746549
 BoxCollider2D:
   m_ObjectHideFlags: 0
