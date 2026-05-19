@@ -5184,22 +5184,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas_HUD_Damon
       objectReference: {fileID: 0}
-    - target: {fileID: 4560301063983458551, guid: 07991d068375396b39828c43198888a6, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 4560301063983458551, guid: 07991d068375396b39828c43198888a6, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4560301063983458551, guid: 07991d068375396b39828c43198888a6, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 387.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4560301063983458551, guid: 07991d068375396b39828c43198888a6, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -186
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

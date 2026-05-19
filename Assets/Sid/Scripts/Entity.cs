@@ -59,15 +59,5 @@ public abstract class Entity : MonoBehaviour
             col.enabled = false;
         }
         
-        if (TryGetComponent(out BossAI scriptBoss))
-        {
-            StartCoroutine(EsperaECarregaFimDeJogo());
-        }
-    }
-    
-    private IEnumerator EsperaECarregaFimDeJogo()
-    {
-        yield return new WaitForSeconds(6f);
-        SceneManager.LoadScene("FimJogo");
     }
 }
