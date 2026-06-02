@@ -10,6 +10,7 @@ public class DialogueManager : MonoBehaviour
 
     [Header("UI do Diálogo")]
     public GameObject dialogueBox;
+    public GameObject botoesHUD;
     public Image retrato;
     public TextMeshProUGUI nomeTexto;
     public TextMeshProUGUI dialogoTexto;
@@ -71,6 +72,7 @@ public class DialogueManager : MonoBehaviour
         onDialogoFinalizado = onFinalizado; 
 
         dialogueBox.SetActive(true);
+        if (botoesHUD != null) botoesHUD.SetActive(false);
         retrato.gameObject.SetActive(true);
         nomeTexto.gameObject.SetActive(true);
         dialogoTexto.gameObject.SetActive(true);
@@ -174,6 +176,7 @@ public class DialogueManager : MonoBehaviour
         nomeTexto.gameObject.SetActive(false);
         dialogoTexto.gameObject.SetActive(false);
         if (indicadorContinuar != null) indicadorContinuar.SetActive(false);
+        if (botoesHUD != null) botoesHUD.SetActive(true);
 
         PlayerMovement player = FindObjectOfType<PlayerMovement>();
         if (player != null) 

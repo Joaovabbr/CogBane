@@ -57,7 +57,7 @@ public class PlayerInventory : MonoBehaviour
         }
     }
 
-    private void UsarPocao()
+    public void UsarPocao()
     {
         if (statusDamon.quantidadePocoes > 0 && statusDamon.vidaAtual < statusDamon.vidaMaxima)
         {

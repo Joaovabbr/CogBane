@@ -29,6 +29,10 @@ public class PlayerCombat : MonoBehaviour
     public float offset_x;
     public float offset_y;
 
+    [HideInInspector] public bool mobileDagger = false;
+    [HideInInspector] public bool mobileBesta = false;
+    [HideInInspector] public bool mobileGarra = false;
+
     [Header("Balanceamento (Cooldown)")]
     public float tempoRecargaBesta = 0.75f;
     private float cronometroRecarga = 0f;
@@ -65,9 +69,12 @@ public class PlayerCombat : MonoBehaviour
 
         if (isAttacking) return;
 
-        bool apertouAtaqueCurto = Input.GetKeyDown(KeyCode.Z) || Input.GetKeyDown(KeyCode.J);
-        bool apertouAtaqueLongo = Input.GetKeyDown(KeyCode.X) || Input.GetKeyDown(KeyCode.K);
-        bool apertouAtaqueGarra = Input.GetKeyDown(KeyCode.C) || Input.GetKeyDown(KeyCode.L);
+        bool apertouAtaqueCurto = Input.GetKeyDown(KeyCode.Z) || Input.GetKeyDown(KeyCode.J) || mobileDagger;
+        bool apertouAtaqueLongo = Input.GetKeyDown(KeyCode.X) || Input.GetKeyDown(KeyCode.K) || mobileBesta;
+        bool apertouAtaqueGarra = Input.GetKeyDown(KeyCode.C) || Input.GetKeyDown(KeyCode.L) || mobileGarra;
+        mobileDagger = false;
+        mobileBesta = false;
+        mobileGarra = false;
 
         if (apertouAtaqueCurto) 
         { 

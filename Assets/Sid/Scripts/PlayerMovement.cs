@@ -20,6 +20,10 @@ public class PlayerMovement : MonoBehaviour
 
     public PlayerCombat playerCombat;
 
+    [HideInInspector] public bool mobileLeft = false;
+    [HideInInspector] public bool mobileRight = false;
+    [HideInInspector] public bool mobilePulo = false;
+
     [Header("Configurações de Chão")]
     public LayerMask groundLayer; 
     private bool isGrounded;
@@ -66,8 +70,16 @@ public class PlayerMovement : MonoBehaviour
             return; 
         }
 
+        float mobileX = 0f;
+        if (mobileLeft && !mobileRight) mobileX = -1f;
+        else if (mobileRight && !mobileLeft) mobileX = 1f;
+
         float movX = Input.GetAxisRaw("Horizontal");
-        bool apertouPulo = Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.UpArrow);
+        if (movX == 0f) movX = mobileX;
+
+        bool mobileJumpInput = mobilePulo;
+        mobilePulo = false;
+        bool apertouPulo = Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.UpArrow) || mobileJumpInput;
 
         if (movX != 0 || apertouPulo)
         {
