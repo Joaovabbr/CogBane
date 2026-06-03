@@ -53,14 +53,6 @@ public class MisterM_SceneManager : MonoBehaviour
         bossJaMorreu = true;
         
         if (canvasBossHUD != null) canvasBossHUD.SetActive(false); 
-
-        Debug.Log("Mr. M foi derrotado! [Espaço reservado para carregar tela de vitória ou créditos]");
-
-        // =========================================================================
-        // TODO: IMPLEMENTAR AS LÓGICAS DE VITÓRIA / FIM DE JOGO DAQUI PARA BAIXO
-        // Exemplos futuros:
-        // UnityEngine.SceneManagement.SceneManager.LoadScene("TelaVitoria");
-        // ou desativar os controles do jogador e rodar animação de créditos.
-        // =========================================================================
+        
     }
 }

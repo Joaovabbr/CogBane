@@ -6,10 +6,14 @@ public class BotaoAtaqueGarra : MonoBehaviour, IPointerDownHandler
     public StatusJogadorSO statusDamon;
 
     private PlayerCombat playerCombat;
+    private Vector3 escalaOriginal; 
 
     void Start()
     {
         playerCombat = FindObjectOfType<PlayerCombat>();
+        
+        escalaOriginal = transform.localScale; 
+        
         AtualizarVisibilidade();
     }
 
@@ -21,11 +25,22 @@ public class BotaoAtaqueGarra : MonoBehaviour, IPointerDownHandler
     void AtualizarVisibilidade()
     {
         if (statusDamon != null)
-            gameObject.SetActive(statusDamon.garraDesbloqueada);
+        {
+            if (statusDamon.garraDesbloqueada)
+            {
+                transform.localScale = escalaOriginal; 
+            }
+            else
+            {
+                transform.localScale = Vector3.zero; 
+            }
+        }
     }
 
     public void OnPointerDown(PointerEventData eventData)
     {
+        if (statusDamon != null && !statusDamon.garraDesbloqueada) return;
+
         if (playerCombat != null)
             playerCombat.mobileGarra = true;
     }

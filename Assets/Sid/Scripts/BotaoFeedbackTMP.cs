@@ -12,7 +12,6 @@ public class BotaoFeedbackTMP : MonoBehaviour, IPointerEnterHandler, IPointerExi
 
     void Awake()
     {
-        // Mágica aqui: Agora ele procura o texto nele mesmo OU nos filhos!
         textoDoBotao = GetComponentInChildren<TextMeshProUGUI>();
         
         if (textoDoBotao != null)

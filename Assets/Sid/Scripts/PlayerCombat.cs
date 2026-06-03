@@ -186,17 +186,14 @@ public class PlayerCombat : MonoBehaviour
         
         foreach (Collider2D hit in hits)
         {
-            // Tenta quebrar primeiro
             if (hit.TryGetComponent(out ObjetoQuebravel objetoQuebravel))
             {
                 objetoQuebravel.Quebrar();
                 continue; 
             }
-            
-            // Depois ignora os gatilhos invisíveis
+
             if (hit.isTrigger) continue;
 
-            // Por fim, aplica o dano nos inimigos
             if (hit.CompareTag("Enemy") && hit.TryGetComponent(out Entity scriptInimigo))
             {
                 scriptInimigo.TomarDano(danoGarra, "enemy");

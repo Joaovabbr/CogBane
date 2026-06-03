@@ -27,7 +27,7 @@ public class PlayerEntity : Entity
 
     protected override void ConfigurarAtributos()
     {
-        // Puxa a vida salva do arquivo permanente (SO) logo ao carregar a cena
+
         if (statusDamon != null)
         {
             vidaMaxima = statusDamon.vidaMaxima;

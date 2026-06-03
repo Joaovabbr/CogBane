@@ -13,27 +13,26 @@ public class TutorialFade : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        // Verifica se quem entrou na área foi o jogador (Damon)
+        
         if (collision.CompareTag("Player"))
         {
             if (fadeCoroutine != null) StopCoroutine(fadeCoroutine);
-            fadeCoroutine = StartCoroutine(Esmaecer(1f)); // 1f = 100% visível
+            fadeCoroutine = StartCoroutine(Esmaecer(1f)); 
         }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        // Verifica se o jogador saiu da área
+   
         if (collision.CompareTag("Player"))
         {
             if (fadeCoroutine != null) StopCoroutine(fadeCoroutine);
-            fadeCoroutine = StartCoroutine(Esmaecer(0f)); // 0f = 100% invisível
+            fadeCoroutine = StartCoroutine(Esmaecer(0f)); 
         }
     }
 
     private IEnumerator Esmaecer(float alphaAlvo)
     {
-        // Enquanto o alpha atual não chegar no alvo, continua mudando suavemente
         while (!Mathf.Approximately(grupoTutorial.alpha, alphaAlvo))
         {
             grupoTutorial.alpha = Mathf.MoveTowards(grupoTutorial.alpha, alphaAlvo, velocidadeFade * Time.deltaTime);

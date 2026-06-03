@@ -15,7 +15,7 @@ public class PocaoColetavel : MonoBehaviour
     [Header("Áudio de Coleta")]
     public AudioClip somColeta;
     [Range(0f, 2f)]
-    public float volumeColeta = 2f; // Controle de volume direto no Inspector
+    public float volumeColeta = 2f;
 
     void Start()
     {
@@ -51,8 +51,6 @@ public class PocaoColetavel : MonoBehaviour
                         statusDamon.itensColetados.Add(idUnico);
                     }
                 }
-
-                // Toca o som no local onde a poção estava antes de ser destruída
                 if (somColeta != null)
                 {
                     

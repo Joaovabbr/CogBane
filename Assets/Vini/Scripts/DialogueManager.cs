@@ -19,6 +19,12 @@ public class DialogueManager : MonoBehaviour
     [Header("Configurações")]
     public float velocidadeTexto = 0.05f;
 
+    // --- NOVAS VARIÁVEIS DE ÁUDIO AQUI ---
+    [Header("Áudio do Diálogo")]
+    public AudioSource audioSourceDialogo;
+    public AudioClip somDeLetra;
+    // -------------------------------------
+
     private bool dialogoAtivo = false;
     private bool textoCompleto = false;
     private Coroutine digitandoCoroutine;
@@ -142,6 +148,16 @@ public class DialogueManager : MonoBehaviour
         foreach (char letra in texto.ToCharArray())
         {
             dialogoTexto.text += letra;
+            
+            // --- INJEÇÃO DO EFEITO SONORO AQUI ---
+            // Toca o som para caracteres que não sejam espaços em branco para um ritmo melhor
+            if (somDeLetra != null && audioSourceDialogo != null && letra != ' ')
+            {
+                audioSourceDialogo.pitch = Random.Range(0.9f, 1.1f);
+                audioSourceDialogo.PlayOneShot(somDeLetra);
+            }
+            // -------------------------------------
+
             yield return new WaitForSeconds(velocidadeTexto);
         }
 
@@ -192,6 +208,7 @@ public class DialogueManager : MonoBehaviour
 
         PlayerCombat combat = FindObjectOfType<PlayerCombat>();
         if (combat != null) combat.enabled = true;
+        
         if (onDialogoFinalizado != null)
         {
             onDialogoFinalizado.Invoke();

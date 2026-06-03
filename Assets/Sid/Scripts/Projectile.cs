@@ -7,8 +7,7 @@ public class Projectile : MonoBehaviour
     private Rigidbody2D rb;
 
     [Header("Áudio de Impacto")]
-    public AudioClip somImpacto; // Arraste o impacto_besta.wav aqui
-
+    public AudioClip somImpacto; 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();

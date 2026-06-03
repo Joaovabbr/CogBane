@@ -3,9 +3,20 @@ using UnityEngine;
 [RequireComponent(typeof(Collider2D))]
 public class FullHealArea : MonoBehaviour
 {
+    [Header("Interface Mobile")]
+    public GameObject botaoDescansoMobile;
+
+    private PlayerInventory playerNaArea;
+
     private void Start()
     {
         GetComponent<Collider2D>().isTrigger = true;
+        
+        // Esconde o botão ao iniciar o jogo
+        if (botaoDescansoMobile != null) 
+        {
+            botaoDescansoMobile.SetActive(false);
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -14,9 +25,13 @@ public class FullHealArea : MonoBehaviour
         
         if (player != null)
         {
-            player.EntrarAreaFullHeal();
+            playerNaArea = player; 
+            player.EntrarAreaFullHeal(); 
 
-            Debug.Log("Entre na área de Full Heal! Pressione R para curar.");
+            if (botaoDescansoMobile != null) 
+            {
+                botaoDescansoMobile.SetActive(true);
+            }
         }
     }
 
@@ -26,8 +41,20 @@ public class FullHealArea : MonoBehaviour
         
         if (player != null)
         {
-            player.SairAreaFullHeal();
+            player.SairAreaFullHeal(); 
+            playerNaArea = null; 
             
+            if (botaoDescansoMobile != null) 
+            {
+                botaoDescansoMobile.SetActive(false);
+            }
+        }
+    }
+    public void CurarPeloMobile()
+    {
+        if (playerNaArea != null)
+        {
+            playerNaArea.UsarFullHeal(); 
         }
     }
 }

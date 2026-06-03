@@ -19,7 +19,7 @@ public class GameOverController : MonoBehaviour
     [Header("Áudio da Voz de Game Over")]
     public AudioClip somVozGameOver;
     [Range(0f, 1f)]
-    public float volumeVoz = 1f; // Controle de volume exclusivo para a voz
+    public float volumeVoz = 1f;
 
     [Header("Áudio do Botão")]
     public AudioClip somCliqueBotao;
@@ -57,7 +57,6 @@ public class GameOverController : MonoBehaviour
         
         if (audioSource == null) audioSource = GetComponent<AudioSource>();
 
-        // TOCA A VOZ DO GAME OVER IMEDIATAMENTE (Usando a posição da câmera para volume máximo 2D)
         if (somVozGameOver != null)
         {
             AudioSource.PlayClipAtPoint(somVozGameOver, Camera.main.transform.position, volumeVoz);

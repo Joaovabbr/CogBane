@@ -21,7 +21,6 @@ public abstract class EnemyEntity : Entity
         float vidaAntes = vidaAtual;
         base.TomarDano(dano, type);
 
-        // Se tomou dano e não morreu, pisca vermelho
         if (vidaAtual < vidaAntes && vidaAtual > 0)
         {
             if (coroutinePiscarVermelho != null) StopCoroutine(coroutinePiscarVermelho);
@@ -34,10 +33,9 @@ public abstract class EnemyEntity : Entity
         if (coroutinePiscarVermelho != null) StopCoroutine(coroutinePiscarVermelho);
         if (spriteRenderer != null) spriteRenderer.color = Color.white;
 
-        // 1. Faz o básico (Animação, Hitbox e Física) chamando o pai
         base.Morrer(); 
 
-        // 2. Inicia o comportamento exclusivo de inimigo
+      
         if (coroutineSequenciaMorte != null) StopCoroutine(coroutineSequenciaMorte);
         coroutineSequenciaMorte = StartCoroutine(SequenciaMorte());
     }
